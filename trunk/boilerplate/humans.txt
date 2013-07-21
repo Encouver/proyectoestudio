@@ -2,9 +2,18 @@
 # The humans responsible & technology colophon
 
 # TEAM
+	
+	Chef and Developer: Edgar Leal
+	Twitter: @edgarleal1
+	From: Los Teques, Distrito Capital, Venezuela
+	
+	Chef and Developer: Marcos Ramirez
+	Twitter: @S0cram
+	From: Cagua, Aragua, Venezuela
+	
 
-    <name> -- <role> -- <twitter>
 
+	
 # THANKS
 
     <name>
