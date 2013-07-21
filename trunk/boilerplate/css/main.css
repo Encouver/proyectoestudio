@@ -16,12 +16,13 @@ input,
 select,
 textarea {
     color: #222;
+	ont-family: 'Open Sans';
 }
 
 body {
-    font-size: 1em;
+    font-size: 3em;
     line-height: 1.4;
-	font-family: 'Special Elite', cursive;
+	font-family: 'Economica', cursive;
 }
 
 /*
