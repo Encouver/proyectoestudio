@@ -95,7 +95,11 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
-
+.container {
+	max-width:950px;
+	padding:0 10px; /*right and left paddings are 10*/
+	margin:0 auto
+}
 
 
 
