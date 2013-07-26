@@ -205,7 +205,7 @@ textarea {
 }
 body {
   margin: 0;
-  font-family: 'Jacques Francois', serif;
+  font-family: 'Josefin Slab', serif;
   font-size: 16px;
   line-height: 20px;
   color: #333333;
@@ -892,7 +892,7 @@ input,
 button,
 select,
 textarea {
-  font-family: 'Jacques Francois', serif;
+  font-family: 'Josefin Slab', serif;
 }
 label {
   display: block;
