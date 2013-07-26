@@ -545,6 +545,9 @@ a:focus {
 .container-fluid:after {
   clear: both;
 }
+footer {
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.25);
+}
 p {
   margin: 0 0 10px;
 }
@@ -553,6 +556,7 @@ p {
   font-size: 24px;
   font-weight: 200;
   line-height: 30px;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.25);
 }
 small {
   font-size: 85%;
@@ -622,6 +626,7 @@ h6 {
   line-height: 20px;
   color: inherit;
   text-rendering: optimizelegibility;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.25);
 }
 h1 small,
 h2 small,
