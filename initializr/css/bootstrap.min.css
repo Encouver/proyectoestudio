@@ -520,6 +520,8 @@ a:focus {
 .container {
   margin-right: auto;
   margin-left: auto;
+  display: -webkit-flex;
+  display: flex;
   *zoom: 1;
 }
 .container:before,
@@ -530,6 +532,10 @@ a:focus {
 }
 .container:after {
   clear: both;
+}
+.block {
+  -webkit-align-self: center;
+  align-self: center;
 }
 .container-fluid {
   padding-right: 20px;
