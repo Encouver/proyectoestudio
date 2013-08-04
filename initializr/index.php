@@ -24,7 +24,6 @@
         
         <link rel="stylesheet/less" type="text/css" href="less/bootstrap.less" />
         
-        <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
         <script type="text/javascript">
 			less = {
 				env: "development", // or "production"
@@ -141,27 +140,63 @@
            <li><a href="#">Quiénes somos</a></li>
               <li><a href="#">Contacto</a></li> -->
             </ul>
-            <a href="http://univeonline.com"><img src="img/bocetoNN2.png" alt="Logo UniveOnline" width="250"></a>
+            <img src="img/bocetoNN2.png" alt="Logo UniveOnline" width="250">
 
             <!--<h2 class="mark">UniveOnline</h2> -->
           </div>
     <hr>
-
 			 <div class="jumbotron">
                 <h2>Bienvenido a UniveOnline:</h2><h3>Tu comunidad de enseñanza y aprendizaje</h3>
-                <br>
-                <form method="POST" class="form-inline search-form" action="subs.php">
+                
+                <div id="example" class="modal hide fade in" style="display: none; ">
+                    <div class="modal-header">
+                        <a class="close" data-dismiss="modal">×</a>
+                        <h3>Gracias por subscribirte</h3>
+                    </div>
+                    <div class="modal-body">
+                        <h4>Text in a modal</h4>
+                        <p>You can add some text here.</p>
+                        <?php
+                            if(isset($_POST['email'])){
+                            
+                                $dbconn = pg_connect("host=localhost port=5432 dbname=univeonl_univeonl user=univeonl_univeonl password=admin") or die ("No se pudo conectar a la Base de Datos");
+                                echo "Conectado satisfactoriamente.\n";
+                                
+                                 $email_from = $_POST['email'];
+                                 $error_message = "";
+                                 $email_exp = '/^[A-Za-z0-9._%-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,4}$/';
+                                 
+                                  if(!preg_match($email_exp,$email_from)) {
+                                    $error_message .= 'The Email Address you entered does not appear to be valid.';
+                                  }
+                                  
+                                  $res = pg_insert($dbconn, 'maillist', $_POST);
+                                  if ($res) {
+                                      echo "POST data is successfully logged\n";
+                                  } else {
+                                      echo "User must have sent wrong inputs\n";
+                                  }
+                                
+                                pg_close($dbconn);
+                            }
+                        ?>	        
+                    </div>
+                    <div class="modal-footer">
+                        <!--<a href="#" class="btn btn-success">Call to action</a>-->
+                        <a href="#" class="btn" data-dismiss="modal">Close</a>
+                    </div>
+                </div>
+                
+                <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+                <script src="/js/bootstrap-modal.js"></script>
+                         
+                <form method="POST" class="form-inline search-form">
                    <div class="input-append">
                    <input id="" class="xlarge ui-autocomplete-input span4" type="text" value="" autocomplete="off" placeholder="tucorreo@ejemplo.com" name="email" role="textbox" aria-autocomplete="list" aria-haspopup="true" style="height:40px !important; font-size:25px !important;">
-                    <button id="artist_submit" class="btn btn-large btn-danger" type="submit" formaction="subs.php"formmethod="post" value="">Subscribirme</button>
+                    <button id="artist_submit" class="btn btn-large btn-danger" type="submit"  formmethod="post" value="" data-toggle="modal" href="#example">Subscribirme</button>
                     </div>
                 </form>
-                <br>
-                <script>
-				function Subscripcion(){
-					
-				}
-                </script>
+                
 
 
                 <p class="lead">Estamos actualizando nuestra plataforma.<br>Suscríbete y pronto recibirás información de nuestros cursos gratis en línea y mucho más.</p>
