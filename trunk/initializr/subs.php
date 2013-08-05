@@ -16,10 +16,13 @@
 		  if(!preg_match($email_exp,$email_from)) {
 			 echo "0";
 		  }else{
+			  if(pg_select ($dbconn, 'maillist', $_POST)){
+			  		
 			  
 			  $res = pg_insert($dbconn, 'maillist', $_POST);
 			  if ($res) {
 				  echo "1";
+			  }
 			  } else {
 				  echo "3";
 			  }
