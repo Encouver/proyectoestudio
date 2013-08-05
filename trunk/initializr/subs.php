@@ -13,7 +13,7 @@
 <?php
 	if(isset($_POST['email'])){
 	
-		$dbconn = pg_connect("host=localhost port=5432 dbname=univeonl_univeonl user=univeonl_univeonl password=admin") or die ("No se pudo conectar a la Base de Datos");
+		$dbconn = pg_connect("host=localhost port=5432 dbname=univeonl_ine user=postgres password=20190906") or die ("No se pudo conectar a la Base de Datos");
 		echo "Conectado satisfactoriamente.\n";
 		
 		 $email_from = $_POST['email'];
