@@ -237,8 +237,8 @@
 				},
 				description : {
 					email : {
-						required : '<div class="alert alert-error">Correo requerido.</div>',
-						pattern : '<div class="alert alert-error">Correo invalido.</div>',
+						required : '<div class="alert alert-error">Correo requerido</div>',
+						pattern : '<div class="alert alert-error">Correo inválido</div>',
 						//conditional : '<div class="alert alert-error">Conditional</div>',
 						valid : function() {
 								
@@ -263,16 +263,16 @@
 										
 										if(json==0)
 										{
-										$('#email-description').html('<div class="alert alert-error">Correo invalido</div>');
+										$('#email-description').html('<div class="alert alert-error">Correo inválido</div>');
 										}else if(json==1)
 										{
-										$('#email-description').html('<div class="alert alert-success">Gracias por suscribirte.</div>');
+										$('#email-description').html('<div class="alert alert-success">¡Gracias por suscribirte!</div>');
 										}else if(json==2)
 										{
-										$('#email-description').html('<div class="alert alert-error">hubo un problema en la recepción de los datos. </div>');
+										$('#email-description').html('<div class="alert alert-error">Hubo un problema en la recepción de los datos, inténtalo nuevamente</div>');
 										}else if(json==3)
 										{
-										$('#email-description').html('<div class="alert alert-error">Este correo ya fue registrado.</div>');
+										$('#email-description').html('<div class="alert alert-error">Este correo ya fue registrado</div>');
 										}
 										$('#email').val("");
 								}
