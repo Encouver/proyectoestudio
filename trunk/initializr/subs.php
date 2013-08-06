@@ -16,7 +16,11 @@
 		  if(!preg_match($email_exp,$email_from)) {
 			 echo "0";
 		  }else{
-			  if(pg_select ($dbconn, 'maillist', $_POST)){
+		  
+		  $qu = pg_query($dbconn, "SELECT email FROM maillist WHERE email = '".$_POST['email']."'");
+		  $rows = pg_num_rows($qu);
+		  
+			  if($rows == 0){
 			  		
 			  
 			  $res = pg_insert($dbconn, 'maillist', $_POST);
