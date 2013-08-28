@@ -5,10 +5,14 @@
 
 // This is the main Web application configuration. Any writable
 // CWebApplication properties can be configured here.
+
+Yii::setPathOfAlias('bootstrap', dirname(__FILE__).'/../extensions/bootstrap');
+
 return array(
 	'basePath'=>dirname(__FILE__).DIRECTORY_SEPARATOR.'..',
 	'name'=>'My Web Application',
-
+	'theme'=>'bootstrap',
+	//'theme'=>'bootstrap',
 	// preloading 'log' component
 	'preload'=>array('log'),
 
@@ -19,6 +23,11 @@ return array(
 	),
 
 	'modules'=>array(
+		'gii'=>array(
+            'generatorPaths'=>array(
+                'bootstrap.gii',
+            ),
+        ),
 		// uncomment the following to enable the Gii tool
 		/*
 		'gii'=>array(
@@ -36,6 +45,9 @@ return array(
 			// enable cookie-based authentication
 			'allowAutoLogin'=>true,
 		),
+		 'bootstrap'=>array(
+            'class'=>'bootstrap.components.Bootstrap',
+        ),
 		// uncomment the following to enable URLs in path-format
 		/*
 		'urlManager'=>array(
@@ -91,7 +103,7 @@ return array(
 
 // Define a path alias for the Bootstrap extension as it's used internally.
 // In this example we assume that you unzipped the extension under protected/extensions.
-Yii::setPathOfAlias('bootstrap', dirname(__FILE__).'/../extensions/bootstrap');
+/*Yii::setPathOfAlias('bootstrap', dirname(__FILE__).'/../extensions/bootstrap');
  
 return array(
     'theme'=>'bootstrap', // requires you to copy the theme under your themes directory
@@ -107,4 +119,4 @@ return array(
             'class'=>'bootstrap.components.Bootstrap',
         ),
     ),
-);
+);*/
