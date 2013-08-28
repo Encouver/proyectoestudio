@@ -88,3 +88,23 @@ return array(
 		'adminEmail'=>'webmaster@example.com',
 	),
 );
+
+// Define a path alias for the Bootstrap extension as it's used internally.
+// In this example we assume that you unzipped the extension under protected/extensions.
+Yii::setPathOfAlias('bootstrap', dirname(__FILE__).'/../extensions/bootstrap');
+ 
+return array(
+    'theme'=>'bootstrap', // requires you to copy the theme under your themes directory
+    'modules'=>array(
+        'gii'=>array(
+            'generatorPaths'=>array(
+                'bootstrap.gii',
+            ),
+        ),
+    ),
+    'components'=>array(
+        'bootstrap'=>array(
+            'class'=>'bootstrap.components.Bootstrap',
+        ),
+    ),
+);
