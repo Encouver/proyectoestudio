@@ -14,6 +14,7 @@
 
 <body>
 
+<div class = "navbar-fixed-top">
 <?php $this->widget('bootstrap.widgets.TbNavbar',array(
     'items'=>array(
         array(
@@ -29,6 +30,7 @@
         ),
     ),
 )); ?>
+</div>
 
 <div class="container" id="page">
 
@@ -42,13 +44,15 @@
 
 	<div class="clear"></div>
 
-	<div id="footer">
+
+
+</div><!-- page -->
+
+	<div id="footer" >
 		Copyright &copy; <?php echo date('Y'); ?> by UniveOnline.<br/>
 		All Rights Reserved.<br/>
 		<?php echo Yii::powered(); ?>
 	</div><!-- footer -->
-
-</div><!-- page -->
-
+    
 </body>
 </html>
