@@ -43,11 +43,6 @@
 	<div class="clear"></div>
 
 	<div id="footer">
-    <?php 
-		$this->widget('bootstrap.widgets.TbGridView.php',array(
-				
-			));		
-	?>
 		Copyright &copy; <?php echo date('Y'); ?> by UniveOnline.<br/>
 		All Rights Reserved.<br/>
 		<?php echo Yii::powered(); ?>
