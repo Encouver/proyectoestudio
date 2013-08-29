@@ -14,9 +14,7 @@
     <?php  
 	  $baseUrl = Yii::app()->baseUrl; 
 	  $cs = Yii::app()->getClientScript();
-	  //$cs->registerCssFile($baseUrl.'/css/reset_html5.css');
 	  $cs->registerCssFile($baseUrl.'/css/flip_099.css');
-	  $cs->registerScriptFile($baseUrl.'/assets/4e432cba/jquery.min.js');
 	  $cs->registerScriptFile($baseUrl.'/js/jquery-ui-1.10.3.custom.min.js');
 	  $cs->registerScriptFile($baseUrl.'/js/jquery.flip.min.js');
 	  //$cs->registerScriptFile($baseUrl.'/js/yourscript.js');
