@@ -14,6 +14,8 @@
     <?php  
 	  $baseUrl = Yii::app()->baseUrl; 
 	  $cs = Yii::app()->getClientScript();
+	  //$cs->registerCssFile($baseUrl.'/css/reset_html5.css');
+	  $cs->registerCssFile($baseUrl.'/css/flip_099.css');
 	  $cs->registerScriptFile($baseUrl.'/assets/4e432cba/jquery.min.js');
 	  $cs->registerScriptFile($baseUrl.'/js/jquery-ui-1.10.3.custom.min.js');
 	  $cs->registerScriptFile($baseUrl.'/js/jquery.flip.min.js');
@@ -64,18 +66,9 @@
     )); ?>
 </div>
 
-<div id="flipbox">Hello! I'm a flip-box! :)</div>
-<div id="flipPad">
-    <a href="#" class="left" rel="rl" rev="#39AB3E" title="Change content as <em>you</em> like!">left</a>
-    <a href="#" class="top" rel="bt" rev="#B0EB17" title="Ohhh yeah!">top</a>
-    <a href="#" class="bottom" rel="tb" rev="#82BD2E" title="Hey oh let's go!">bottom</a>
-    <a href="#" class="right" rel="lr" rev="#C8D97E" title="Waiting for css3...">right</a>
-    <a href="#" class="revert">revert!</a>
-</div>
 
-<div class="container" id="banner">
 
-</div>
+
 
 <div class="container" id="page">
 
@@ -92,7 +85,18 @@
 
 
 </div><!-- page -->
+<div class="container" id="banner">
 
+    <div id="flipbox">Hello! I'm a flip-box! :)</div>
+    <div id="flipPad">
+        <a href="#" class="left" rel="rl" rev="#39AB3E" title="Change content as <em>you</em> like!">left</a>
+        <a href="#" class="top" rel="bt" rev="#B0EB17" title="Ohhh yeah!">top</a>
+        <a href="#" class="bottom" rel="tb" rev="#82BD2E" title="Hey oh let's go!">bottom</a>
+        <a href="#" class="right" rel="lr" rev="#C8D97E" title="Waiting for css3...">right</a>
+        <a href="#" class="revert">revert!</a>
+    </div>
+
+</div>
 	<div id="footer" >
 		Copyright &copy; <?php echo date('Y'); ?> by UniveOnline.<br/>
 		All Rights Reserved.<br/>
