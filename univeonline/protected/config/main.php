@@ -8,6 +8,7 @@
 
 Yii::setPathOfAlias('bootstrap', dirname(__FILE__).'/../extensions/bootstrap');
 
+
 return array(
 	'basePath'=>dirname(__FILE__).DIRECTORY_SEPARATOR.'..',
 	'name'=>'UniveOnline',
@@ -46,6 +47,9 @@ return array(
 			// enable cookie-based authentication
 			'allowAutoLogin'=>true,
 		),
+		/*'assetManager' => array (
+			'linkAssets' => true,
+		),*/
 		 'bootstrap'=>array(
             'class'=>'bootstrap.components.Bootstrap',
         ),

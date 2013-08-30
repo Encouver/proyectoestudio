@@ -67,34 +67,37 @@
 
 
 
-
-<div class="container" id="page">
-
-	<?php if(isset($this->breadcrumbs)):?>
-		<?php $this->widget('bootstrap.widgets.TbBreadcrumbs', array(
-			'links'=>$this->breadcrumbs,
-		)); ?><!-- breadcrumbs -->
-	<?php endif?>
-
-	<?php echo $content; ?>
-
-	<div class="clear"></div>
-
-
-
-</div><!-- page -->
-<div class="container" id="banner">
-
-    <div id="flipbox">Hello! I'm a flip-box! :)</div>
-    <div id="flipPad">
-        <a href="#" class="left" rel="rl" rev="#39AB3E" title="Change content as <em>you</em> like!">left</a>
-        <a href="#" class="top" rel="bt" rev="#B0EB17" title="Ohhh yeah!">top</a>
-        <a href="#" class="bottom" rel="tb" rev="#82BD2E" title="Hey oh let's go!">bottom</a>
-        <a href="#" class="right" rel="lr" rev="#C8D97E" title="Waiting for css3...">right</a>
-        <a href="#" class="revert">revert!</a>
+<div id="container">
+    <div id="content">
+        <div class="container" id="page">
+        
+            <?php if(isset($this->breadcrumbs)):?>
+                <?php $this->widget('bootstrap.widgets.TbBreadcrumbs', array(
+                    'links'=>$this->breadcrumbs,
+                )); ?><!-- breadcrumbs -->
+            <?php endif?>
+        
+            <?php echo $content; ?>
+        
+            <div class="clear"></div>
+        
+        
+        
+        </div><!-- page -->
+        <div class="container" id="banner">
+        
+            <div id="flipbox">Hello! I'm a flip-box! :)</div>
+            <div id="flipPad">
+                <a href="#" class="left" rel="rl" rev="#39AB3E" title="Change content as <em>you</em> like!">left</a>
+                <a href="#" class="top" rel="bt" rev="#B0EB17" title="Ohhh yeah!">top</a>
+                <a href="#" class="bottom" rel="tb" rev="#82BD2E" title="Hey oh let's go!">bottom</a>
+                <a href="#" class="right" rel="lr" rev="#C8D97E" title="Waiting for css3...">right</a>
+                <a href="#" class="revert">revert!</a>
+            </div>
+        </div>
     </div>
-
 </div>
+
 	<div id="footer" >
 		Copyright &copy; <?php echo date('Y'); ?> by UniveOnline.<br/>
 		All Rights Reserved.<br/>
