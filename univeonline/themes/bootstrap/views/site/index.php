@@ -45,12 +45,19 @@ $cs->registerScriptFile($baseUrl.'/js/jquery.flip.min.js');
           <!-- Carousel items -->
           <div class="carousel-inner">
             <div class="active item">
-            
-            	<img alt="" src="images/3.jpg" >
+            <?php $this->widget('ext.imagemask.ImageMask', array(
+                'shape' => 'roundedsquare',
+                'imgpath' => Yii::app()->basePath.'/../images/3.jpg',
+                'width' => '200',
+                'height' => '200',
+                'title' => 'Sample Image',
+                ));
+                ?>
+<!--            	<img alt="" src="images/3.jpg" >
                 <div class="carousel-caption">
                 <h4>First Thumbnail label</h4>
                 <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-                </div>
+                </div>-->
 			</div>
 			<div class="item">
             
