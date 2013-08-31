@@ -30,12 +30,19 @@ $cs->registerScriptFile($baseUrl.'/js/jquery.flip.min.js');
                 <a href="#" class="revert">revert!</a>
             </div>
         </div>-->
-       <div class="input-prepend input-append">
-    	<input class="span2" id="" type="text" placeholder="">
-        <span class="fornav"><i class="icon-search"></i></span>
-        <!--<span class="add-on">Buscar</span>-->
-    	<!--<span class="add-on">Buscar</span>-->
-       </div>
+      <form class="form-search">
+          <div class="input-prepend input-append"><!-- 
+            <input class="span9" id="" type="text" placeholder="Buscar un curso">
+            <span class="fornav"><i class="icon-search" ></i></span>
+            <!--<span class="add-on">Buscar</span>-->
+            <!--<span class="add-on">Buscar</span>-->
+           </div>
+         <div class="input-append">
+         	<span class="fornav"><i class="icon-search" ></i></span>
+            <input type="text" class="input-xxlarge search-query " placeholder="Buscar un curso">
+            <button type="submit" class="btn">Search</button>
+         </div>
+      </form>
     
         <div id="myCarousel" class="carousel slide">
           <ol class="carousel-indicators">
@@ -45,19 +52,29 @@ $cs->registerScriptFile($baseUrl.'/js/jquery.flip.min.js');
           <!-- Carousel items -->
           <div class="carousel-inner">
             <div class="active item">
-            <?php $this->widget('ext.imagemask.ImageMask', array(
+              <?php /*$this->widget('ext.imagemask.ImageMask', array(
                 'shape' => 'roundedsquare',
                 'imgpath' => Yii::app()->basePath.'/../images/3.jpg',
                 'width' => '200',
                 'height' => '200',
                 'title' => 'Sample Image',
-                ));
+                ));*/
+				
+					$image = Yii::app()->image->load('images/3.jpg');
+					$image->crop(1600, 1000);
+					$image->save('images/3t.jpg'); // or $image->save('images/small.jpg');
+					
+				/*	Yii::import('application.extensions.image.Image');
+					$image = new Image('images/3.jpg');
+					$image->resize(400, 100)->rotate(-45)->quality(75)->sharpen(20);
+					$image->render();*/
+										
                 ?>
-<!--            	<img alt="" src="images/3.jpg" >
+ 	        	<img alt="" src="images/3t.jpg" >
                 <div class="carousel-caption">
                 <h4>First Thumbnail label</h4>
                 <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-                </div>-->
+                </div>
 			</div>
 			<div class="item">
             
