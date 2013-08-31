@@ -19,24 +19,7 @@ $cs->registerScriptFile($baseUrl.'/js/jquery.flip.min.js');
 	})
 </script>
 
-<!--        <div class="container center-fixed" id="banner">
-        
-            <div id="flipbox">Hello! I'm a flip-box! :)</div>
-            <div id="flipPad">
-                <a href="#" class="left" rel="rl" rev="#39AB3E" title="Change content as <em>you</em> like!">left</a>
-                <a href="#" class="top" rel="bt" rev="#B0EB17" title="Ohhh yeah!">top</a>
-                <a href="#" class="bottom" rel="tb" rev="#82BD2E" title="Hey oh let's go!">bottom</a>
-                <a href="#" class="right" rel="lr" rev="#C8D97E" title="Waiting for css3...">right</a>
-                <a href="#" class="revert">revert!</a>
-            </div>
-        </div>-->
       <form class="form-search">
-          <div class="input-prepend input-append"><!-- 
-            <input class="span9" id="" type="text" placeholder="Buscar un curso">
-            <span class="fornav"><i class="icon-search" ></i></span>
-            <!--<span class="add-on">Buscar</span>-->
-            <!--<span class="add-on">Buscar</span>-->
-           </div>
          <div class="input-append">
          	<span class="fornav"><i class="icon-search" ></i></span>
             <input type="text" class="input-xxlarge search-query " placeholder="Buscar un curso">
