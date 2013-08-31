@@ -356,3 +356,24 @@ Stack trace:
 REQUEST_URI=/proyectoestudio/univeonline/index.php
 HTTP_REFERER=http://localhost/proyectoestudio/univeonline/index.php?r=site/login
 ---
+2013/08/31 12:39:55 [error] [exception.CException] exception 'CException' with message 'image file not found' in C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\proyectoestudio\univeonline\protected\extensions\image\Image.php:78
+Stack trace:
+#0 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\proyectoestudio\univeonline\protected\extensions\image\CImageComponent.php(41): Image->__construct('images/3.jpg', Array)
+#1 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\proyectoestudio\univeonline\themes\bootstrap\views\site\index.php(56): CImageComponent->load('images/3.jpg')
+#2 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CBaseController.php(126): require('C:\Program File...')
+#3 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\Program File...', NULL, true)
+#4 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\Program File...', NULL, true)
+#5 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CController.php(782): CController->renderPartial('index', NULL, true)
+#6 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\proyectoestudio\univeonline\protected\controllers\SiteController.php(32): CController->render('index')
+#7 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#8 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#9 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#10 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('')
+#12 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('')
+#13 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#14 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\proyectoestudio\univeonline\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/proyectoestudio/univeonline/index.php
+HTTP_REFERER=http://localhost/proyectoestudio/univeonline/index.php?r=site/login
+---
