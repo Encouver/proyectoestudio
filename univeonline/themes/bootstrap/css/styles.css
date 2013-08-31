@@ -4,7 +4,8 @@
 
 .fornav {
     position:relative;
-    margin-left:-22px;
-    top:-3px;
+    margin-left:5px;
+	margin-right: -15px;
+    top:-8px;
     z-index:2;
 }
