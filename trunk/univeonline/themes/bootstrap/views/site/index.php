@@ -13,9 +13,13 @@ $cs->registerScriptFile($baseUrl.'/js/jquery.flip.min.js');
 //$cs->registerCssFile($baseUrl.'/css/yourcss.css');
 ?>    
 
+<script type="text/javascript">
+	$('.carousel').carousel({
+		interval: 2000
+	})
+</script>
 
-
-        <div class="container center-fixed" id="banner">
+<!--        <div class="container center-fixed" id="banner">
         
             <div id="flipbox">Hello! I'm a flip-box! :)</div>
             <div id="flipPad">
@@ -25,6 +29,31 @@ $cs->registerScriptFile($baseUrl.'/js/jquery.flip.min.js');
                 <a href="#" class="right" rel="lr" rev="#C8D97E" title="Waiting for css3...">right</a>
                 <a href="#" class="revert">revert!</a>
             </div>
+        </div>-->
+        
+        <div id="myCarousel" class="carousel slide">
+          <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+          </ol>
+          <!-- Carousel items -->
+          <div class="carousel-inner">
+            <div class="active item">…
+            
+            	<!--<img alt="" src="assets/img/bootstrap-mdo-sfmoma-02.jpg">
+                <div class="carousel-caption">
+                <h4>Second Thumbnail label</h4>
+                <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+-->
+			</div>
+            <div class="item">…</div>
+            <div class="item">…</div>
+
+          </div>
+          <!-- Carousel nav -->
+          <a class="carousel-control left" href="#myCarousel" data-slide="prev">&lsaquo;</a>
+          <a class="carousel-control right" href="#myCarousel" data-slide="next">&rsaquo;</a>
         </div>
         
 <?php $this->beginWidget('bootstrap.widgets.TbHeroUnit',array(
