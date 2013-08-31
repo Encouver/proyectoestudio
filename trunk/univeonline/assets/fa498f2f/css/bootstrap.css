@@ -577,6 +577,11 @@ body > #container {
 #content {
   padding-bottom: 4em;
 }
+#banner {
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
 p {
   margin: 0 0 10px;
 }

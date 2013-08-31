@@ -15,7 +15,7 @@ $cs->registerScriptFile($baseUrl.'/js/jquery.flip.min.js');
 
 
 
-        <div class="container" id="banner">
+        <div class="container center-fixed" id="banner">
         
             <div id="flipbox">Hello! I'm a flip-box! :)</div>
             <div id="flipPad">

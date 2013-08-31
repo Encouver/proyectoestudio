@@ -25,8 +25,8 @@
                     array('label'=>'Cursos', 'url'=>array('')),
                     array('label'=>'Sobre UniveOnline', 'url'=>array('/site/page', 'view'=>'about')),
                     array('label'=>'Contacto', 'url'=>array('/site/contact')),
-                    array('label'=>'Login', 'url'=>array('/site/login'), 'visible'=>Yii::app()->user->isGuest),
-                    array('label'=>'Logout ('.Yii::app()->user->name.')', 'url'=>array('/site/logout'), 'visible'=>!Yii::app()->user->isGuest)
+                    array('label'=>'Iniciar Sesión', 'url'=>array('/site/login'), 'visible'=>Yii::app()->user->isGuest),
+                    array('label'=>'Desconectarse ('.Yii::app()->user->name.')', 'url'=>array('/site/logout'), 'visible'=>!Yii::app()->user->isGuest)
                 ),
             ),
         ),
