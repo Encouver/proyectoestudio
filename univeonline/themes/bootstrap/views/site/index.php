@@ -30,7 +30,12 @@ $cs->registerScriptFile($baseUrl.'/js/jquery.flip.min.js');
                 <a href="#" class="revert">revert!</a>
             </div>
         </div>-->
-        
+       <div class="input-prepend input-append">
+    	<span class="add-on"><i class="icon-search"></i></span>
+    	<input class="span2" id="appendedPrependedInput" type="text">
+    	<span class="add-on">Buscar</span>
+       </div>
+    
         <div id="myCarousel" class="carousel slide">
           <ol class="carousel-indicators">
             <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
