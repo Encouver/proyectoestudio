@@ -40,7 +40,7 @@ $cs->registerScriptFile($baseUrl.'/js/jquery.flip.min.js');
           <div class="carousel-inner">
             <div class="active item">
             
-            	<img alt="" src="images/1.jpg" style="width:1300px !important; height:400px !important;">
+            	<img alt="" src="images/3.jpg" >
                 <div class="carousel-caption">
                 <h4>Second Thumbnail label</h4>
                 <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
@@ -48,7 +48,7 @@ $cs->registerScriptFile($baseUrl.'/js/jquery.flip.min.js');
 			</div>
 			<div class="item">
             
-            	<img alt="" src="images/1.jpg" style="width:1300px !important; height:400px !important;">
+            	<img alt="" src="images/3.jpg" style="width:1300px !important; height:400px !important;">
                 <div class="carousel-caption">
                 <h4>Second Thumbnail label</h4>
                 <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
