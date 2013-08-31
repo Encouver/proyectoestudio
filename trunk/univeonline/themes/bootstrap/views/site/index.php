@@ -35,21 +35,25 @@ $cs->registerScriptFile($baseUrl.'/js/jquery.flip.min.js');
           <ol class="carousel-indicators">
             <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
             <li data-target="#myCarousel" data-slide-to="1"></li>
-            <li data-target="#myCarousel" data-slide-to="2"></li>
           </ol>
           <!-- Carousel items -->
           <div class="carousel-inner">
-            <div class="active item">…
+            <div class="active item">
             
-            	<!--<img alt="" src="assets/img/bootstrap-mdo-sfmoma-02.jpg">
+            	<img alt="" src="images/1.jpg" style="width:1300px !important; height:400px !important;">
                 <div class="carousel-caption">
                 <h4>Second Thumbnail label</h4>
                 <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
--->
+                </div>
 			</div>
-            <div class="item">…</div>
-            <div class="item">…</div>
-
+			<div class="item">
+            
+            	<img alt="" src="images/1.jpg" style="width:1300px !important; height:400px !important;">
+                <div class="carousel-caption">
+                <h4>Second Thumbnail label</h4>
+                <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                </div>
+			</div>
           </div>
           <!-- Carousel nav -->
           <a class="carousel-control left" href="#myCarousel" data-slide="prev">&lsaquo;</a>
