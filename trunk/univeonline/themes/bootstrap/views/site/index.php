@@ -31,9 +31,10 @@ $cs->registerScriptFile($baseUrl.'/js/jquery.flip.min.js');
             </div>
         </div>-->
        <div class="input-prepend input-append">
-    	<span class="add-on"><i class="icon-search"></i></span>
-    	<input class="span2" id="appendedPrependedInput" type="text">
-    	<span class="add-on">Buscar</span>
+    	<input class="span2" id="" type="text" placeholder="">
+        <span class="fornav"><i class="icon-search"></i></span>
+        <!--<span class="add-on">Buscar</span>-->
+    	<!--<span class="add-on">Buscar</span>-->
        </div>
     
         <div id="myCarousel" class="carousel slide">
