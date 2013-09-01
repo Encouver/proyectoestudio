@@ -18,15 +18,21 @@ $cs->registerScriptFile($baseUrl.'/js/jquery.flip.min.js');
 		interval: 2000
 	})
 </script>
-
-      <form class="form-search">
+	
+    
+    
+	<!--Formulario de busqueda principal-->
+	<div class="pagination-centered hero-unit">
+      <div class="form-search">
          <div class="input-append">
          	<span class="fornav"><i class="icon-search" ></i></span>
             <input type="text" class="input-xxlarge search-query " placeholder="Buscar un curso">
-            <button type="submit" class="btn">Search</button>
+            <button type="submit" class="btn" formmethod="post">Buscar</button>
          </div>
-      </form>
+      </div>
+    </div>
     
+    <!--Banner-->
         <div id="myCarousel" class="carousel slide">
           <ol class="carousel-indicators">
             <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
@@ -73,6 +79,8 @@ $cs->registerScriptFile($baseUrl.'/js/jquery.flip.min.js');
           <a class="carousel-control right" href="#myCarousel" data-slide="next">&rsaquo;</a>
         </div>
         
+        <div class="container">
+        
 <?php $this->beginWidget('bootstrap.widgets.TbHeroUnit',array(
     'heading'=>'Welcome to '.CHtml::encode(Yii::app()->name),
 )); ?>
@@ -92,8 +100,9 @@ $cs->registerScriptFile($baseUrl.'/js/jquery.flip.min.js');
     the <a href="http://www.yiiframework.com/doc/">documentation</a>.
     Feel free to ask in the <a href="http://www.yiiframework.com/forum/">forum</a>,
     should you have any questions.</p>
-    
-<script type="text/javascript">
+  
+    </div>
+<!--<script type="text/javascript">
 	$(function(){
 		
 		$("#flipPad a:not(.revert)").bind("click",function(){
@@ -114,4 +123,4 @@ $cs->registerScriptFile($baseUrl.'/js/jquery.flip.min.js');
 		
 		
 	});
-</script>
+</script>-->

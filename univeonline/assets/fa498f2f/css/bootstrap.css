@@ -1596,7 +1596,7 @@ select:focus:invalid:focus {
 input.search-query {
   padding-right: 14px;
   padding-right: 4px \9;
-  padding-left: 14px;
+  padding-left: 28px;
   padding-left: 4px \9;
   /* IE7-8 doesn't have border-radius, so don't indent the padding */
 
@@ -5258,13 +5258,13 @@ a.badge:focus {
   margin-bottom: 0;
 }
 .hero-unit {
-  padding: 60px;
+  padding: 15px;
   margin-bottom: 30px;
   font-size: 18px;
   font-weight: 200;
   line-height: 30px;
   color: inherit;
-  background-color: #eeeeee;
+  background-color: #048ac2;
   -webkit-border-radius: 6px;
   -moz-border-radius: 6px;
   border-radius: 6px;
