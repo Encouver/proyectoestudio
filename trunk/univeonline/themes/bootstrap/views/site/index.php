@@ -50,7 +50,7 @@ $cs->registerScriptFile($baseUrl.'/js/jquery.flip.min.js');
                 ));*/
 				
 					$image = Yii::app()->image->load('images/3.jpg');
-					$image->crop(1600, 1000);
+					$image->crop(1170, 500);
 					$image->save('images/3t.jpg'); // or $image->save('images/small.jpg');
 					
 				/*	Yii::import('application.extensions.image.Image');

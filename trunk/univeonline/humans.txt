@@ -1,0 +1,24 @@
+# humanstxt.org/
+# The humans responsible & technology colophon
+
+# TEAM
+	
+	Chef and Developer: Edgar Leal
+	Twitter: @edgarleal1
+	From: Los Teques, Distrito Capital, Venezuela
+	
+	Chef and Developer: Marcos Ramirez
+	Twitter: @S0cram
+	From: Cagua, Aragua, Venezuela
+	
+	Chef and Developer: Mantura Kabchi
+	Twitter: @ManturaKabchi
+	From: Caracas, Distrito Capital, Venezuela
+
+
+
+# TECHNOLOGY COLOPHON
+
+    HTML5, CSS3
+    jQuery, Yii, 
+    Bootstrap
