@@ -20,8 +20,8 @@
         'items'=>array(
             array(
                 'class'=>'bootstrap.widgets.TbMenu',
-                                        'htmlOptions'=>array('class'=>'pull-right'),
-
+                'htmlOptions'=>array('class'=>'pull-right'),
+                
                 'items'=>array(
                     array('label'=>'Inicio', 'url'=>array('/site/index')),                    
                     array('label'=>'Cursos', 'url'=>array('')),
