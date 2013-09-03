@@ -31,8 +31,9 @@
             ),
         ),
 		'type'=> 'inverse',
-
 		'collapse' => 'true',
+        'brand'=>"<img src='images/logoslogan.png' width='310px'>",
+        'brandUrl'=>array('/site/index'),
     )); ?>
 
 
