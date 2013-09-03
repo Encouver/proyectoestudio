@@ -31,6 +31,7 @@
             ),
         ),
 		'type'=> 'inverse',
+
 		'collapse' => 'true',
     )); ?>
 
@@ -45,7 +46,10 @@
             <?php if(isset($this->breadcrumbs)):?>
                 <?php $this->widget('bootstrap.widgets.TbBreadcrumbs', array(
                     'links'=>$this->breadcrumbs,
-                )); ?><!-- breadcrumbs -->
+                )); 
+                
+                ?><!-- breadcrumbs -->
+
             <?php endif?>
         
             <?php echo $content; ?>
