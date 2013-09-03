@@ -461,6 +461,392 @@ Stack trace:
 #24 {main}
 REQUEST_URI=/proyectoestudio/univeonline/index.php?r=site/index
 ---
+2013/09/02 22:30:25 [error] [exception.CException] exception 'CException' with message 'El alias "ext.SAImageDisplayer" es inválido. Asegúrese de que apunta a un archivo PHP y el archivo tiene permisos de lectura.' in C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\YiiBase.php:316
+Stack trace:
+#0 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CWidgetFactory.php(146): YiiBase::import('ext.SAImageDisp...', true)
+#1 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CBaseController.php(146): CWidgetFactory->createWidget(Object(SiteController), 'ext.SAImageDisp...', Array)
+#2 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CBaseController.php(172): CBaseController->createWidget('ext.SAImageDisp...', Array)
+#3 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\proyectoestudio\univeonline\themes\bootstrap\views\site\index.php(64): CBaseController->widget('ext.SAImageDisp...', Array)
+#4 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CBaseController.php(126): require('C:\Program File...')
+#5 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\Program File...', NULL, true)
+#6 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\Program File...', NULL, true)
+#7 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CController.php(782): CController->renderPartial('index', NULL, true)
+#8 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\proyectoestudio\univeonline\protected\controllers\SiteController.php(32): CController->render('index')
+#9 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#10 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#11 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#12 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('index')
+#14 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/index')
+#15 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#16 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\proyectoestudio\univeonline\index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/proyectoestudio/univeonline/index.php?r=site/index
+HTTP_REFERER=http://localhost/proyectoestudio/univeonline/index.php?r=site/index
+---
+2013/09/02 22:32:47 [error] [exception.CException] exception 'CException' with message 'El alias "ext.SAImageDisplayer" es inválido. Asegúrese de que apunta a un archivo PHP y el archivo tiene permisos de lectura.' in C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\YiiBase.php:316
+Stack trace:
+#0 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CWidgetFactory.php(146): YiiBase::import('ext.SAImageDisp...', true)
+#1 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CBaseController.php(146): CWidgetFactory->createWidget(Object(SiteController), 'ext.SAImageDisp...', Array)
+#2 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CBaseController.php(172): CBaseController->createWidget('ext.SAImageDisp...', Array)
+#3 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\proyectoestudio\univeonline\themes\bootstrap\views\site\index.php(64): CBaseController->widget('ext.SAImageDisp...', Array)
+#4 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CBaseController.php(126): require('C:\Program File...')
+#5 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\Program File...', NULL, true)
+#6 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\Program File...', NULL, true)
+#7 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CController.php(782): CController->renderPartial('index', NULL, true)
+#8 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\proyectoestudio\univeonline\protected\controllers\SiteController.php(32): CController->render('index')
+#9 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#10 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#11 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#12 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('index')
+#14 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/index')
+#15 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#16 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\proyectoestudio\univeonline\index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/proyectoestudio/univeonline/index.php?r=site/index
+HTTP_REFERER=http://localhost/proyectoestudio/univeonline/index.php?r=site/index
+---
+2013/09/02 22:34:08 [error] [exception.CException] exception 'CException' with message 'El alias "ext.SAImageDisplayer" es inválido. Asegúrese de que apunta a un archivo PHP y el archivo tiene permisos de lectura.' in C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\YiiBase.php:316
+Stack trace:
+#0 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CWidgetFactory.php(146): YiiBase::import('ext.SAImageDisp...', true)
+#1 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CBaseController.php(146): CWidgetFactory->createWidget(Object(SiteController), 'ext.SAImageDisp...', Array)
+#2 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CBaseController.php(172): CBaseController->createWidget('ext.SAImageDisp...', Array)
+#3 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\proyectoestudio\univeonline\themes\bootstrap\views\site\index.php(64): CBaseController->widget('ext.SAImageDisp...', Array)
+#4 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CBaseController.php(126): require('C:\Program File...')
+#5 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\Program File...', NULL, true)
+#6 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\Program File...', NULL, true)
+#7 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CController.php(782): CController->renderPartial('index', NULL, true)
+#8 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\proyectoestudio\univeonline\protected\controllers\SiteController.php(32): CController->render('index')
+#9 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#10 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#11 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#12 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('index')
+#14 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/index')
+#15 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#16 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\proyectoestudio\univeonline\index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/proyectoestudio/univeonline/index.php?r=site/index
+HTTP_REFERER=http://localhost/proyectoestudio/univeonline/index.php?r=site/index
+---
+2013/09/02 22:35:29 [error] [exception.Exception] exception 'Exception' with message '3.png do not exists!' in C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\proyectoestudio\univeonline\protected\extensions\SAImageDisplayer.php:203
+Stack trace:
+#0 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\proyectoestudio\univeonline\protected\extensions\SAImageDisplayer.php(155): SAImageDisplayer->defineImageFile('originals')
+#1 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CBaseController.php(147): SAImageDisplayer->init()
+#2 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CBaseController.php(172): CBaseController->createWidget('ext.SAImageDisp...', Array)
+#3 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\proyectoestudio\univeonline\themes\bootstrap\views\site\index.php(64): CBaseController->widget('ext.SAImageDisp...', Array)
+#4 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CBaseController.php(126): require('C:\Program File...')
+#5 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\Program File...', NULL, true)
+#6 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\Program File...', NULL, true)
+#7 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CController.php(782): CController->renderPartial('index', NULL, true)
+#8 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\proyectoestudio\univeonline\protected\controllers\SiteController.php(32): CController->render('index')
+#9 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#10 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#11 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#12 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('index')
+#14 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/index')
+#15 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#16 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\proyectoestudio\univeonline\index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/proyectoestudio/univeonline/index.php?r=site/index
+HTTP_REFERER=http://localhost/proyectoestudio/univeonline/index.php?r=site/index
+---
+2013/09/02 22:36:01 [error] [exception.Exception] exception 'Exception' with message '3.png do not exists!' in C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\proyectoestudio\univeonline\protected\extensions\SAImageDisplayer.php:203
+Stack trace:
+#0 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\proyectoestudio\univeonline\protected\extensions\SAImageDisplayer.php(155): SAImageDisplayer->defineImageFile('originals')
+#1 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CBaseController.php(147): SAImageDisplayer->init()
+#2 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CBaseController.php(172): CBaseController->createWidget('ext.SAImageDisp...', Array)
+#3 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\proyectoestudio\univeonline\themes\bootstrap\views\site\index.php(64): CBaseController->widget('ext.SAImageDisp...', Array)
+#4 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CBaseController.php(126): require('C:\Program File...')
+#5 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\Program File...', NULL, true)
+#6 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\Program File...', NULL, true)
+#7 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CController.php(782): CController->renderPartial('index', NULL, true)
+#8 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\proyectoestudio\univeonline\protected\controllers\SiteController.php(32): CController->render('index')
+#9 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#10 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#11 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#12 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('index')
+#14 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/index')
+#15 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#16 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\proyectoestudio\univeonline\index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/proyectoestudio/univeonline/index.php?r=site/index
+HTTP_REFERER=http://localhost/proyectoestudio/univeonline/index.php?r=site/index
+---
+2013/09/02 22:40:53 [error] [php] Undefined index: banner (C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\proyectoestudio\univeonline\protected\extensions\SAImageDisplayer.php:250)
+Stack trace:
+#0 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CBaseController.php(172): SiteController->createWidget()
+#1 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\proyectoestudio\univeonline\themes\bootstrap\views\site\index.php(65): SiteController->widget()
+#2 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CBaseController.php(126): require()
+#3 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CBaseController.php(95): SiteController->renderInternal()
+#4 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CController.php(869): SiteController->renderFile()
+#5 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CController.php(782): SiteController->renderPartial()
+#6 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\proyectoestudio\univeonline\protected\controllers\SiteController.php(32): SiteController->render()
+#7 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#8 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#9 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CController.php(286): SiteController->runAction()
+#10 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#11 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CWebApplication.php(282): SiteController->run()
+#12 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#13 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#14 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\proyectoestudio\univeonline\index.php(13): CWebApplication->run()
+REQUEST_URI=/proyectoestudio/univeonline/index.php?r=site/index
+in C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\proyectoestudio\univeonline\protected\extensions\SAImageDisplayer.php (250)
+in C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\proyectoestudio\univeonline\protected\extensions\SAImageDisplayer.php (149)
+in C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\proyectoestudio\univeonline\themes\bootstrap\views\site\index.php (65)
+2013/09/02 22:42:30 [error] [php] Undefined index: banner (C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\proyectoestudio\univeonline\protected\extensions\SAImageDisplayer.php:250)
+Stack trace:
+#0 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CBaseController.php(172): SiteController->createWidget()
+#1 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\proyectoestudio\univeonline\themes\bootstrap\views\site\index.php(65): SiteController->widget()
+#2 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CBaseController.php(126): require()
+#3 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CBaseController.php(95): SiteController->renderInternal()
+#4 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CController.php(869): SiteController->renderFile()
+#5 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CController.php(782): SiteController->renderPartial()
+#6 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\proyectoestudio\univeonline\protected\controllers\SiteController.php(32): SiteController->render()
+#7 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#8 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#9 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CController.php(286): SiteController->runAction()
+#10 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#11 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CWebApplication.php(282): SiteController->run()
+#12 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#13 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#14 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\proyectoestudio\univeonline\index.php(13): CWebApplication->run()
+REQUEST_URI=/proyectoestudio/univeonline/index.php?r=site/index
+in C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\proyectoestudio\univeonline\protected\extensions\SAImageDisplayer.php (250)
+in C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\proyectoestudio\univeonline\protected\extensions\SAImageDisplayer.php (149)
+in C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\proyectoestudio\univeonline\themes\bootstrap\views\site\index.php (65)
+2013/09/02 22:43:25 [error] [php] Undefined index: banner (C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\proyectoestudio\univeonline\protected\extensions\SAImageDisplayer.php:250)
+Stack trace:
+#0 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CBaseController.php(172): SiteController->createWidget()
+#1 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\proyectoestudio\univeonline\themes\bootstrap\views\site\index.php(65): SiteController->widget()
+#2 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CBaseController.php(126): require()
+#3 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CBaseController.php(95): SiteController->renderInternal()
+#4 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CController.php(869): SiteController->renderFile()
+#5 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CController.php(782): SiteController->renderPartial()
+#6 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\proyectoestudio\univeonline\protected\controllers\SiteController.php(32): SiteController->render()
+#7 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#8 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#9 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CController.php(286): SiteController->runAction()
+#10 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#11 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CWebApplication.php(282): SiteController->run()
+#12 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#13 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#14 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\proyectoestudio\univeonline\index.php(13): CWebApplication->run()
+REQUEST_URI=/proyectoestudio/univeonline/index.php?r=site/index
+in C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\proyectoestudio\univeonline\protected\extensions\SAImageDisplayer.php (250)
+in C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\proyectoestudio\univeonline\protected\extensions\SAImageDisplayer.php (149)
+in C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\proyectoestudio\univeonline\themes\bootstrap\views\site\index.php (65)
+2013/09/02 22:58:07 [error] [php] Undefined index: banner (C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\proyectoestudio\univeonline\protected\extensions\SAImageDisplayer.php:250)
+Stack trace:
+#0 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CBaseController.php(172): SiteController->createWidget()
+#1 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\proyectoestudio\univeonline\themes\bootstrap\views\site\index.php(65): SiteController->widget()
+#2 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CBaseController.php(126): require()
+#3 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CBaseController.php(95): SiteController->renderInternal()
+#4 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CController.php(869): SiteController->renderFile()
+#5 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CController.php(782): SiteController->renderPartial()
+#6 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\proyectoestudio\univeonline\protected\controllers\SiteController.php(32): SiteController->render()
+#7 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#8 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#9 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CController.php(286): SiteController->runAction()
+#10 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#11 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CWebApplication.php(282): SiteController->run()
+#12 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#13 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#14 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\proyectoestudio\univeonline\index.php(13): CWebApplication->run()
+REQUEST_URI=/proyectoestudio/univeonline/index.php?r=site/index
+in C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\proyectoestudio\univeonline\protected\extensions\SAImageDisplayer.php (250)
+in C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\proyectoestudio\univeonline\protected\extensions\SAImageDisplayer.php (149)
+in C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\proyectoestudio\univeonline\themes\bootstrap\views\site\index.php (65)
+2013/09/02 22:59:54 [error] [php] Undefined index: thumb (C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\proyectoestudio\univeonline\protected\extensions\SAImageDisplayer.php:250)
+Stack trace:
+#0 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CBaseController.php(172): SiteController->createWidget()
+#1 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\proyectoestudio\univeonline\themes\bootstrap\views\site\index.php(65): SiteController->widget()
+#2 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CBaseController.php(126): require()
+#3 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CBaseController.php(95): SiteController->renderInternal()
+#4 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CController.php(869): SiteController->renderFile()
+#5 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CController.php(782): SiteController->renderPartial()
+#6 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\proyectoestudio\univeonline\protected\controllers\SiteController.php(32): SiteController->render()
+#7 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#8 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#9 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CController.php(286): SiteController->runAction()
+#10 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#11 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CWebApplication.php(282): SiteController->run()
+#12 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#13 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#14 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\proyectoestudio\univeonline\index.php(13): CWebApplication->run()
+REQUEST_URI=/proyectoestudio/univeonline/index.php?r=site/index
+in C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\proyectoestudio\univeonline\protected\extensions\SAImageDisplayer.php (250)
+in C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\proyectoestudio\univeonline\protected\extensions\SAImageDisplayer.php (149)
+in C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\proyectoestudio\univeonline\themes\bootstrap\views\site\index.php (65)
+2013/09/02 23:19:12 [error] [exception.CException] exception 'CException' with message 'image invalid master' in C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\proyectoestudio\univeonline\protected\extensions\image\Image.php:180
+Stack trace:
+#0 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\proyectoestudio\univeonline\protected\extensions\SAImageDisplayer.php(215): Image->resize(1170, 350, 'width')
+#1 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\proyectoestudio\univeonline\protected\extensions\SAImageDisplayer.php(152): SAImageDisplayer->createImagesIfNotExists()
+#2 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CBaseController.php(147): SAImageDisplayer->init()
+#3 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CBaseController.php(172): CBaseController->createWidget('ext.SAImageDisp...', Array)
+#4 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\proyectoestudio\univeonline\themes\bootstrap\views\site\index.php(74): CBaseController->widget('ext.SAImageDisp...', Array)
+#5 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CBaseController.php(126): require('C:\Program File...')
+#6 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\Program File...', NULL, true)
+#7 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\Program File...', NULL, true)
+#8 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CController.php(782): CController->renderPartial('index', NULL, true)
+#9 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\proyectoestudio\univeonline\protected\controllers\SiteController.php(32): CController->render('index')
+#10 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#11 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#12 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#13 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#14 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('index')
+#15 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/index')
+#16 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#17 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\proyectoestudio\univeonline\index.php(13): CApplication->run()
+#18 {main}
+REQUEST_URI=/proyectoestudio/univeonline/index.php?r=site/index
+HTTP_REFERER=http://localhost/proyectoestudio/univeonline/index.php?r=site/contact
+---
+2013/09/02 23:20:11 [error] [exception.CException] exception 'CException' with message 'image invalid master' in C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\proyectoestudio\univeonline\protected\extensions\image\Image.php:180
+Stack trace:
+#0 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\proyectoestudio\univeonline\protected\extensions\SAImageDisplayer.php(215): Image->resize(1170, 350, 'width')
+#1 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\proyectoestudio\univeonline\protected\extensions\SAImageDisplayer.php(152): SAImageDisplayer->createImagesIfNotExists()
+#2 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CBaseController.php(147): SAImageDisplayer->init()
+#3 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CBaseController.php(172): CBaseController->createWidget('ext.SAImageDisp...', Array)
+#4 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\proyectoestudio\univeonline\themes\bootstrap\views\site\index.php(74): CBaseController->widget('ext.SAImageDisp...', Array)
+#5 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CBaseController.php(126): require('C:\Program File...')
+#6 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\Program File...', NULL, true)
+#7 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\Program File...', NULL, true)
+#8 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CController.php(782): CController->renderPartial('index', NULL, true)
+#9 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\proyectoestudio\univeonline\protected\controllers\SiteController.php(32): CController->render('index')
+#10 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#11 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#12 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#13 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#14 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('index')
+#15 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/index')
+#16 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#17 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\proyectoestudio\univeonline\index.php(13): CApplication->run()
+#18 {main}
+REQUEST_URI=/proyectoestudio/univeonline/index.php?r=site/index
+HTTP_REFERER=http://localhost/proyectoestudio/univeonline/index.php?r=site/contact
+---
+2013/09/02 23:20:13 [error] [exception.CException] exception 'CException' with message 'image invalid master' in C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\proyectoestudio\univeonline\protected\extensions\image\Image.php:180
+Stack trace:
+#0 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\proyectoestudio\univeonline\protected\extensions\SAImageDisplayer.php(215): Image->resize(1170, 350, 'width')
+#1 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\proyectoestudio\univeonline\protected\extensions\SAImageDisplayer.php(152): SAImageDisplayer->createImagesIfNotExists()
+#2 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CBaseController.php(147): SAImageDisplayer->init()
+#3 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CBaseController.php(172): CBaseController->createWidget('ext.SAImageDisp...', Array)
+#4 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\proyectoestudio\univeonline\themes\bootstrap\views\site\index.php(74): CBaseController->widget('ext.SAImageDisp...', Array)
+#5 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CBaseController.php(126): require('C:\Program File...')
+#6 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\Program File...', NULL, true)
+#7 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\Program File...', NULL, true)
+#8 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CController.php(782): CController->renderPartial('index', NULL, true)
+#9 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\proyectoestudio\univeonline\protected\controllers\SiteController.php(32): CController->render('index')
+#10 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#11 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#12 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#13 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#14 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('index')
+#15 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/index')
+#16 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#17 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\proyectoestudio\univeonline\index.php(13): CApplication->run()
+#18 {main}
+REQUEST_URI=/proyectoestudio/univeonline/index.php?r=site/index
+HTTP_REFERER=http://localhost/proyectoestudio/univeonline/index.php?r=site/contact
+---
+2013/09/02 23:22:36 [error] [exception.CException] exception 'CException' with message 'image invalid master' in C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\proyectoestudio\univeonline\protected\extensions\image\Image.php:180
+Stack trace:
+#0 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\proyectoestudio\univeonline\protected\extensions\SAImageDisplayer.php(215): Image->resize(1170, 350, 'SAImageDisplaye...')
+#1 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\proyectoestudio\univeonline\protected\extensions\SAImageDisplayer.php(152): SAImageDisplayer->createImagesIfNotExists()
+#2 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CBaseController.php(147): SAImageDisplayer->init()
+#3 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CBaseController.php(172): CBaseController->createWidget('ext.SAImageDisp...', Array)
+#4 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\proyectoestudio\univeonline\themes\bootstrap\views\site\index.php(74): CBaseController->widget('ext.SAImageDisp...', Array)
+#5 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CBaseController.php(126): require('C:\Program File...')
+#6 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\Program File...', NULL, true)
+#7 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\Program File...', NULL, true)
+#8 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CController.php(782): CController->renderPartial('index', NULL, true)
+#9 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\proyectoestudio\univeonline\protected\controllers\SiteController.php(32): CController->render('index')
+#10 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#11 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#12 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#13 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#14 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('index')
+#15 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/index')
+#16 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#17 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\proyectoestudio\univeonline\index.php(13): CApplication->run()
+#18 {main}
+REQUEST_URI=/proyectoestudio/univeonline/index.php?r=site/index
+HTTP_REFERER=http://localhost/proyectoestudio/univeonline/index.php?r=site/contact
+---
+2013/09/02 23:23:06 [error] [exception.CException] exception 'CException' with message 'image invalid master' in C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\proyectoestudio\univeonline\protected\extensions\image\Image.php:180
+Stack trace:
+#0 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\proyectoestudio\univeonline\protected\extensions\SAImageDisplayer.php(215): Image->resize(1170, 350, 'WIDTH')
+#1 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\proyectoestudio\univeonline\protected\extensions\SAImageDisplayer.php(152): SAImageDisplayer->createImagesIfNotExists()
+#2 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CBaseController.php(147): SAImageDisplayer->init()
+#3 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CBaseController.php(172): CBaseController->createWidget('ext.SAImageDisp...', Array)
+#4 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\proyectoestudio\univeonline\themes\bootstrap\views\site\index.php(74): CBaseController->widget('ext.SAImageDisp...', Array)
+#5 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CBaseController.php(126): require('C:\Program File...')
+#6 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\Program File...', NULL, true)
+#7 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\Program File...', NULL, true)
+#8 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CController.php(782): CController->renderPartial('index', NULL, true)
+#9 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\proyectoestudio\univeonline\protected\controllers\SiteController.php(32): CController->render('index')
+#10 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#11 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#12 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#13 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#14 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('index')
+#15 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/index')
+#16 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#17 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\proyectoestudio\univeonline\index.php(13): CApplication->run()
+#18 {main}
+REQUEST_URI=/proyectoestudio/univeonline/index.php?r=site/index
+HTTP_REFERER=http://localhost/proyectoestudio/univeonline/index.php?r=site/contact
+---
+2013/09/02 23:30:06 [error] [exception.CException] exception 'CException' with message 'Propiedad "SAImageDisplayer"."width" no se encuentra definida.' in C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\base\CComponent.php:173
+Stack trace:
+#0 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CWidgetFactory.php(161): CComponent->__set('width', '')
+#1 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CBaseController.php(146): CWidgetFactory->createWidget(Object(SiteController), 'ext.SAImageDisp...', Array)
+#2 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CBaseController.php(172): CBaseController->createWidget('ext.SAImageDisp...', Array)
+#3 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\proyectoestudio\univeonline\themes\bootstrap\views\site\index.php(76): CBaseController->widget('ext.SAImageDisp...', Array)
+#4 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CBaseController.php(126): require('C:\Program File...')
+#5 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\Program File...', NULL, true)
+#6 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\Program File...', NULL, true)
+#7 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CController.php(782): CController->renderPartial('index', NULL, true)
+#8 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\proyectoestudio\univeonline\protected\controllers\SiteController.php(32): CController->render('index')
+#9 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#10 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#11 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#12 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('index')
+#14 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/index')
+#15 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#16 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\proyectoestudio\univeonline\index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/proyectoestudio/univeonline/index.php?r=site/index
+HTTP_REFERER=http://localhost/proyectoestudio/univeonline/index.php?r=site/contact
+---
+2013/09/02 23:32:16 [error] [exception.CException] exception 'CException' with message 'Propiedad "SAImageDisplayer"."width" no se encuentra definida.' in C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\base\CComponent.php:173
+Stack trace:
+#0 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CWidgetFactory.php(161): CComponent->__set('width', '')
+#1 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CBaseController.php(146): CWidgetFactory->createWidget(Object(SiteController), 'ext.SAImageDisp...', Array)
+#2 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CBaseController.php(172): CBaseController->createWidget('ext.SAImageDisp...', Array)
+#3 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\proyectoestudio\univeonline\themes\bootstrap\views\site\index.php(76): CBaseController->widget('ext.SAImageDisp...', Array)
+#4 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CBaseController.php(126): require('C:\Program File...')
+#5 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\Program File...', NULL, true)
+#6 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\Program File...', NULL, true)
+#7 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CController.php(782): CController->renderPartial('index', NULL, true)
+#8 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\proyectoestudio\univeonline\protected\controllers\SiteController.php(32): CController->render('index')
+#9 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#10 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#11 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#12 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('index')
+#14 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/index')
+#15 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#16 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\proyectoestudio\univeonline\index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/proyectoestudio/univeonline/index.php?r=site/index
+HTTP_REFERER=http://localhost/proyectoestudio/univeonline/index.php?r=site/contact
+---
 2013/09/02 22:53:32 [error] [exception.CException] exception 'CException' with message 'La propiedad "TbNavbar"."align" no se encuentra definida.' in C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\base\CComponent.php:173
 Stack trace:
 #0 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CWidgetFactory.php(161): CComponent->__set('align', 'pull-right')

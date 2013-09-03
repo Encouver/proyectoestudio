@@ -15,7 +15,6 @@
 
 <body>
 
-
 	<?php $this->widget('bootstrap.widgets.TbNavbar',array(
         'items'=>array(
             array(
@@ -33,7 +32,6 @@
             ),
         ),
 		'type'=> 'inverse',
-
 		'collapse' => 'true',
         'brand'=>"<img src='images/logoslogan.png' width='310px'>",
         'brandUrl'=>array('/site/index'),
@@ -67,6 +65,18 @@
 </div>
 
 	<div id="footer" >
+    <div class = "span2 pagination-center"
+    <?php 
+		$this->widget('bootstrap.widgets.TbMenu',array(
+                'items'=>array(
+                    array('label'=>'Inicio', 'url'=>array('/site/index')),
+                    
+                ),
+				'stacked' => 'true',
+				'type' => 'pills'
+		));
+	?>
+    </div>
 		Copyright &copy; <?php echo date('Y'); ?> by UniveOnline.<br/>
 		All Rights Reserved.<br/>
 		<?php echo Yii::powered(); ?>

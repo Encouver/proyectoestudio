@@ -61,6 +61,31 @@ return array(
             // ImageMagick setup path
             'params'=>array('directory'=>'/opt/local/bin'),
         ),
+ 		'widgetFactory'=>array(
+            'widgets'=>array(
+                
+                'SAImageDisplayer'=>array(
+                    'baseDir' => 'images',
+                    'originalFolderName'=> 'originals',
+                    'sizes' =>array(
+                        'tiny' => array('width' => 40, 'height' => 30),
+                        'big' => array('width' => 640, 'height' => 480),
+                        'thumb' => array('width' => 400, 'height' => 300),
+						'banner' => array('width' => 1170, 'height' => 500),
+                    ),
+                    'groups' => array(
+                        'news' => array(
+                            'tiny' => array('width' => 40, 'height' => 30),
+                            'big' => array('width' => 640, 'height' => 480),
+							'banner' => array('width' => 1000, 'height' => 350),
+                          ),
+                        'reviews' => array(
+                            'thumb' => array('width' => 400, 'height' => 300),
+                         ), 
+                    ),
+                ),
+            ),
+        ),
 		// uncomment the following to enable URLs in path-format
 		/*
 		'urlManager'=>array(

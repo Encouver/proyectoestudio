@@ -50,15 +50,16 @@ $cs->registerScriptFile($baseUrl.'/js/jquery.flip.min.js');
                 ));*/
 				
 					$image = Yii::app()->image->load('images/3.jpg');
-					$image->crop(1170, 500);
+					$image->resize(1170, 500);
 					$image->save('images/3t.jpg'); // or $image->save('images/small.jpg');
-					
-				/*	Yii::import('application.extensions.image.Image');
+					/*
+					Yii::import('application.extensions.image.Image');
 					$image = new Image('images/3.jpg');
 					$image->resize(400, 100)->rotate(-45)->quality(75)->sharpen(20);
 					$image->render();*/
 										
                 ?>
+
  	        	<img alt="" src="images/3t.jpg" >
                 <div class="carousel-caption">
                 <h4>First Thumbnail label</h4>
@@ -66,8 +67,14 @@ $cs->registerScriptFile($baseUrl.'/js/jquery.flip.min.js');
                 </div>
 			</div>
 			<div class="item">
-            
-            	<img alt="" src="images/3.jpg">
+                <?php $this->widget('ext.SAImageDisplayer', array(
+					'image' => '3.png',
+					'size' => 'banner',
+					//'resizeMode' => 'WIDTH',
+					//'width' => '',
+					//'height' => '',
+				)); ?>
+            	<!--<img alt="" src="images/3.jpg">-->
                 <div class="carousel-caption">
                 <h4>Second Thumbnail label</h4>
                 <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
