@@ -31,6 +31,7 @@
             ),
         ),
 		'type'=> 'inverse',
+		'collapse' => 'true',
     )); ?>
 
 

@@ -81,6 +81,9 @@ $cs->registerScriptFile($baseUrl.'/js/jquery.flip.min.js');
         
         <div class="container">
         
+        <div></div>
+        <div></div>
+        <div></div>
 <?php $this->beginWidget('bootstrap.widgets.TbHeroUnit',array(
     'heading'=>'Welcome to '.CHtml::encode(Yii::app()->name),
 )); ?>
