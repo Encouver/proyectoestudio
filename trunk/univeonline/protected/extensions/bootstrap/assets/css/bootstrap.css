@@ -4205,17 +4205,17 @@ input[type="submit"].btn.btn-mini {
 .navbar-inverse .btn-navbar {
   color: #ffffff;
   text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
-  background-color: rgba(20, 20, 20, 0.6799999999999999);
-  background-image: -moz-linear-gradient(top, #151515, rgba(4, 4, 4, 0.2));
-  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#151515), to(rgba(4, 4, 4, 0.2)));
-  background-image: -webkit-linear-gradient(top, #151515, rgba(4, 4, 4, 0.2));
-  background-image: -o-linear-gradient(top, #151515, rgba(4, 4, 4, 0.2));
-  background-image: linear-gradient(to bottom, #151515, rgba(4, 4, 4, 0.2));
+  background-color: #0086b3;
+  background-image: -moz-linear-gradient(top, #0086b3, #0086b3);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#0086b3), to(#0086b3));
+  background-image: -webkit-linear-gradient(top, #0086b3, #0086b3);
+  background-image: -o-linear-gradient(top, #0086b3, #0086b3);
+  background-image: linear-gradient(to bottom, #0086b3, #0086b3);
   background-repeat: repeat-x;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff151515', endColorstr='#33040404', GradientType=0);
-  border-color: rgba(4, 4, 4, 0.2) rgba(4, 4, 4, 0.2) rgba(0, 0, 0, 0.2);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff0086b3', endColorstr='#ff0086b3', GradientType=0);
+  border-color: #0086b3 #0086b3 #004d66;
   border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
-  *background-color: rgba(4, 4, 4, 0.2);
+  *background-color: #0086b3;
   /* Darken IE7 buttons by default so they stand out more given they won't have borders */
 
   filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
@@ -4227,12 +4227,12 @@ input[type="submit"].btn.btn-mini {
 .navbar-inverse .btn-navbar.disabled,
 .navbar-inverse .btn-navbar[disabled] {
   color: #ffffff;
-  background-color: rgba(4, 4, 4, 0.2);
-  *background-color: rgba(0, 0, 0, 0.2);
+  background-color: #0086b3;
+  *background-color: #007399;
 }
 .navbar-inverse .btn-navbar:active,
 .navbar-inverse .btn-navbar.active {
-  background-color: rgba(0, 0, 0, 0.2) \9;
+  background-color: #006080 \9;
 }
 .breadcrumb {
   padding: 8px 15px;
