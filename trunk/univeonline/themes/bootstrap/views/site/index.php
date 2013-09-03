@@ -22,7 +22,7 @@ $cs->registerScriptFile($baseUrl.'/js/jquery.flip.min.js');
     
     
 	<!--Formulario de busqueda principal-->
-	<div class="pagination-centered hero-unit">
+	<div class="pagination-centered hero-unit sombra">
       <div class="form-search">
          <div class="input-append">
          	<span class="fornav"><i class="icon-search" ></i></span>
