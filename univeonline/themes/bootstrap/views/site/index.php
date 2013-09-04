@@ -6,9 +6,7 @@ $this->pageTitle=Yii::app()->name;
  
 $baseUrl = Yii::app()->baseUrl; 
 $cs = Yii::app()->getClientScript();
-$cs->registerCssFile($baseUrl.'/css/flip_099.css');
 $cs->registerScriptFile($baseUrl.'/js/jquery-ui-1.10.3.custom.min.js');
-$cs->registerScriptFile($baseUrl.'/js/jquery.flip.min.js');
 //$cs->registerScriptFile($baseUrl.'/js/yourscript.js');
 //$cs->registerCssFile($baseUrl.'/css/yourcss.css');
 ?>    
@@ -91,6 +89,7 @@ $cs->registerScriptFile($baseUrl.'/js/jquery.flip.min.js');
         <div></div>
         <div></div>
         <div></div>
+        
 <?php $this->beginWidget('bootstrap.widgets.TbHeroUnit',array(
     'heading'=>'Welcome to '.CHtml::encode(Yii::app()->name),
 )); ?>
@@ -112,25 +111,4 @@ $cs->registerScriptFile($baseUrl.'/js/jquery.flip.min.js');
     should you have any questions.</p>
   
     </div>
-<!--<script type="text/javascript">
-	$(function(){
-		
-		$("#flipPad a:not(.revert)").bind("click",function(){
-			var $this = $(this);
-			$("#flipbox").flip({
-				direction: $this.attr("rel"),
-				color: $this.attr("rev"),
-				content: $this.attr("title"),//(new Date()).getTime(),
-				onBefore: function(){$(".revert").show()}
-			})
-			return false;
-		});
-		
-		$(".revert").bind("click",function(){
-			$("#flipbox").revertFlip();
-			return false;
-		});
-		
-		
-	});
-</script>-->
+
