@@ -69,7 +69,7 @@
                     <div class = "span4">
  <center>
                         <img src="images/logo_unive2.png" width="200px">
-                        <h6>Tu comunidad de enseñanza - aprendizake</h6>
+                        <h6>Tu comunidad de enseñanza - aprendizaje</h6>
                          </center>
                     </div>
                     <div class = "span1">
@@ -96,7 +96,7 @@
                     <br>
                 </center>
                     </div>
-                    <div class = "span9">
+                    <div class = "span11">
                          <hr>
                         <center>
                         Copyright &copy; <?php echo date('Y'); ?> por UniveOnline  |  Todos los derechos reservados
