@@ -63,32 +63,32 @@
         </div><!-- page -->
     </div>
 </div>
-    <div >
-	<div class = 'container-content' id="footer" >
-        <div class="pagination-centered">
-            <div class = "span4"
-                <?php 
-            		$this->widget('bootstrap.widgets.TbMenu',array(
-                            'items'=>array(
-                                array('label'=>'Inicio', 'url'=>array('/site/index')),
-                                
-                            ),
-            				'stacked' => 'true',
-            				'type' => 'pills'
-            		));
-            	?>
-            </div>
-            <div class="span4">
+	<div id="footer" >
+                <div class="container">
 
-        		Copyright &copy; <?php echo date('Y'); ?> by UniveOnline.<br/>
-        	</div>
-            <div class="span4">	
-                All Rights Reserved.<br/>
-        		<?php echo Yii::powered(); ?>
+                    <div class = "span4">
+                        <?php 
+                    		$this->widget('bootstrap.widgets.TbMenu',array(
+                                    'items'=>array(
+                                        array('label'=>'Inicio', 'url'=>array('/site/index')),
+                                        
+                                    ),
+                    				'stacked' => 'true',
+                    				'type' => 'pills'
+                    		));
+                    	?>
+                    </div>
+                    <div class="span4">
+
+                		Copyright &copy; <?php echo date('Y'); ?> by UniveOnline.<br/>
+                	</div>
+                    <div class="span4">	
+                        All Rights Reserved.<br/>
+                		<?php echo Yii::powered(); ?>
+                    
+                    </div>
+                </div>
             
-            </div>
-
-        </div>
     </div><!-- footer -->
     
 </body>
