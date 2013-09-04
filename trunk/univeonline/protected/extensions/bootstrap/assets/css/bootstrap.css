@@ -582,13 +582,13 @@ body {
   height: 100%;
 }
 footer {
-  color: #303030;
+  color: #646464;
   background: #cccccc;
   padding: 17px 0 18px 0;
-  border-top: 1px solid #000;
+  border-top: 1px solid #BDBDBD;
 }
 footer a {
-  color: #303030;
+  color: #646464;
 }
 footer a:hover {
   color: #0099cc;
