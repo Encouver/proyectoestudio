@@ -74,7 +74,7 @@
  <center>
                         <img src="images/logo_unive2.png" width="200px">
                         <br/>
-                        <br/>
+                        <h6>Tu comunidad de enseñanza - aprendizake</h6>
                          </center>
                     </div>
                     <div class = "span3">
@@ -94,7 +94,7 @@
                     </div>
                     <div class = "span3">
                     <center>
-                    <h4>Únete a la comunidad en </h4> 
+                    <h5>Únete a la comunidad en </h5> 
                     <img src="images/facebook.png">
                     <img src="images/twitter.png">
                     <img src="images/google.png">
