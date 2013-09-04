@@ -66,7 +66,7 @@
 	<footer >
                 <div class="container">
 
-                    <div class = "span4">
+                    <div class = "span3">
 
                         <img src="images/logo_unive2.png" width="200px">
                         <br/>
@@ -74,7 +74,7 @@
                         
                         univeonline.com
                     </div>
-                    <div class = "span4">
+                    <div class = "span3">
                         <?php 
                             $this->widget('bootstrap.widgets.TbMenu',array(
                                     'items'=>array(
@@ -86,15 +86,15 @@
                                     ),
                             ));
                         ?>
-                		Copyright &copy; <?php echo date('Y'); ?> by UniveOnline.<br/>
-                	All Rights Reserved.<br/>
-                        <?php echo Yii::powered(); ?>
+
                     </div>
                     <div class = "span3">
                         
                     
                     UniveOnline busca romper las barreras del conocimiento tradicional y llevarlo a través de la educación online a todos los interesados en cualquier parte del mundo.
                     </div>
+                    
+
                 </div>
             
     </footer><!-- footer -->

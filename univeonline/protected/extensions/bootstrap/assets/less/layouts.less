@@ -20,6 +20,11 @@
  margin-top: @navbarHeight;
 }
 
+footer a{
+  text-decoration: none;
+}
+
+
 /*
 @heightFooter: 18em;
 
@@ -36,10 +41,7 @@ body > #container { height: auto; min-height: 100%; }
  padding-top: 30px;
 }
 
-#footer a{
-  text-decoration: none;
-  background-color: transparent;
-}
+
 
 #content { padding-bottom: @heightFooter; }
 
@@ -55,16 +57,18 @@ body > #container { height: auto; min-height: 100%; }
             height: 100%;
         }
         footer {
-            color: #666;
+            color: #303030;
             background: #cccccc;
             padding: 17px 0 18px 0;
             border-top: 1px solid #000;    
         }
         footer a {
-            color: #999;
+            color: #303030;
         }
         footer a:hover {
-            color: #efefef;
+            color: @azulito;
+            text-decoration: none;
+            background-color: transparent;
         }
         .wrapper {
             min-height: 100%;
