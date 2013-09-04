@@ -78,11 +78,11 @@
                     		));
                     	?>
                     </div>
-                    <div class="span4">
+                    <div class = "span4">
 
-                		Copyright &copy; <?php echo date('Y'); ?> by UniveOnline.<br/>
+                		Copyright &copy; <?php echo date('Y'); ?> by UniveOnline.
                 	</div>
-                    <div class="span4">	
+                    <div class = "span3">
                         All Rights Reserved.<br/>
                 		<?php echo Yii::powered(); ?>
                     
