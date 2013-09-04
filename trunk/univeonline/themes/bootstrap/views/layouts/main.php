@@ -67,25 +67,33 @@
                 <div class="container">
 
                     <div class = "span4">
-                        <?php 
-                    		$this->widget('bootstrap.widgets.TbMenu',array(
-                                    'items'=>array(
-                                        array('label'=>'Inicio', 'url'=>array('/site/index')),
-                                        
-                                    ),
-                    				'stacked' => 'true',
-                    				'type' => 'pills'
-                    		));
-                    	?>
+
+                        <img src="images/logo_unive2.png" width="200px">
+                        <br/>
+                        <br/>
+                        
+                        univeonline.com
                     </div>
                     <div class = "span4">
-
-                		Copyright &copy; <?php echo date('Y'); ?> by UniveOnline.
-                	</div>
+                        <?php 
+                            $this->widget('bootstrap.widgets.TbMenu',array(
+                                    'items'=>array(
+                                        array('label'=>'Inicio', 'url'=>array('/site/index')),
+                                                            array('label'=>'Cursos', 'url'=>array('')),
+                    array('label'=>'Sobre UniveOnline', 'url'=>array('/site/page', 'view'=>'about')),
+                    array('label'=>'Contacto', 'url'=>array('/site/contact')),
+                                        
+                                    ),
+                            ));
+                        ?>
+                		Copyright &copy; <?php echo date('Y'); ?> by UniveOnline.<br/>
+                	All Rights Reserved.<br/>
+                        <?php echo Yii::powered(); ?>
+                    </div>
                     <div class = "span3">
-                        All Rights Reserved.<br/>
-                		<?php echo Yii::powered(); ?>
+                        
                     
+                    UniveOnline busca romper las barreras del conocimiento tradicional y llevarlo a través de la educación online a todos los interesados en cualquier parte del mundo.
                     </div>
                 </div>
             
