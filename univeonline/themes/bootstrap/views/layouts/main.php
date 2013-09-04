@@ -41,9 +41,7 @@
 
  <div class="wrapper"> <!-- esto es para el footer -->
 
-	<div class = 'container-content'>
-
-    		<div class="container" id="page">
+    		<div class="container container-content" id="page">
         
             <?php if(isset($this->breadcrumbs)):?>
                 <?php $this->widget('bootstrap.widgets.TbBreadcrumbs', array(
@@ -59,9 +57,7 @@
             <div class="clear"></div>
         
         
-        
         </div><!-- page -->
-    </div>
 
 
 	<div class="push"><!--//--></div>
@@ -70,9 +66,9 @@
 	<footer>
                 <div class="container">
 
-                    <div class = "span3">
+                    <div class = "span4">
  <center>
-                        <img src="images/logo_unive2.png" width="180px">
+                        <img src="images/logo_unive2.png" width="200px">
                         <h6>Tu comunidad de enseñanza - aprendizake</h6>
                          </center>
                     </div>
@@ -91,7 +87,7 @@
                             ));
                         ?>
                     </div>
-                    <div class = "span3">
+                    <div class = "span4">
                     <center>
                     <h5>Únete a la comunidad en </h5> 
                     <img src="images/facebook.png">
