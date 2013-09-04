@@ -63,7 +63,7 @@
         </div><!-- page -->
     </div>
 </div>
-	<footer >
+	<footer>
                 <div class="container">
 
                     <div class = "span3">
@@ -72,7 +72,6 @@
                         <br/>
                         <br/>
                         
-                        univeonline.com
                     </div>
                     <div class = "span3">
                         <?php 
@@ -93,7 +92,13 @@
                     
                     UniveOnline busca romper las barreras del conocimiento tradicional y llevarlo a través de la educación online a todos los interesados en cualquier parte del mundo.
                     </div>
-                    
+                    <br />
+                    <div class = "span9">
+                        <center>
+                        Copyright &copy; <?php echo date('Y'); ?> por UniveOnline  |  Todos los derechos reservados
+                        |  <?php echo Yii::powered(); ?>
+                        </center>
+                    </div>
 
                 </div>
             
