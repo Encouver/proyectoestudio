@@ -73,12 +73,12 @@
                     <div class = "span3">
  <center>
                         <img src="images/logo_unive2.png" width="200px">
-                        <br/>
                         <h6>Tu comunidad de enseñanza - aprendizake</h6>
                          </center>
                     </div>
-                    <div class = "span3">
-                         <center>
+                    <div class = "span1">
+                    </div>
+                    <div class = "span2">
                         <?php 
                             $this->widget('bootstrap.widgets.TbMenu',array(
                                     'items'=>array(
@@ -90,7 +90,6 @@
                                     ),
                             ));
                         ?>
- </center>
                     </div>
                     <div class = "span3">
                     <center>
