@@ -548,45 +548,80 @@ a:focus {
 .container-content {
   margin-top: 60px;
 }
-/*#footer {
-   //position: absolute;
-   text-align: left;
-   left:0px;
-   bottom:0px;
-   height:80px;
-   width:100%;
+/*
+@heightFooter: 18em;
 
-}*/
-html,
-body,
-#container {
-  height: 100%;
-}
-body > #container {
-  height: auto;
-  min-height: 100%;
-}
+html, body, #container { height: 100%; }
+body > #container { height: auto; min-height: 100%; }
+
 #footer {
-  clear: both;
-  position: relative;
-  z-index: 10;
-  height: 18em;
-  margin-top: -18em;
-  background: #cccccc;
-  padding-top: 30px;
+ clear: both;
+ position: relative;
+ z-index: 10;
+ height: @heightFooter;
+ margin-top: -@heightFooter;
+ background:#cccccc;
+ padding-top: 30px;
 }
-#footer a {
+
+#footer a{
   text-decoration: none;
   background-color: transparent;
 }
-#content {
-  padding-bottom: 18em;
-}
+
+#content { padding-bottom: @heightFooter; }
+
 #banner {
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%;
+		margin-left:auto;
+		margin-right:auto;
+		width:50%;
+	}
+	*/
+html,
+body {
+  height: 100%;
 }
+footer {
+  color: #666;
+  background: #cccccc;
+  padding: 17px 0 18px 0;
+  border-top: 1px solid #000;
+}
+footer a {
+  color: #999;
+}
+footer a:hover {
+  color: #efefef;
+}
+.wrapper {
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+  margin: 0 auto -63px;
+}
+.push {
+  height: 63px;
+}
+/* not required for sticky footer; just pushes hero down a bit */
+.wrapper > .container {
+  padding-top: 60px;
+}
+/* responsive footer fix by Aalaap Ghag */
+@media (max-width: 767px) {
+  body {
+    padding-right: 0px;
+    padding-left: 0px;
+  }
+  footer,
+  .wrapper {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+.container {
+  max-width: 940px;
+}
+/* end responsive footer fix */
 p {
   margin: 0 0 10px;
 }

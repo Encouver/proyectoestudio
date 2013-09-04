@@ -63,7 +63,7 @@
         </div><!-- page -->
     </div>
 </div>
-	<div id="footer" >
+	<footer >
                 <div class="container">
 
                     <div class = "span4">
@@ -97,7 +97,7 @@
                     </div>
                 </div>
             
-    </div><!-- footer -->
+    </footer><!-- footer -->
     
 </body>
 </html>
