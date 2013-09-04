@@ -77,10 +77,10 @@
                         <?php 
                             $this->widget('bootstrap.widgets.TbMenu',array(
                                     'items'=>array(
-                                        array('label'=>'Inicio', 'url'=>array('/site/index')),
-                                                            array('label'=>'Cursos', 'url'=>array('')),
-                    array('label'=>'Sobre UniveOnline', 'url'=>array('/site/page', 'view'=>'about')),
-                    array('label'=>'Contacto', 'url'=>array('/site/contact')),
+                                        array('label'=>'> Inicio', 'url'=>array('/site/index')),
+                                        array('label'=>'> Cursos', 'url'=>array('')),
+                                        array('label'=>'> Sobre UniveOnline', 'url'=>array('/site/page', 'view'=>'about')),
+                                        array('label'=>'> Contacto', 'url'=>array('/site/contact')),
                                         
                                     ),
                             ));
