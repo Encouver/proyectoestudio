@@ -92,12 +92,16 @@
 
                     </div>
                     <div class = "span3">
-                        
-                    
-                    UniveOnline busca romper las barreras del conocimiento tradicional y llevarlo a través de la educación online a todos los interesados en cualquier parte del mundo.
+                    <center>
+                    <h4>Únete a la comunidad en </h4> 
+                    <img src="images/facebook.png">
+                    <img src="images/twitter.png">
+                    <img src="images/google.png">
+                    <br>
+                </center>
                     </div>
-                    <br />
                     <div class = "span9">
+                         <hr>
                         <center>
                         Copyright &copy; <?php echo date('Y'); ?> por UniveOnline  |  Todos los derechos reservados
                         |  <?php echo Yii::powered(); ?>
