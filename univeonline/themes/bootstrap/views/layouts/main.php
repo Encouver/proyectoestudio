@@ -39,11 +39,11 @@
 
 
 
+ <div class="wrapper"> <!-- esto es para el footer -->
 
+	<div class = 'container-content'>
 
-<div class = 'container-content' id="container">
-    <div id="content">
-        <div class="container" id="page">
+    		<div class="container" id="page">
         
             <?php if(isset($this->breadcrumbs)):?>
                 <?php $this->widget('bootstrap.widgets.TbBreadcrumbs', array(
@@ -62,7 +62,11 @@
         
         </div><!-- page -->
     </div>
-</div>
+
+
+	<div class="push"><!--//--></div>
+</div> <!-- .wrapper -->
+
 	<footer>
                 <div class="container">
 
@@ -77,10 +81,10 @@
                         <?php 
                             $this->widget('bootstrap.widgets.TbMenu',array(
                                     'items'=>array(
-                                        array('label'=>'> Inicio', 'url'=>array('/site/index')),
-                                        array('label'=>'> Cursos', 'url'=>array('')),
-                                        array('label'=>'> Sobre UniveOnline', 'url'=>array('/site/page', 'view'=>'about')),
-                                        array('label'=>'> Contacto', 'url'=>array('/site/contact')),
+                                        array('label'=>'Inicio', 'url'=>array('/site/index')),
+										array('label'=>'Cursos', 'url'=>array('')),
+										array('label'=>'Sobre UniveOnline', 'url'=>array('/site/page', 'view'=>'about')),
+										array('label'=>'Contacto', 'url'=>array('/site/contact')),
                                         
                                     ),
                             ));
