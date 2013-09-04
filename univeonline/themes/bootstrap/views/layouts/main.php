@@ -71,13 +71,14 @@
                 <div class="container">
 
                     <div class = "span3">
-
+ <center>
                         <img src="images/logo_unive2.png" width="200px">
                         <br/>
                         <br/>
-                        
+                         </center>
                     </div>
                     <div class = "span3">
+                         <center>
                         <?php 
                             $this->widget('bootstrap.widgets.TbMenu',array(
                                     'items'=>array(
@@ -89,7 +90,7 @@
                                     ),
                             ));
                         ?>
-
+ </center>
                     </div>
                     <div class = "span3">
                     <center>
