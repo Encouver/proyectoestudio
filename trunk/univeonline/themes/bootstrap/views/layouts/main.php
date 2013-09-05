@@ -59,15 +59,13 @@
 	<footer>
         <div class="container">
             <div class = "span4">
-                <center>
                     <img src="images/logo_unive2.png" width="200px">
                     <h6>Tu comunidad de enseñanza - aprendizaje</h6>
-                </center>
             </div>
             
-            <div class = "span1">
+
+                        <div class = "span1">
             </div>
-            
             <div class = "span2">
                 <?php 
                     $this->widget('bootstrap.widgets.TbMenu',array(
@@ -81,9 +79,10 @@
                     ));
                 ?>
             </div>
+            <div class = "span1">
+            </div>
             
-            <div class = "span4">
-                <center>
+            <div class = "span3">
                     <h5>Únete a la comunidad en </h5> 
                     <?php
                         echo CHtml::link('<img src="images/facebook.png">', "http://www.facebook.com");
@@ -91,7 +90,6 @@
                         echo CHtml::link('<img src="images/google.png">', "https://plus.google.com/‎");
                     ?> 
                     <br>
-                </center>
             </div>
             
             <div class = "span11">
