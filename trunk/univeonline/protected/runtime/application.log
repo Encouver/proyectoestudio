@@ -999,3 +999,18 @@ Stack trace:
 REQUEST_URI=/proyectoestudio/univeonline/index.php?r=site/page
 HTTP_REFERER=http://localhost/proyectoestudio/univeonline/index.php?r=site/page&view=about
 ---
+2013/09/04 01:04:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'La vista solicitada "index" no fue encontrada.' in C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\actions\CViewAction.php:112
+Stack trace:
+#0 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\actions\CViewAction.php(123): CViewAction->resolveView('index')
+#1 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\actions\CAction.php(76): CViewAction->run()
+#2 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CController.php(308): CAction->runWithParams(Array)
+#3 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CController.php(286): CController->runAction(Object(CViewAction))
+#4 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CViewAction), Array)
+#5 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('page')
+#6 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/page')
+#7 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#8 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\proyectoestudio\univeonline\index.php(13): CApplication->run()
+#9 {main}
+REQUEST_URI=/proyectoestudio/univeonline/index.php?r=site/page
+HTTP_REFERER=http://localhost/proyectoestudio/univeonline/index.php?r=site/page&view=about
+---
