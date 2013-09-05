@@ -29,7 +29,7 @@ $cs->registerScriptFile($baseUrl.'/js/jquery-ui-1.10.3.custom.min.js');
          </div>
       </div>
     </div>
-    
+    <div></div>
     <!--Banner-->
         <div id="myCarousel" class="carousel slide">
           <ol class="carousel-indicators">
@@ -55,7 +55,6 @@ $cs->registerScriptFile($baseUrl.'/js/jquery-ui-1.10.3.custom.min.js');
 					$image = new Image('images/3.jpg');
 					$image->resize(400, 100)->rotate(-45)->quality(75)->sharpen(20);
 					$image->render();*/
-										
                 ?>
 
  	        	<img alt="" src="images/3t.jpg" >
