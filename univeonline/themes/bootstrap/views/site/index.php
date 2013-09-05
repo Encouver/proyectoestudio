@@ -79,39 +79,33 @@ $cs->registerScriptFile($baseUrl.'/js/jquery-ui-1.10.3.custom.min.js');
         
         <div class="container">
         	
-    <div class="row">
+    <div class="row-fluid">
     	<div class="span12">
-        	 <div class="row">
                 <div class="span3">Curso 1</div>
                 <div class="span3">Curso 2</div>
                 <div class="span3">Curso 3</div>
                 <div class="span3">Curso 4</div>
-            </div>
         </div>
     	
     </div>
     
-    <div class="row">
+    <div class="row-fluid">
     	<div class="span12">
-        	 <div class="row">
                  <div class="span3">Curso 1</div>
                 <div class="span3">Curso 2</div>
                 <div class="span3">Curso 3</div>
                 <div class="span3">Curso 4</div>
-            </div>
         </div>
     	
     </div>
     
     
-    <div class="row">
+    <div class="row-fluid">
     	<div class="span12">
-        	 <div class="row">
                 <div class="span3">Curso 1</div>
                 <div class="span3">Curso 2</div>
                 <div class="span3">Curso 3</div>
                 <div class="span3">Curso 4</div>
-            </div>
         </div>
     	
     </div>
