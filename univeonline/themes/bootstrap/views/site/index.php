@@ -42,14 +42,14 @@ $cs->registerScriptFile($baseUrl.'/js/jquery-ui-1.10.3.custom.min.js');
               <?php 
 					$image = Yii::app()->image->load('images/3.jpg');
 					$image->resize(1170, 500);
-<<<<<<< .mine					$image->save('images/3t.jpg'); // or $image->save('images/small.jpg');					
-=======					$image->save('images/3t.jpg'); // or $image->save('images/small.jpg');
+					$image->save('images/3t.jpg'); // or $image->save('images/small.jpg');					
+  				    $image->save('images/3t.jpg'); // or $image->save('images/small.jpg');
 					/*
 					Yii::import('application.extensions.image.Image');
 					$image = new Image('images/3.jpg');
 					$image->resize(400, 100)->rotate(-45)->quality(75)->sharpen(20);
 					$image->render();*/
->>>>>>> .theirs                ?>
+              ?>
 
  	        	<img alt="" src="images/3t.jpg" >
                 <div class="carousel-caption">
