@@ -95,7 +95,7 @@
             <div class = "span2">
                                 <center>
 
-                <img src="images/latinoamerica.png" width="120px">
+                <img src="images/latinoamerica.png" width="130px">
                                 </center>
 
             </div>
