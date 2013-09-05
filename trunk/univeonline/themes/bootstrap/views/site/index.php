@@ -42,8 +42,6 @@ $cs->registerScriptFile($baseUrl.'/js/jquery-ui-1.10.3.custom.min.js');
               <?php 
 					$image = Yii::app()->image->load('images/3.jpg');
 					$image->resize(1170, 500);
-					$image->save('images/3t.jpg'); // or $image->save('images/small.jpg');					
-  				    $image->save('images/3t.jpg'); // or $image->save('images/small.jpg');
 					/*
 					Yii::import('application.extensions.image.Image');
 					$image = new Image('images/3.jpg');
@@ -80,8 +78,20 @@ $cs->registerScriptFile($baseUrl.'/js/jquery-ui-1.10.3.custom.min.js');
         <div class="container">
         	
     <div class="row-fluid">
-    	<div class="span12">
-                <div class="span3">Curso 1</div>
+    	<div class="span12" style="border: 2px solid; border-radius:5px;">
+        <h4>Cursos recientes</h4>
+                <div class="span3">Curso 1<br><br><br><br><br><br><br><br><br><br><br></div>
+                <div class="span3">Curso 2</div>
+                <div class="span3">Curso 3</div>
+                <div class="span3">Curso 4</div>
+        </div>
+    	
+    </div>
+    <br>
+    <div class="row-fluid">
+      <div class="span12" style="border: 2px solid; border-radius:5px;">
+        <h4>Cursos recientes</h4>
+                <div class="span3">Curso 1<br><br><br><br><br><br><br><br><br><br><br></div>
                 <div class="span3">Curso 2</div>
                 <div class="span3">Curso 3</div>
                 <div class="span3">Curso 4</div>
@@ -89,20 +99,11 @@ $cs->registerScriptFile($baseUrl.'/js/jquery-ui-1.10.3.custom.min.js');
     	
     </div>
     
+      <br>  
     <div class="row-fluid">
-    	<div class="span12">
-                 <div class="span3">Curso 1</div>
-                <div class="span3">Curso 2</div>
-                <div class="span3">Curso 3</div>
-                <div class="span3">Curso 4</div>
-        </div>
-    	
-    </div>
-    
-    
-    <div class="row-fluid">
-    	<div class="span12">
-                <div class="span3">Curso 1</div>
+      <div class="span12" style="border: 2px solid; border-radius:5px;">
+        <h4>Cursos recientes</h4>
+                <div class="span3">Curso 1<br><br><br><br><br><br><br><br><br><br><br></div>
                 <div class="span3">Curso 2</div>
                 <div class="span3">Curso 3</div>
                 <div class="span3">Curso 4</div>
