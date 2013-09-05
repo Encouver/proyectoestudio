@@ -2,20 +2,20 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head>
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-	<meta name="language" content="en" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="language" content="en" />
 
     <link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->theme->baseUrl; ?>/css/styles.css" />
 
-	<title><?php echo CHtml::encode($this->pageTitle); ?></title>
+    <title><?php echo CHtml::encode($this->pageTitle); ?></title>
 
-	<?php Yii::app()->bootstrap->register(); ?>
+    <?php Yii::app()->bootstrap->register(); ?>
 
 </head>
 
 <body>
 
-	<?php $this->widget('bootstrap.widgets.TbNavbar',array(
+    <?php $this->widget('bootstrap.widgets.TbNavbar',array(
         'items'=>array(
             array(
                 'class'=>'bootstrap.widgets.TbMenu',
@@ -31,8 +31,8 @@
                 ),
             ),
         ),
-		'type'=> 'inverse',
-		'collapse' => 'true',
+        'type'=> 'inverse',
+        'collapse' => 'true',
         'brand'=>"<img src='images/logoslogan.png' width='310px'>",
         'brandUrl'=>array('/site/index'),
     )); ?>
@@ -53,10 +53,10 @@
         
             <div class="clear"></div>
         </div><!-- page -->
-	    <div class="push"><!--//--></div>
+        <div class="push"><!--//--></div>
     </div> <!-- .wrapper -->
 
-	<footer>
+    <footer>
         <div class="container">
             <div class = "span4">
                 <center>
@@ -65,26 +65,25 @@
                 </center>
             </div>
             
-            <div class = "span1">
-            </div>
+
             
             <div class = "span2">
                 <?php 
                     $this->widget('bootstrap.widgets.TbMenu',array(
                             'items'=>array(
                                 array('label'=>'Inicio', 'url'=>array('/site/index')),
-								array('label'=>'Cursos', 'url'=>array('')),
-								array('label'=>'Sobre UniveOnline', 'url'=>array('/site/page', 'view'=>'about')),
-								array('label'=>'Contacto', 'url'=>array('/site/contact')),
+                                array('label'=>'Cursos', 'url'=>array('')),
+                                array('label'=>'Sobre UniveOnline', 'url'=>array('/site/page', 'view'=>'about')),
+                                array('label'=>'Contacto', 'url'=>array('/site/contact')),
                                 
                             ),
                     ));
                 ?>
             </div>
             
-            <div class = "span4">
+            <div class = "span2">
                 <center>
-                    <h5>Únete a la comunidad en </h5> 
+                    <h5>Únete a la comunidad univeonline en </h5> 
                     <?php
                         echo CHtml::link('<img src="images/facebook.png">', "http://www.facebook.com");
                         echo CHtml::link('<img src="images/twitter.png">', "http://www.twiiter.com");
@@ -92,6 +91,13 @@
                     ?> 
                     <br>
                 </center>
+            </div>
+            <div class = "span2">
+                                <center>
+
+                <img src="images/latinoamerica.png" width="120px">
+                                </center>
+
             </div>
             
             <div class = "span11">
