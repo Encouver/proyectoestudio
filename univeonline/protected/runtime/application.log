@@ -1014,3 +1014,29 @@ Stack trace:
 REQUEST_URI=/proyectoestudio/univeonline/index.php?r=site/page
 HTTP_REFERER=http://localhost/proyectoestudio/univeonline/index.php?r=site/page&view=about
 ---
+2013/09/04 23:12:36 [error] [php] Object of class SAImageDisplayer could not be converted to string (C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\helpers\CHtml.php:157)
+Stack trace:
+#0 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CBaseController.php(126): require()
+#1 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CBaseController.php(95): SiteController->renderInternal()
+#2 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\widgets\CContentDecorator.php(76): SiteController->renderFile()
+#3 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\widgets\CContentDecorator.php(54): CContentDecorator->decorate()
+#4 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\widgets\COutputProcessor.php(44): CContentDecorator->processOutput()
+#5 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CBaseController.php(206): CContentDecorator->run()
+#6 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CBaseController.php(300): SiteController->endWidget()
+#7 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\proyectoestudio\univeonline\protected\views\layouts\column1.php(6): SiteController->endContent()
+#8 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CBaseController.php(126): require()
+#9 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CBaseController.php(95): SiteController->renderInternal()
+#10 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CController.php(784): SiteController->renderFile()
+#11 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\proyectoestudio\univeonline\protected\controllers\SiteController.php(32): SiteController->render()
+#12 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#13 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#14 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CController.php(286): SiteController->runAction()
+#15 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#16 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CWebApplication.php(282): SiteController->run()
+#17 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#18 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#19 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\proyectoestudio\univeonline\index.php(13): CWebApplication->run()
+REQUEST_URI=/proyectoestudio/univeonline/index.php?r=site/index
+in C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\proyectoestudio\univeonline\themes\bootstrap\views\layouts\main.php (90)
+in C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\proyectoestudio\univeonline\protected\views\layouts\column1.php (6)
+in C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\proyectoestudio\univeonline\protected\controllers\SiteController.php (32)
