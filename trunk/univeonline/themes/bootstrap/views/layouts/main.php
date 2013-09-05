@@ -38,73 +38,70 @@
     )); ?>
 
 
-
- <div class="wrapper"> <!-- esto es para el footer -->
-
-    		<div class="container container-content" id="page">
-        
+    <div class="wrapper"> <!-- esto es para el footer -->
+        <div class="container container-content" id="page">
             <?php if(isset($this->breadcrumbs)):?>
                 <?php $this->widget('bootstrap.widgets.TbBreadcrumbs', array(
                     'links'=>$this->breadcrumbs,
                 )); 
                 
-                ?><!-- breadcrumbs -->
+            ?><!-- breadcrumbs -->
 
             <?php endif?>
         
             <?php echo $content; ?>
         
             <div class="clear"></div>
-        
-        
         </div><!-- page -->
-
-
-	<div class="push"><!--//--></div>
-</div> <!-- .wrapper -->
+	    <div class="push"><!--//--></div>
+    </div> <!-- .wrapper -->
 
 	<footer>
-                <div class="container">
-
-                    <div class = "span4">
- <center>
-                        <img src="images/logo_unive2.png" width="200px">
-                        <h6>Tu comunidad de enseñanza - aprendizaje</h6>
-                         </center>
-                    </div>
-                    <div class = "span1">
-                    </div>
-                    <div class = "span2">
-                        <?php 
-                            $this->widget('bootstrap.widgets.TbMenu',array(
-                                    'items'=>array(
-                                        array('label'=>'Inicio', 'url'=>array('/site/index')),
-										array('label'=>'Cursos', 'url'=>array('')),
-										array('label'=>'Sobre UniveOnline', 'url'=>array('/site/page', 'view'=>'about')),
-										array('label'=>'Contacto', 'url'=>array('/site/contact')),
-                                        
-                                    ),
-                            ));
-                        ?>
-                    </div>
-                    <div class = "span4">
-                    <center>
+        <div class="container">
+            <div class = "span4">
+                <center>
+                    <img src="images/logo_unive2.png" width="200px">
+                    <h6>Tu comunidad de enseñanza - aprendizaje</h6>
+                </center>
+            </div>
+            
+            <div class = "span1">
+            </div>
+            
+            <div class = "span2">
+                <?php 
+                    $this->widget('bootstrap.widgets.TbMenu',array(
+                            'items'=>array(
+                                array('label'=>'Inicio', 'url'=>array('/site/index')),
+								array('label'=>'Cursos', 'url'=>array('')),
+								array('label'=>'Sobre UniveOnline', 'url'=>array('/site/page', 'view'=>'about')),
+								array('label'=>'Contacto', 'url'=>array('/site/contact')),
+                                
+                            ),
+                    ));
+                ?>
+            </div>
+            
+            <div class = "span4">
+                <center>
                     <h5>Únete a la comunidad en </h5> 
-                    <img src="images/facebook.png">
-                    <img src="images/twitter.png">
-                    <img src="images/google.png">
+                    <?php
+                        echo CHtml::link('<img src="images/facebook.png">', "http://www.facebook.com");
+                        echo CHtml::link('<img src="images/twitter.png">', "http://www.twiiter.com");
+                        echo CHtml::link('<img src="images/google.png">', "https://plus.google.com/‎");
+                    ?> 
                     <br>
                 </center>
-                    </div>
-                    <div class = "span11">
-                         <hr>
-                        <center>
-                        Copyright &copy; <?php echo date('Y'); ?> por UniveOnline  |  Todos los derechos reservados
-                        |  <?php echo Yii::powered(); ?>
-                        </center>
-                    </div>
+            </div>
+            
+            <div class = "span11">
+                <hr>
+                <center>
+                    Copyright &copy; <?php echo date('Y'); ?> por UniveOnline  |  Todos los derechos reservados |  <?php echo Yii::powered(); ?>
+                </center>
+            </div>
 
-                </div>
+        </div>
             
     </footer><!-- footer -->
     
