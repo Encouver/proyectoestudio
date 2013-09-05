@@ -39,23 +39,17 @@ $cs->registerScriptFile($baseUrl.'/js/jquery-ui-1.10.3.custom.min.js');
           <!-- Carousel items -->
           <div class="carousel-inner">
             <div class="active item">
-              <?php /*$this->widget('ext.imagemask.ImageMask', array(
-                'shape' => 'roundedsquare',
-                'imgpath' => Yii::app()->basePath.'/../images/3.jpg',
-                'width' => '200',
-                'height' => '200',
-                'title' => 'Sample Image',
-                ));*/
-				
+              <?php 
 					$image = Yii::app()->image->load('images/3.jpg');
 					$image->resize(1170, 500);
-					$image->save('images/3t.jpg'); // or $image->save('images/small.jpg');
+<<<<<<< .mine					$image->save('images/3t.jpg'); // or $image->save('images/small.jpg');					
+=======					$image->save('images/3t.jpg'); // or $image->save('images/small.jpg');
 					/*
 					Yii::import('application.extensions.image.Image');
 					$image = new Image('images/3.jpg');
 					$image->resize(400, 100)->rotate(-45)->quality(75)->sharpen(20);
 					$image->render();*/
-                ?>
+>>>>>>> .theirs                ?>
 
  	        	<img alt="" src="images/3t.jpg" >
                 <div class="carousel-caption">
@@ -84,30 +78,65 @@ $cs->registerScriptFile($baseUrl.'/js/jquery-ui-1.10.3.custom.min.js');
         </div>
         
         <div class="container">
+        	
+    <div class="row">
+    	<div class="span12">
+        	 <div class="row">
+                <div class="span3">Curso 1</div>
+                <div class="span3">Curso 2</div>
+                <div class="span3">Curso 3</div>
+                <div class="span3">Curso 4</div>
+            </div>
+        </div>
+    	
+    </div>
+    
+    <div class="row">
+    	<div class="span12">
+        	 <div class="row">
+                 <div class="span3">Curso 1</div>
+                <div class="span3">Curso 2</div>
+                <div class="span3">Curso 3</div>
+                <div class="span3">Curso 4</div>
+            </div>
+        </div>
+    	
+    </div>
+    
+    
+    <div class="row">
+    	<div class="span12">
+        	 <div class="row">
+                <div class="span3">Curso 1</div>
+                <div class="span3">Curso 2</div>
+                <div class="span3">Curso 3</div>
+                <div class="span3">Curso 4</div>
+            </div>
+        </div>
+    	
+    </div>
         
-        <div></div>
-        <div></div>
-        <div></div>
-        
-<?php $this->beginWidget('bootstrap.widgets.TbHeroUnit',array(
+
+  <!--      
+<?php /*$this->beginWidget('bootstrap.widgets.TbHeroUnit',array(
     'heading'=>'Welcome to '.CHtml::encode(Yii::app()->name),
-)); ?>
+)); */?>
 
 <p>Congratulations! You have successfully created your Yii application.</p>
 
-<?php $this->endWidget(); ?>
+<?php //$this->endWidget(); ?>
 
 <p>You may change the content of this page by modifying the following two files:</p>
 
 <ul>
-    <li>View file: <code><?php echo __FILE__; ?></code></li>
-    <li>Layout file: <code><?php echo $this->getLayoutFile('main'); ?></code></li>
+    <li>View file: <code><?php //echo __FILE__; ?></code></li>
+    <li>Layout file: <code><?php //echo $this->getLayoutFile('main'); ?></code></li>
 </ul>
 
 <p>For more details on how to further develop this application, please read
     the <a href="http://www.yiiframework.com/doc/">documentation</a>.
     Feel free to ask in the <a href="http://www.yiiframework.com/forum/">forum</a>,
     should you have any questions.</p>
-  
+  -->
     </div>
 

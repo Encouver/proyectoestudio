@@ -8,7 +8,7 @@
   .container-fixed();
 }
 
-// Fluid layouts (left aligned, with sidebar, min- & max-width content)
+// Fluid layouts fsdf(left aligned, with sidebar, min- & max-width content)
 .container-fluid {
   padding-right: @gridGutterWidth;
   padding-left: @gridGutterWidth;
@@ -20,18 +20,13 @@
  margin-top: @navbarHeight;
 }
 
+footer a{
+  text-decoration: none;
+}
 
-/*#footer {
-   //position: absolute;
-   text-align: left;
-   left:0px;
-   bottom:0px;
-   height:80px;
-   width:100%;
 
-}*/
-
-@heightFooter: 4em;
+/*
+@heightFooter: 18em;
 
 html, body, #container { height: 100%; }
 body > #container { height: auto; min-height: 100%; }
@@ -42,8 +37,11 @@ body > #container { height: auto; min-height: 100%; }
  z-index: 10;
  height: @heightFooter;
  margin-top: -@heightFooter;
-  background:#999;
+ background:#cccccc;
+ padding-top: 30px;
 }
+
+
 
 #content { padding-bottom: @heightFooter; }
 
@@ -52,3 +50,51 @@ body > #container { height: auto; min-height: 100%; }
 		margin-right:auto;
 		width:50%;
 	}
+	*/
+
+	
+	        html, body {
+            height: 100%;
+        }
+        footer {
+            color: #646464;
+            background: #cccccc;
+            padding: 17px 0 18px 0;
+            border-top: 1px solid #BDBDBD;    
+        }
+        footer a {
+            color: #646464;
+        }
+        footer a:hover {
+            color: @azulito;
+            text-decoration: none;
+            background-color: transparent;
+        }
+        .wrapper {
+            min-height: 100%;
+            height: auto !important;
+            height: 100%;
+            margin: 0 auto -63px;
+        }
+        .push {
+            height: 10em;
+        }
+        /* not required for sticky footer; just pushes hero down a bit */
+        .wrapper > .container {
+            padding-top: 60px;
+        }
+ 
+        /* responsive footer fix by Aalaap Ghag */
+        @media (max-width: 767px) {
+            body {
+                padding-right: 0px;
+                padding-left: 0px;
+            }
+    
+            footer, .wrapper {
+                padding-left: 20px;
+                padding-right: 20px;
+            }
+        }
+ 
+        /* end responsive footer fix */
