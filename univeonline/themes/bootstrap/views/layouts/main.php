@@ -23,7 +23,7 @@
                 
                 'items'=>array(
                     array('label'=>'Inicio', 'url'=>array('/site/index')),                    
-                    array('label'=>'Cursos', 'url'=>array('')),
+                    array('label'=>'| Cursos', 'url'=>array('')),
                     array('label'=>'Sobre UniveOnline', 'url'=>array('/site/page', 'view'=>'about')),
                     array('label'=>'Contacto', 'url'=>array('/site/contact')),
                     array('label'=>'Iniciar Sesión', 'url'=>array('/site/login'), 'visible'=>Yii::app()->user->isGuest),

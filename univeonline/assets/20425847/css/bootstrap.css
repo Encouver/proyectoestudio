@@ -548,40 +548,79 @@ a:focus {
 .container-content {
   margin-top: 60px;
 }
-/*#footer {
-   //position: absolute;
-   text-align: left;
-   left:0px;
-   bottom:0px;
-   height:80px;
-   width:100%;
+footer a {
+  text-decoration: none;
+}
+/*
+@heightFooter: 18em;
 
-}*/
+html, body, #container { height: 100%; }
+body > #container { height: auto; min-height: 100%; }
+
+#footer {
+ clear: both;
+ position: relative;
+ z-index: 10;
+ height: @heightFooter;
+ margin-top: -@heightFooter;
+ background:#cccccc;
+ padding-top: 30px;
+}
+
+
+
+#content { padding-bottom: @heightFooter; }
+
+#banner {
+		margin-left:auto;
+		margin-right:auto;
+		width:50%;
+	}
+	*/
 html,
-body,
-#container {
+body {
   height: 100%;
 }
-body > #container {
-  height: auto;
+footer {
+  color: #646464;
+  background: #cccccc;
+  padding: 17px 0 18px 0;
+  border-top: 1px solid #BDBDBD;
+}
+footer a {
+  color: #646464;
+}
+footer a:hover {
+  color: #0099cc;
+  text-decoration: none;
+  background-color: transparent;
+}
+.wrapper {
   min-height: 100%;
+  height: auto !important;
+  height: 100%;
+  margin: 0 auto -63px;
 }
-#footer {
-  clear: both;
-  position: relative;
-  z-index: 10;
-  height: 4em;
-  margin-top: -4em;
-  background: #999;
+.push {
+  height: 10em;
 }
-#content {
-  padding-bottom: 4em;
+/* not required for sticky footer; just pushes hero down a bit */
+.wrapper > .container {
+  padding-top: 60px;
 }
-#banner {
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%;
+/* responsive footer fix by Aalaap Ghag */
+@media (max-width: 767px) {
+  body {
+    padding-right: 0px;
+    padding-left: 0px;
+  }
+  footer,
+  .wrapper {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
 }
+/* end responsive footer fix */
 p {
   margin: 0 0 10px;
 }
@@ -784,8 +823,8 @@ dd {
 hr {
   margin: 20px 0;
   border: 0;
-  border-top: 1px solid #eeeeee;
-  border-bottom: 1px solid #ffffff;
+  border-top: 0.05em solid #eeeeee;
+  border-bottom: 0.1em solid #eeeeee;
 }
 abbr[title],
 abbr[data-original-title] {
@@ -1596,7 +1635,7 @@ select:focus:invalid:focus {
 input.search-query {
   padding-right: 14px;
   padding-right: 4px \9;
-  padding-left: 14px;
+  padding-left: 28px;
   padding-left: 4px \9;
   /* IE7-8 doesn't have border-radius, so don't indent the padding */
 
@@ -3390,7 +3429,6 @@ input[type="submit"].btn.btn-mini {
 .nav > li > a:hover,
 .nav > li > a:focus {
   text-decoration: none;
-  background-color: #eeeeee;
 }
 .nav > li > a > img {
   max-width: none;
@@ -3728,6 +3766,7 @@ input[type="submit"].btn.btn-mini {
 .navbar {
   overflow: visible;
   margin-bottom: 20px;
+  font-size: 12px;
   *position: relative;
   *z-index: 2;
 }
@@ -3771,7 +3810,7 @@ input[type="submit"].btn.btn-mini {
 .navbar .brand {
   float: left;
   display: block;
-  padding: 20px 20px 20px;
+  padding: 5px 5px 5px;
   margin-left: -20px;
   font-size: 20px;
   font-weight: 200;
@@ -3786,6 +3825,7 @@ input[type="submit"].btn.btn-mini {
   margin-bottom: 0;
   line-height: 60px;
   color: #777777;
+  font-size: 9px;
 }
 .navbar-link {
   color: #777777;
@@ -3937,7 +3977,7 @@ input[type="submit"].btn.btn-mini {
 }
 .navbar .nav > li > a {
   float: none;
-  padding: 20px 15px 20px;
+  padding: 34px 15px 0;
   color: #777777;
   text-decoration: none;
   text-shadow: 0 1px 0 rgba(255, 255, 255, 0.8);
@@ -3957,9 +3997,6 @@ input[type="submit"].btn.btn-mini {
   color: #555555;
   text-decoration: none;
   background-color: rgba(229, 229, 229, 0.8);
-  -webkit-box-shadow: inset 0 3px 8px rgba(0, 0, 0, 0.125);
-  -moz-box-shadow: inset 0 3px 8px rgba(0, 0, 0, 0.125);
-  box-shadow: inset 0 3px 8px rgba(0, 0, 0, 0.125);
 }
 .navbar .btn-navbar {
   display: none;
@@ -4109,38 +4146,38 @@ input[type="submit"].btn.btn-mini {
 }
 .navbar-inverse .brand,
 .navbar-inverse .nav > li > a {
-  color: #999999;
+  color: #ffffff;
   text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
 }
 .navbar-inverse .brand:hover,
 .navbar-inverse .nav > li > a:hover,
 .navbar-inverse .brand:focus,
 .navbar-inverse .nav > li > a:focus {
-  color: #ffffff;
+  color: #0099cc;
 }
 .navbar-inverse .brand {
-  color: #999999;
+  color: #ffffff;
 }
 .navbar-inverse .navbar-text {
-  color: #999999;
+  color: #ffffff;
 }
 .navbar-inverse .nav > li > a:focus,
 .navbar-inverse .nav > li > a:hover {
   background-color: transparent;
-  color: #ffffff;
+  color: #0099cc;
 }
 .navbar-inverse .nav .active > a,
 .navbar-inverse .nav .active > a:hover,
 .navbar-inverse .nav .active > a:focus {
-  color: #ffffff;
-  background-color: rgba(17, 17, 17, 0.2);
+  color: #0099cc;
+  background-color: transparent;
 }
 .navbar-inverse .navbar-link {
-  color: #999999;
+  color: #ffffff;
 }
 .navbar-inverse .navbar-link:hover,
 .navbar-inverse .navbar-link:focus {
-  color: #ffffff;
+  color: #0099cc;
 }
 .navbar-inverse .divider-vertical {
   border-left-color: rgba(17, 17, 17, 0.2);
@@ -4149,23 +4186,23 @@ input[type="submit"].btn.btn-mini {
 .navbar-inverse .nav li.dropdown.open > .dropdown-toggle,
 .navbar-inverse .nav li.dropdown.active > .dropdown-toggle,
 .navbar-inverse .nav li.dropdown.open.active > .dropdown-toggle {
-  background-color: rgba(17, 17, 17, 0.2);
-  color: #ffffff;
+  background-color: transparent;
+  color: #0099cc;
 }
 .navbar-inverse .nav li.dropdown > a:hover .caret,
 .navbar-inverse .nav li.dropdown > a:focus .caret {
-  border-top-color: #ffffff;
-  border-bottom-color: #ffffff;
+  border-top-color: #0099cc;
+  border-bottom-color: #0099cc;
 }
 .navbar-inverse .nav li.dropdown > .dropdown-toggle .caret {
-  border-top-color: #999999;
-  border-bottom-color: #999999;
+  border-top-color: #ffffff;
+  border-bottom-color: #ffffff;
 }
 .navbar-inverse .nav li.dropdown.open > .dropdown-toggle .caret,
 .navbar-inverse .nav li.dropdown.active > .dropdown-toggle .caret,
 .navbar-inverse .nav li.dropdown.open.active > .dropdown-toggle .caret {
-  border-top-color: #ffffff;
-  border-bottom-color: #ffffff;
+  border-top-color: #0099cc;
+  border-bottom-color: #0099cc;
 }
 .navbar-inverse .navbar-search .search-query {
   color: #ffffff;
@@ -4203,17 +4240,17 @@ input[type="submit"].btn.btn-mini {
 .navbar-inverse .btn-navbar {
   color: #ffffff;
   text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
-  background-color: rgba(20, 20, 20, 0.6799999999999999);
-  background-image: -moz-linear-gradient(top, #151515, rgba(4, 4, 4, 0.2));
-  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#151515), to(rgba(4, 4, 4, 0.2)));
-  background-image: -webkit-linear-gradient(top, #151515, rgba(4, 4, 4, 0.2));
-  background-image: -o-linear-gradient(top, #151515, rgba(4, 4, 4, 0.2));
-  background-image: linear-gradient(to bottom, #151515, rgba(4, 4, 4, 0.2));
+  background-color: #0086b3;
+  background-image: -moz-linear-gradient(top, #0086b3, #0086b3);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#0086b3), to(#0086b3));
+  background-image: -webkit-linear-gradient(top, #0086b3, #0086b3);
+  background-image: -o-linear-gradient(top, #0086b3, #0086b3);
+  background-image: linear-gradient(to bottom, #0086b3, #0086b3);
   background-repeat: repeat-x;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff151515', endColorstr='#33040404', GradientType=0);
-  border-color: rgba(4, 4, 4, 0.2) rgba(4, 4, 4, 0.2) rgba(0, 0, 0, 0.2);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff0086b3', endColorstr='#ff0086b3', GradientType=0);
+  border-color: #0086b3 #0086b3 #004d66;
   border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
-  *background-color: rgba(4, 4, 4, 0.2);
+  *background-color: #0086b3;
   /* Darken IE7 buttons by default so they stand out more given they won't have borders */
 
   filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
@@ -4225,12 +4262,12 @@ input[type="submit"].btn.btn-mini {
 .navbar-inverse .btn-navbar.disabled,
 .navbar-inverse .btn-navbar[disabled] {
   color: #ffffff;
-  background-color: rgba(4, 4, 4, 0.2);
-  *background-color: rgba(0, 0, 0, 0.2);
+  background-color: #0086b3;
+  *background-color: #007399;
 }
 .navbar-inverse .btn-navbar:active,
 .navbar-inverse .btn-navbar.active {
-  background-color: rgba(0, 0, 0, 0.2) \9;
+  background-color: #006080 \9;
 }
 .breadcrumb {
   padding: 8px 15px;
@@ -5132,9 +5169,16 @@ a.badge:focus {
 .carousel img {
   top: 0;
   left: 0;
-  min-width: 100%;
   height: 500px;
-  max-width: none;
+  max-width: 100%;
+  width: 100%;
+  /*
+  height: auto;
+  max-width: 100%;
+  vertical-align: middle;
+  border: 0;
+*/
+
 }
 .carousel-inner {
   overflow: hidden;
@@ -5258,13 +5302,13 @@ a.badge:focus {
   margin-bottom: 0;
 }
 .hero-unit {
-  padding: 60px;
+  padding: 15px;
   margin-bottom: 30px;
   font-size: 18px;
   font-weight: 200;
   line-height: 30px;
   color: inherit;
-  background-color: #eeeeee;
+  background-color: #048ac2;
   -webkit-border-radius: 6px;
   -moz-border-radius: 6px;
   border-radius: 6px;

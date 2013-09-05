@@ -6,7 +6,7 @@
 // GENERAL STYLES
 // --------------
 
-// Make all forms have space below them
+// Make all forms have space above and below them
 form {
   margin: 0 0 @baseLineHeight;
 }
@@ -543,7 +543,7 @@ select:focus:invalid {
 input.search-query {
   padding-right: 14px;
   padding-right: 4px \9;
-  padding-left: 14px;
+  padding-left: 14px * 2;		//Lo multiplique por dos para encajar el icono-search a la izquierda
   padding-left: 4px \9; /* IE7-8 doesn't have border-radius, so don't indent the padding */
   margin-bottom: 0; // Remove the default margin on all inputs
   .border-radius(15px);
