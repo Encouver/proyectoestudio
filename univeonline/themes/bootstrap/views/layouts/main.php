@@ -61,11 +61,7 @@
             <div class = "span4">
                     <img src="images/logo_unive2.png" width="200px">
                     <h6>Tu comunidad de enseñanza - aprendizaje</h6>
-            </div>
-            
-
-                        <div class = "span1">
-            </div>
+            </div> 
             <div class = "span2">
                 <?php 
                     $this->widget('bootstrap.widgets.TbMenu',array(
@@ -79,9 +75,6 @@
                     ));
                 ?>
             </div>
-            <div class = "span1">
-            </div>
-            
             <div class = "span3">
                     <h5>Únete a la comunidad en </h5> 
                     <?php
