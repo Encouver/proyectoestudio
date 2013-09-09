@@ -43,9 +43,9 @@
     <div class="wrapper"> <!-- esto es para el footer -->
         <div class="container container-content" id="page">
             <?php if(isset($this->breadcrumbs)):?>
-                <?php $this->widget('bootstrap.widgets.TbBreadcrumbs', array(
+                <?php /*$this->widget('bootstrap.widgets.TbBreadcrumbs', array(
                     'links'=>$this->breadcrumbs,
-                )); 
+                )); */
                 
             ?><!-- breadcrumbs -->
                 <!--Formulario de busqueda principal-->
