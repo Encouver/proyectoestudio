@@ -77,38 +77,47 @@ $cs->registerScriptFile($baseUrl.'/js/jquery-ui-1.10.3.custom.min.js');
         
         <div class="container">
         	
-    <div class="row-fluid">
-    	<div class="span12" style="border: 2px solid; border-radius:5px;">
-        <h4>Cursos recientes</h4>
-                <div class="span3">Curso 1<br><br><br><br><br><br><br><br><br><br><br></div>
-                <div class="span3">Curso 2</div>
-                <div class="span3">Curso 3</div>
-                <div class="span3">Curso 4</div>
-        </div>
-    	
-    </div>
-    <br>
-    <div class="row-fluid">
-      <div class="span12" style="border: 2px solid; border-radius:5px;">
-        <h4>Cursos recientes</h4>
-                <div class="span3">Curso 1<br><br><br><br><br><br><br><br><br><br><br></div>
-                <div class="span3">Curso 2</div>
-                <div class="span3">Curso 3</div>
-                <div class="span3">Curso 4</div>
-        </div>
-    	
-    </div>
-    
-      <br>  
-    <div class="row-fluid">
-      <div class="span12" style="border: 2px solid; border-radius:5px;">
-        <h4>Cursos recientes</h4>
-                <div class="span3">Curso 1<br><br><br><br><br><br><br><br><br><br><br></div>
-                <div class="span3">Curso 2</div>
-                <div class="span3">Curso 3</div>
-                <div class="span3">Curso 4</div>
-        </div>
-    	
-    </div>
-    </div>
+            <div class="row-fluid">
+                <div class="span12">
+                <h4>Cursos recientes</h4>
+                	<hr />
+                    	<div class="span1" style="margin:0px !important"></div>
+                        <div class="span3" style="margin:0px !important"><img src="images/large-icon1.png" /></div>
+                        <div class="span1" style="margin:0px !important"></div>
+                        <div class="span3" style="margin:0px !important"><img src="images/large-icon.png" /></div>
+                        <div class="span1" style="margin:0px !important"></div>
+                        <div class="span3" style="margin:0px !important"><img src="images/PMH-02.jpg" /></div>
+                </div>
+                
+            </div>
+            <br>
+            <div class="row-fluid">
+              <div class="span12">
+                <h4>Cursos más cursados</h4>
+                        <hr />
+                    	<div class="span1" style="margin:0px !important"></div>
+                        <div class="span3" style="margin:0px !important"><img src="images/large-icon1.png" /></div>
+                        <div class="span1" style="margin:0px !important"></div>
+                        <div class="span3" style="margin:0px !important"><img src="images/large-icon.png" /></div>
+                        <div class="span1" style="margin:0px !important"></div>
+                        <div class="span3" style="margin:0px !important"><img src="images/PMH-02.jpg" /></div>
+                </div>
+                
+            </div>
+            
+              <br>  
+            <div class="row-fluid">
+              <div class="span12">
+                <h4>Cursos más destacados</h4>
+                      <hr />
+                    	<div class="span1" style="margin:0px !important"></div>
+                        <div class="span3" style="margin:0px !important"><img src="images/large-icon1.png" /></div>
+                        <div class="span1" style="margin:0px !important"></div>
+                        <div class="span3" style="margin:0px !important"><img src="images/large-icon.png" /></div>
+                        <div class="span1" style="margin:0px !important"></div>
+                        <div class="span3" style="margin:0px !important"><img src="images/PMH-02.jpg" /></div>
+                </div>
+                
+            </div>
+    	</div>
 
