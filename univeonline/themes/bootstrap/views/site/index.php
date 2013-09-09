@@ -18,18 +18,6 @@ $cs->registerScriptFile($baseUrl.'/js/jquery-ui-1.10.3.custom.min.js');
 </script>
 	
     
-    
-	<!--Formulario de busqueda principal-->
-	<div class="pagination-centered hero-unit sombra">
-      <div class="form-search">
-         <div class="input-append">
-         	<span class="fornav"><i class="icon-search" ></i></span>
-            <input type="text" class="input-xxlarge search-query " placeholder="Buscar un curso">
-            <button type="submit" class="btn" formmethod="post">Buscar</button>
-         </div>
-      </div>
-    </div>
-    <div></div>
     <!--Banner-->
         <div id="myCarousel" class="carousel slide">
           <ol class="carousel-indicators">
@@ -74,6 +62,8 @@ $cs->registerScriptFile($baseUrl.'/js/jquery-ui-1.10.3.custom.min.js');
           <a class="carousel-control left" href="#myCarousel" data-slide="prev">&lsaquo;</a>
           <a class="carousel-control right" href="#myCarousel" data-slide="next">&rsaquo;</a>
         </div>
+        
+    
         
         <div class="container">
         	

@@ -48,7 +48,16 @@
                 )); 
                 
             ?><!-- breadcrumbs -->
-
+                <!--Formulario de busqueda principal-->
+              <div class="pagination-centered hero-unit sombra">
+                  <div class="form-search">
+                     <div class="input-append">
+                        <span class="fornav"><i class="icon-search" ></i></span>
+                        <input type="text" class="input-xxlarge search-query " placeholder="Buscar un curso">
+                        <button type="submit" class="btn" formmethod="post">Buscar</button>
+                     </div>
+                  </div>
+              </div>
             <?php endif?>
         
             <?php echo $content; ?>
