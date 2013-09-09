@@ -49,10 +49,13 @@
 @serifFontFamily:       Georgia, "Times New Roman", Times, serif;
 @monoFontFamily:        Monaco, Menlo, Consolas, "Courier New", monospace;
 
-@baseFontSize:          14px;
-@baseFontFamily:        @sansFontFamily;
+@simpleFontFamily:		'Jacques Francois', serif;			// Para uso frecuente
+@fancyFontFamily:		'Josefin Slab', serif;				// Para uso especial
+
+@baseFontSize:          16px;
+@baseFontFamily:        @simpleFontFamily;
 @baseLineHeight:        20px;
-@altFontFamily:         @serifFontFamily;
+@altFontFamily:         @fancyFontFamily;
 
 @headingsFontFamily:    inherit; // empty to use BS default, @baseFontFamily
 @headingsFontWeight:    bold;    // instead of browser default, bold
