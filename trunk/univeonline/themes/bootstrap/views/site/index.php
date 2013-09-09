@@ -84,7 +84,7 @@ $cs->registerScriptFile($baseUrl.'/js/jquery-ui-1.10.3.custom.min.js');
                     	<div class="span1" style="margin:0px !important"></div>
                         <div class="span3" style="margin:0px !important"><img src="images/large-icon1.png" /></div>
                         <div class="span1" style="margin:0px !important"></div>
-                        <div class="span3" style="margin:0px !important"><img src="images/large-icon.png" /></div>
+                        <div class="span3" style="margin:0px !important"><img src="images/large-icon.png" /> dsfdfadf <br><a href="#">Ver más</a></div>
                         <div class="span1" style="margin:0px !important"></div>
                         <div class="span3" style="margin:0px !important"><img src="images/PMH-02.jpg" /></div>
                 </div>
