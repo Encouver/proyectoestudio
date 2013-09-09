@@ -82,11 +82,11 @@ $cs->registerScriptFile($baseUrl.'/js/jquery-ui-1.10.3.custom.min.js');
                 <h4>Cursos recientes</h4>
                 	<hr />
                     	<div class="span1" style="margin:0px !important"></div>
-                        <div class="span3" style="margin:0px !important"><img src="images/large-icon1.png" /></div>
+                        <div class="span3" style="margin:0px !important; background-color:#048AC2 !important; padding:5px !important"><img src="images/large-icon1.png" /><br />is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type <br><br /><table width="100%"><tr><td align="center" width="50%" ><a href="#">Inscribir</a></td><td align="center" width="50%"><a href="#">Ver más</a></td></tr></table></div>
                         <div class="span1" style="margin:0px !important"></div>
-                        <div class="span3" style="margin:0px !important"><img src="images/large-icon.png" /> dsfdfadf <br><a href="#">Ver más</a></div>
+                        <div class="span3" style="margin:0px !important"><img src="images/large-icon.png" /> <br />is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type <br><br /><table width="100%"><tr><td align="center" width="50%" ><a href="#">Inscribir</a></td><td align="center" width="50%"><a href="#">Ver más</a></td></tr></table></div>
                         <div class="span1" style="margin:0px !important"></div>
-                        <div class="span3" style="margin:0px !important"><img src="images/PMH-02.jpg" /></div>
+                        <div class="span3" style="margin:0px !important"><img src="images/PMH-02.jpg" /><br />is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type <br><br /><table width="100%"><tr><td align="center" width="50%" ><a href="#">Inscribir</a></td><td align="center" width="50%"><a href="#">Ver más</a></td></tr></table></div>
                 </div>
                 
             </div>
