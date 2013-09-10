@@ -16,7 +16,14 @@ $cs->registerScriptFile($baseUrl.'/js/jquery-ui-1.10.3.custom.min.js');
 		interval: 2000
 	})
 </script>
-	
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+  <!--[if gte IE 9]>
+    <style type="text/css">
+      .gradient {
+         filter: none;
+      }
+    </style>
+  <![endif]-->	
     
     <!--Banner-->
         <div id="myCarousel" class="carousel slide">
@@ -67,95 +74,488 @@ $cs->registerScriptFile($baseUrl.'/js/jquery-ui-1.10.3.custom.min.js');
         
         <div class="container">
         	
-            <div class="row-fluid">
-                <div class="span12">
-                <h4 class = "lead">Cursos recientes</h4>
-                	<hr />
-                    	<div class="span1" style="margin:0px !important"></div>
-                        <div class="span3" style="margin:0px !important; background-color:#048AC2 !important; padding:5px !important"><img src="images/large-icon1.png" class="img-polaroid"/><br />is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type <br><br /><table width="100%"><tr><td align="center" width="50%" ><a href="#">Inscribir</a></td><td align="center" width="50%"><a href="#">Ver más</a></td></tr></table></div>
-                        <div class="span1" style="margin:0px !important"></div>
-                        <div class="span3" style="margin:0px !important; padding:5px !important; border:1px solid #048AC2;"><img src="images/large-icon.png" /> <br />is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type <br><br /><table width="100%"><tr><td align="center" width="50%" ><a href="#">Inscribir</a></td><td align="center" width="50%"><a href="#">Ver más</a></td></tr></table></div>
-                        <div class="span1" style="margin:0px !important"></div>
-                        <div class="span3" style="margin:0px !important"><img src="images/PMH-02.jpg" /><br />is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type <br><br /><table width="100%"><tr><td align="center" width="50%" ><a href="#">Inscribir</a></td><td align="center" width="50%"><a href="#">Ver más</a></td></tr></table></div>
+            <br>  
+            <div class="container">
+            <h4 class = "lead">Cursos recientes</h4>
+              <div class="row-fluid">
+                <div class="span4">
+                  <div class="container-item">
+                    <div class="item2" style="background-image: url(images/large-icon.png)">
+                      <div class="item-overlay">
+
+                        <div class="sale-tag"><span>NUEVO</span></div>
+                      </div>
+                      <div class="item-content">
+                        <div class="item-top-content">
+                          <div class="item-top-content-inner">
+                            <div class="item-product">
+                              <div class="item-top-title">
+                                <h5>Ipath lowrunner</h5>
+                                <p class="subdescription">
+                                  Low skateshoes - Grey
+                                </p>
+                              </div>
+                            </div>
+
+                          </div>  
+                        </div>
+                        <div class="item-add-content">
+                          <div class="item-add-content-inner">
+                            <!-- <div class="section">
+                              <h4>Sizes</h4>
+                              <p>40,41,42,43,44,45</p>
+                            </div> -->
+                            <div class="section">
+                              <a href="#" class="btn btn-small">Ver más</a>
+                              <a href="#" class="btn btn-small">Inscribir</a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
                 </div>
-                
+
+                <div class="span4">
+                  <div class="container-item">
+                    <div class="item2" style="background-image: url(images/large-icon1.png)">
+                      <div class="item-overlay">
+                        <div class="sale-tag"><span>NUEVO</span></div>
+                      </div>
+                      <div class="item-content">
+                        <div class="item-top-content">
+                          <div class="item-top-content-inner">
+                            <div class="item-product">
+                              <div class="item-top-title">
+                                <h5>Ipath lowrunner</h5>
+                                <p class="subdescription">
+                                  Low skateshoes - Grey
+                                </p>
+                              </div>
+                            </div>
+                          </div>  
+                        </div>
+                        <div class="item-add-content">
+                          <div class="item-add-content-inner">
+                            <!-- <div class="section">
+                              <h4>Sizes</h4>
+                              <p>40,41,42,43,44,45</p>
+                            </div> -->
+                            <div class="section">
+                              <a href="#" class="btn btn-small">Ver más</a>
+                              <a href="#" class="btn btn-small">Inscribir</a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="span4">
+                  <div class="container-item">
+                    <div class="item2" style="background-image: url(images/PMH-02.jpg)">
+                      <div class="item-overlay">
+
+                        <div class="sale-tag"><span>NUEVO</span></div>
+                      </div>
+                      <div class="item-content">
+                        <div class="item-top-content">
+                          <div class="item-top-content-inner">
+                            <div class="item-product">
+                              <div class="item-top-title">
+                                <h5>Ipath lowrunner</h5>
+                                <p class="subdescription">
+                                  Low skateshoes - Grey
+                                </p>
+                              </div>
+                            </div>
+
+                          </div>  
+                        </div>
+                        <div class="item-add-content">
+                          <div class="item-add-content-inner">
+                            <!-- <div class="section">
+                              <h4>Sizes</h4>
+                              <p>40,41,42,43,44,45</p>
+                            </div> -->
+                            <div class="section">
+                              <a href="#" class="btn btn-small">Ver más</a>
+                              <a href="#" class="btn btn-small">Inscribir</a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+
+              </div>
             </div>
-            <br>
-            <div class="row-fluid">
-              <div class="span12">
-                <h4 class = "lead">Cursos más cursados</h4>
-                        <hr />
-                    	<div class="span1" style="margin:0px !important"></div>
-                        <div class="span3" style="margin:0px !important"><img src="images/large-icon1.png" /><br />This is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type <br><br /><table width="100%"><tr><td align="center" width="50%" ><a href="#">Inscribir</a></td><td align="center" width="50%"><a href="#">Ver más</a></td></tr></table></div>
-                        <div class="span1" style="margin:0px !important"></div>
-                        <div class="span3" style="margin:0px !important"><img src="images/large-icon.png" /><br />This is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type <br><br /><table width="100%"><tr><td align="center" width="50%" ><a href="#">Inscribir</a></td><td align="center" width="50%"><a href="#">Ver más</a></td></tr></table></div>
-                        <div class="span1" style="margin:0px !important"></div>
-                        <div class="span3" style="margin:0px !important"><img src="images/PMH-02.jpg" /><br />This is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type <br><br /><table width="100%"><tr><td align="center" width="50%" ><a href="#">Inscribir</a></td><td align="center" width="50%"><a href="#">Ver más</a></td></tr></table></div>
+            <br>  
+            <div class="container">
+            <h4 class = "lead">Los más cursados</h4>
+              <div class="row-fluid">
+                <div class="span4">
+                  <div class="container-item">
+                    <div class="item2" style="background-image: url(images/large-icon.png)">
+                      <div class="item-overlay">
+
+                        <div class="sale-tag"><span>NUEVO</span></div>
+                      </div>
+                      <div class="item-content">
+                        <div class="item-top-content">
+                          <div class="item-top-content-inner">
+                            <div class="item-product">
+                              <div class="item-top-title">
+                                <h5>Ipath lowrunner</h5>
+                                <p class="subdescription">
+                                  Low skateshoes - Grey
+                                </p>
+                              </div>
+                            </div>
+
+                          </div>  
+                        </div>
+                        <div class="item-add-content">
+                          <div class="item-add-content-inner">
+                            <!-- <div class="section">
+                              <h4>Sizes</h4>
+                              <p>40,41,42,43,44,45</p>
+                            </div> -->
+                            <div class="section">
+                              <a href="#" class="btn btn-small">Ver más</a>
+                              <a href="#" class="btn btn-small">Inscribir</a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
                 </div>
-                
+
+                <div class="span4">
+                  <div class="container-item">
+                    <div class="item2" style="background-image: url(images/large-icon1.png)">
+                      <div class="item-overlay">
+                        <div class="sale-tag"><span>NUEVO</span></div>
+                      </div>
+                      <div class="item-content">
+                        <div class="item-top-content">
+                          <div class="item-top-content-inner">
+                            <div class="item-product">
+                              <div class="item-top-title">
+                                <h5>Ipath lowrunner</h5>
+                                <p class="subdescription">
+                                  Low skateshoes - Grey
+                                </p>
+                              </div>
+                            </div>
+                          </div>  
+                        </div>
+                        <div class="item-add-content">
+                          <div class="item-add-content-inner">
+                            <!-- <div class="section">
+                              <h4>Sizes</h4>
+                              <p>40,41,42,43,44,45</p>
+                            </div> -->
+                            <div class="section">
+                              <a href="#" class="btn btn-small">Ver más</a>
+                              <a href="#" class="btn btn-small">Inscribir</a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="span4">
+                  <div class="container-item">
+                    <div class="item2" style="background-image: url(images/PMH-02.jpg)">
+                      <div class="item-overlay">
+
+                        <div class="sale-tag"><span>NUEVO</span></div>
+                      </div>
+                      <div class="item-content">
+                        <div class="item-top-content">
+                          <div class="item-top-content-inner">
+                            <div class="item-product">
+                              <div class="item-top-title">
+                                <h5>Ipath lowrunner</h5>
+                                <p class="subdescription">
+                                  Low skateshoes - Grey
+                                </p>
+                              </div>
+                            </div>
+
+                          </div>  
+                        </div>
+                        <div class="item-add-content">
+                          <div class="item-add-content-inner">
+                            <!-- <div class="section">
+                              <h4>Sizes</h4>
+                              <p>40,41,42,43,44,45</p>
+                            </div> -->
+                            <div class="section">
+                              <a href="#" class="btn btn-small">Ver más</a>
+                              <a href="#" class="btn btn-small">Inscribir</a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+
+              </div>
             </div>
             
-              <br>  
-            <div class="row-fluid">
-              <div class="span12">
-                <h4 class = "lead">Cursos más destacados</h4>
-                      <hr />
-                    	<div class="span1" style="margin:0px !important"></div>
-                        <div class="span3" style="margin:0px !important"><img src="images/large-icon1.png" /><br />is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type <br><br /><table width="100%"><tr><td align="center" width="50%" ><a href="#">Inscribir</a></td><td align="center" width="50%"><a href="#">Ver más</a></td></tr></table></div>
-                        <div class="span1" style="margin:0px !important"></div>
-                        <div class="span3" style="margin:0px !important"><img src="images/large-icon.png" /><br />is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type <br><br /><table width="100%"><tr><td align="center" width="50%" ><a href="#">Inscribir</a></td><td align="center" width="50%"><a href="#">Ver más</a></td></tr></table></div>
-                        <div class="span1" style="margin:0px !important"></div>
-                        <div class="span3" style="margin:0px !important"><img src="images/PMH-02.jpg" /><br />is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type <br><br /><table width="100%"><tr><td align="center" width="50%" ><a href="#">Inscribir</a></td><td align="center" width="50%"><a href="#">Ver más</a></td></tr></table></div>
+            <br>  
+            <div class="container">
+            <h4 class = "lead">Cursos más destacados</h4>
+              <div class="row-fluid">
+                <div class="span4">
+                  <div class="container-item">
+                    <div class="item2" style="background-image: url(images/large-icon.png)">
+                      <div class="item-overlay">
+
+                        <div class="sale-tag"><span>NUEVO</span></div>
+                      </div>
+                      <div class="item-content">
+                        <div class="item-top-content">
+                          <div class="item-top-content-inner">
+                            <div class="item-product">
+                              <div class="item-top-title">
+                                <h5>Ipath lowrunner</h5>
+                                <p class="subdescription">
+                                  Low skateshoes - Grey
+                                </p>
+                              </div>
+                            </div>
+
+                          </div>  
+                        </div>
+                        <div class="item-add-content">
+                          <div class="item-add-content-inner">
+                            <!-- <div class="section">
+                              <h4>Sizes</h4>
+                              <p>40,41,42,43,44,45</p>
+                            </div> -->
+                            <div class="section">
+                              <a href="#" class="btn btn-small">Ver más</a>
+                              <a href="#" class="btn btn-small">Inscribir</a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
                 </div>
-                
+
+                <div class="span4">
+                  <div class="container-item">
+                    <div class="item2" style="background-image: url(images/large-icon1.png)">
+                      <div class="item-overlay">
+                        <div class="sale-tag"><span>NUEVO</span></div>
+                      </div>
+                      <div class="item-content">
+                        <div class="item-top-content">
+                          <div class="item-top-content-inner">
+                            <div class="item-product">
+                              <div class="item-top-title">
+                                <h5>Ipath lowrunner</h5>
+                                <p class="subdescription">
+                                  Low skateshoes - Grey
+                                </p>
+                              </div>
+                            </div>
+                          </div>  
+                        </div>
+                        <div class="item-add-content">
+                          <div class="item-add-content-inner">
+                            <!-- <div class="section">
+                              <h4>Sizes</h4>
+                              <p>40,41,42,43,44,45</p>
+                            </div> -->
+                            <div class="section">
+                              <a href="#" class="btn btn-small">Ver más</a>
+                              <a href="#" class="btn btn-small">Inscribir</a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="span4">
+                  <div class="container-item">
+                    <div class="item2" style="background-image: url(images/PMH-02.jpg)">
+                      <div class="item-overlay">
+
+                        <div class="sale-tag"><span>NUEVO</span></div>
+                      </div>
+                      <div class="item-content">
+                        <div class="item-top-content">
+                          <div class="item-top-content-inner">
+                            <div class="item-product">
+                              <div class="item-top-title">
+                                <h5>Ipath lowrunner</h5>
+                                <p class="subdescription">
+                                  Low skateshoes - Grey
+                                </p>
+                              </div>
+                            </div>
+
+                          </div>  
+                        </div>
+                        <div class="item-add-content">
+                          <div class="item-add-content-inner">
+                            <!-- <div class="section">
+                              <h4>Sizes</h4>
+                              <p>40,41,42,43,44,45</p>
+                            </div> -->
+                            <div class="section">
+                              <a href="#" class="btn btn-small">Ver más</a>
+                              <a href="#" class="btn btn-small">Inscribir</a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+
+              </div>
             </div>
     	</div>
     <br/><br/><br/><br/>  
-    <div class="container">
+<div class="container">
 <h4 class = "lead">Cursos más destacados</h4>
-      <div class="row-fluid">
-            <ul class="thumbnails">
-              <li class="span3">
-                <div class="thumbnail">
-                  <img data-src="holder.js/260x180" alt="300x200" style="width: 260px; height: 180px;" src="images/large-icon1.png">
-                  <div class="caption">
-                    <h4 class="lead">Thumbnail label</h4>
-                    <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-                    <p> <a href="#" class="btn btn-small">Inscribir</a> <a href="#" class="btn btn-small">Ver más</a></p>
-                  </div>
-                </div>
-              </li>
-              <li class="span3">
-                <div class="thumbnail">
-                  <img data-src="holder.js/260x180" alt="300x200" style="width: 260px; height: 180px;" src="images/large-icon.png">
-                  <div class="caption">
-                    <h4 class="lead">Thumbnail label</h4>
-                    <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-                    <p> <a href="#" class="btn btn-small">Inscribir</a> <a href="#" class="btn btn-small">Ver más</a></p>
-                  </div>
-                </div>
-              </li>
-              <li class="span3">
-                <div class="thumbnail">
-                  <img data-src="holder.js/260x180" alt="300x200" style="width: 260px; height: 180px;" src="images/PMH-02.jpg">
-                  <div class="caption">
-                    <h4 class="lead">Thumbnail label</h4>
-                    <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-                    <p> <a href="#" class="btn btn-small">Inscribir</a> <a href="#" class="btn btn-small">Ver más</a></p>
-                  </div>
-                </div>
-              </li>
-              <li class="span3">
-                <div class="thumbnail">
-                  <img data-src="holder.js/260x180" alt="300x200" style="width: 260px; height: 180px;" src="images/large-icon1.png">
-                  <div class="caption">
-                    <h4 class="lead">Thumbnail label</h4>
-                    <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-                    <p> <a href="#" class="btn btn-small">Inscribir</a> <a href="#" class="btn btn-small">Ver más</a></p>
-                  </div>
-                </div>
-              </li>
-            </ul>
-          </div>
+  <div class="row-fluid">
+    <div class="span4">
+      <div class="container-item">
+        <div class="item2" style="background-image: url(images/large-icon.png)">
+          <div class="item-overlay">
 
+            <div class="sale-tag"><span>NUEVO</span></div>
           </div>
+          <div class="item-content">
+            <div class="item-top-content">
+              <div class="item-top-content-inner">
+                <div class="item-product">
+                  <div class="item-top-title">
+                    <p>Ipath lowrunner</p>
+                    <p class="subdescription">
+                      Low skateshoes - Grey
+                    </p>
+                  </div>
+                </div>
+
+              </div>  
+            </div>
+            <div class="item-add-content">
+              <div class="item-add-content-inner">
+                <!-- <div class="section">
+                  <h4>Sizes</h4>
+                  <p>40,41,42,43,44,45</p>
+                </div> -->
+                <div class="section">
+                  <a href="#" class="btn btn-small">Ver más</a>
+                  <a href="#" class="btn btn-small">Inscribir</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="span4">
+      <div class="container-item">
+        <div class="item2" style="background-image: url(images/large-icon1.png)">
+          <div class="item-overlay">
+            <div class="sale-tag"><span>NUEVO</span></div>
+          </div>
+          <div class="item-content">
+            <div class="item-top-content">
+              <div class="item-top-content-inner">
+                <div class="item-product">
+                  <div class="item-top-title">
+                    <p>Ipath lowrunner</p>
+                    <p class="subdescription">
+                      Low skateshoes - Grey
+                    </p>
+                  </div>
+                </div>
+              </div>  
+            </div>
+            <div class="item-add-content">
+              <div class="item-add-content-inner">
+                <!-- <div class="section">
+                  <h4>Sizes</h4>
+                  <p>40,41,42,43,44,45</p>
+                </div> -->
+                <div class="section">
+                  <a href="#" class="btn btn-small">Ver más</a>
+                  <a href="#" class="btn btn-small">Inscribir</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="span4">
+      <div class="container-item">
+        <div class="item2" style="background-image: url(images/PMH-02.jpg)">
+          <div class="item-overlay">
+
+            <div class="sale-tag"><span>NUEVO</span></div>
+          </div>
+          <div class="item-content">
+            <div class="item-top-content">
+              <div class="item-top-content-inner">
+                <div class="item-product">
+                  <div class="item-top-title">
+                    <p>Ipath lowrunner</p>
+                    <p class="subdescription">
+                      Low skateshoes - Grey
+                    </p>
+                  </div>
+                </div>
+
+              </div>  
+            </div>
+            <div class="item-add-content">
+              <div class="item-add-content-inner">
+                <!-- <div class="section">
+                  <h4>Sizes</h4>
+                  <p>40,41,42,43,44,45</p>
+                </div> -->
+                <div class="section">
+                  <a href="#" class="btn btn-small">Ver más</a>
+                  <a href="#" class="btn btn-small">Inscribir</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+  </div>
+</div>
+
+
+
