@@ -9,39 +9,69 @@ $this->breadcrumbs=array(
 );
 ?>
 
-<h1>Login</h1>
+<div class = "row-fluid">
+	<div class = "span6">
+		<p>Crear una cuenta gratis en univeonline</p>
+		<?php $form=$this->beginWidget('bootstrap.widgets.TbActiveForm', array(
+			'id'=>'register-form',
+		    'type'=>'horizontal',
+			'enableClientValidation'=>true,
+			'clientOptions'=>array(
+				'validateOnSubmit'=>true,
+			),
+		)); ?>	
 
-<p>Please fill out the following form with your login credentials:</p>
+		<?php echo $form->textFieldRow($model,'username'); ?>
 
-<div class="form">
-
-<?php $form=$this->beginWidget('bootstrap.widgets.TbActiveForm', array(
-	'id'=>'login-form',
-    'type'=>'horizontal',
-	'enableClientValidation'=>true,
-	'clientOptions'=>array(
-		'validateOnSubmit'=>true,
-	),
-)); ?>
-
-	<p class="note">Fields with <span class="required">*</span> are required.</p>
-
-	<?php echo $form->textFieldRow($model,'username'); ?>
-
-	<?php echo $form->passwordFieldRow($model,'password',array(
-        'hint'=>'Hint: You may login with <kbd>demo</kbd>/<kbd>demo</kbd> or <kbd>admin</kbd>/<kbd>admin</kbd>',
-    )); ?>
-
-	<?php echo $form->checkBoxRow($model,'rememberMe'); ?>
-
-	<div class="form-actions">
-		<?php $this->widget('bootstrap.widgets.TbButton', array(
-            'buttonType'=>'submit',
-            'type'=>'primary',
-            'label'=>'Login',
-        )); ?>
+		<?php echo $form->passwordFieldRow($model,'password',array(
+		)); ?>
+		<?php echo $form->captchaRow($model,'password',array(
+		)); ?>
+		<div class="form-actions">
+			<?php $this->widget('bootstrap.widgets.TbButton', array(
+	            'buttonType'=>'submit',
+	            'type'=>'primary',
+	            'label'=>'Login',
+	        )); ?>
+		</div>
+		<?php $this->endWidget(); ?>
 	</div>
+	<div class = "span6">
+	<h1>Login</h1>
 
-<?php $this->endWidget(); ?>
+	<p>Please fill out the following form with your login credentials:</p>
 
-</div><!-- form -->
+	<div class="form">
+
+	<?php $form=$this->beginWidget('bootstrap.widgets.TbActiveForm', array(
+		'id'=>'login-form',
+	    'type'=>'horizontal',
+		'enableClientValidation'=>true,
+		'clientOptions'=>array(
+			'validateOnSubmit'=>true,
+		),
+	)); ?>
+
+		<p class="note">Fields with <span class="required">*</span> are required.</p>
+
+		<?php echo $form->textFieldRow($model,'username'); ?>
+
+		<?php echo $form->passwordFieldRow($model,'password',array(
+	        'hint'=>'Hint: You may login with <kbd>demo</kbd>/<kbd>demo</kbd> or <kbd>admin</kbd>/<kbd>admin</kbd>',
+	    )); ?>
+
+		<?php echo $form->checkBoxRow($model,'rememberMe'); ?>
+
+		<div class="form-actions">
+			<?php $this->widget('bootstrap.widgets.TbButton', array(
+	            'buttonType'=>'submit',
+	            'type'=>'primary',
+	            'label'=>'Login',
+	        )); ?>
+		</div>
+
+	<?php $this->endWidget(); ?>
+
+	</div><!-- form -->
+</div>
+</div>
