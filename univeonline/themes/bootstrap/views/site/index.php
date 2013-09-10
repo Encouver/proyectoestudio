@@ -80,7 +80,7 @@ $cs->registerScriptFile($baseUrl.'/js/jquery-ui-1.10.3.custom.min.js');
               <div class="row-fluid">
                 <div class="span4">
                   <div class="container-item">
-                    <div class="item2" style="background-image: url(images/large-icon.png)">
+                    <div class="item2" style="background-image: url(images/bu1.png)">
                       <div class="item-overlay">
 
                       </div>
@@ -118,7 +118,7 @@ $cs->registerScriptFile($baseUrl.'/js/jquery-ui-1.10.3.custom.min.js');
 
                 <div class="span4">
                   <div class="container-item">
-                    <div class="item2" style="background-image: url(images/large-icon1.png)">
+                    <div class="item2" style="background-image: url(images/bu2.jpg)">
                       <div class="item-overlay">
                         <div class="sale-tag"><span>NUEVO</span></div>
                       </div>
@@ -274,7 +274,7 @@ $cs->registerScriptFile($baseUrl.'/js/jquery-ui-1.10.3.custom.min.js');
 
                 <div class="span4">
                   <div class="container-item">
-                    <div class="item2" style="background-image: url(images/PMH-02.jpg)">
+                    <div class="item2" style="background-image: url(images/bu3.jpg)">
                       <div class="item-overlay">
 
                         <div class="sale-tag"><span>NUEVO</span></div>
