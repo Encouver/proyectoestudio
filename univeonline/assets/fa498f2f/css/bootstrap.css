@@ -628,7 +628,7 @@ p {
 .lead {
   margin-bottom: 20px;
   font-size: 24px;
-  font-weight: 200;
+  font-weight: 300;
   line-height: 30px;
 }
 small {
@@ -4782,6 +4782,7 @@ input[type="submit"].btn.btn-mini {
   margin-left: -20px;
   list-style: none;
   *zoom: 1;
+  background-color: #ffffff;
 }
 .thumbnails:before,
 .thumbnails:after {
