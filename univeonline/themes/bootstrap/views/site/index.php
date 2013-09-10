@@ -439,3 +439,51 @@ $cs->registerScriptFile($baseUrl.'/js/jquery-ui-1.10.3.custom.min.js');
 
 
 
+    <div class="container">
+<h4 class = "lead">Cursos más destacados</h4>
+      <div class="row-fluid">
+            <ul class="thumbnails">
+              <li class="span3">
+                <div class="thumbnail">
+                  <img data-src="holder.js/260x180" alt="300x200" style="width: 260px; height: 180px;" src="images/large-icon1.png">
+                  <div class="caption">
+                    <h4 class="lead">Thumbnail label</h4>
+                    <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                    <p> <a href="#" class="btn btn-small">Inscribir</a> <a href="#" class="btn btn-small">Ver más</a></p>
+                  </div>
+                </div>
+              </li>
+              <li class="span3">
+                <div class="thumbnail">
+                  <img data-src="holder.js/260x180" alt="300x200" style="width: 260px; height: 180px;" src="images/large-icon.png">
+                  <div class="caption">
+                    <h4 class="lead">Thumbnail label</h4>
+                    <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                    <p> <a href="#" class="btn btn-small">Inscribir</a> <a href="#" class="btn btn-small">Ver más</a></p>
+                  </div>
+                </div>
+              </li>
+              <li class="span3">
+                <div class="thumbnail">
+                  <img data-src="holder.js/260x180" alt="300x200" style="width: 260px; height: 180px;" src="images/PMH-02.jpg">
+                  <div class="caption">
+                    <h4 class="lead">Thumbnail label</h4>
+                    <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                    <p> <a href="#" class="btn btn-small">Inscribir</a> <a href="#" class="btn btn-small">Ver más</a></p>
+                  </div>
+                </div>
+              </li>
+              <li class="span3">
+                <div class="thumbnail">
+                  <img data-src="holder.js/260x180" alt="300x200" style="width: 260px; height: 180px;" src="images/large-icon1.png">
+                  <div class="caption">
+                    <h4 class="lead">Thumbnail label</h4>
+                    <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                    <p> <a href="#" class="btn btn-small">Inscribir</a> <a href="#" class="btn btn-small">Ver más</a></p>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          </div>
