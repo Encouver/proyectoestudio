@@ -83,7 +83,6 @@ $cs->registerScriptFile($baseUrl.'/js/jquery-ui-1.10.3.custom.min.js');
                     <div class="item2" style="background-image: url(images/large-icon.png)">
                       <div class="item-overlay">
 
-                        <div class="sale-tag"><span>NUEVO</span></div>
                       </div>
                       <div class="item-content">
                         <div class="item-top-content">
@@ -436,126 +435,7 @@ $cs->registerScriptFile($baseUrl.'/js/jquery-ui-1.10.3.custom.min.js');
               </div>
             </div>
     	</div>
-    <br/><br/><br/><br/>  
-<div class="container">
-<h4 class = "lead">Cursos más destacados</h4>
-  <div class="row-fluid">
-    <div class="span4">
-      <div class="container-item">
-        <div class="item2" style="background-image: url(images/large-icon.png)">
-          <div class="item-overlay">
 
-            <div class="sale-tag"><span>NUEVO</span></div>
-          </div>
-          <div class="item-content">
-            <div class="item-top-content">
-              <div class="item-top-content-inner">
-                <div class="item-product">
-                  <div class="item-top-title">
-                    <p>Ipath lowrunner</p>
-                    <p class="subdescription">
-                      Low skateshoes - Grey
-                    </p>
-                  </div>
-                </div>
-
-              </div>  
-            </div>
-            <div class="item-add-content">
-              <div class="item-add-content-inner">
-                <!-- <div class="section">
-                  <h4>Sizes</h4>
-                  <p>40,41,42,43,44,45</p>
-                </div> -->
-                <div class="section">
-                  <a href="#" class="btn btn-small">Ver más</a>
-                  <a href="#" class="btn btn-small">Inscribir</a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-      </div>
-    </div>
-
-    <div class="span4">
-      <div class="container-item">
-        <div class="item2" style="background-image: url(images/large-icon1.png)">
-          <div class="item-overlay">
-            <div class="sale-tag"><span>NUEVO</span></div>
-          </div>
-          <div class="item-content">
-            <div class="item-top-content">
-              <div class="item-top-content-inner">
-                <div class="item-product">
-                  <div class="item-top-title">
-                    <p>Ipath lowrunner</p>
-                    <p class="subdescription">
-                      Low skateshoes - Grey
-                    </p>
-                  </div>
-                </div>
-              </div>  
-            </div>
-            <div class="item-add-content">
-              <div class="item-add-content-inner">
-                <!-- <div class="section">
-                  <h4>Sizes</h4>
-                  <p>40,41,42,43,44,45</p>
-                </div> -->
-                <div class="section">
-                  <a href="#" class="btn btn-small">Ver más</a>
-                  <a href="#" class="btn btn-small">Inscribir</a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="span4">
-      <div class="container-item">
-        <div class="item2" style="background-image: url(images/PMH-02.jpg)">
-          <div class="item-overlay">
-
-            <div class="sale-tag"><span>NUEVO</span></div>
-          </div>
-          <div class="item-content">
-            <div class="item-top-content">
-              <div class="item-top-content-inner">
-                <div class="item-product">
-                  <div class="item-top-title">
-                    <p>Ipath lowrunner</p>
-                    <p class="subdescription">
-                      Low skateshoes - Grey
-                    </p>
-                  </div>
-                </div>
-
-              </div>  
-            </div>
-            <div class="item-add-content">
-              <div class="item-add-content-inner">
-                <!-- <div class="section">
-                  <h4>Sizes</h4>
-                  <p>40,41,42,43,44,45</p>
-                </div> -->
-                <div class="section">
-                  <a href="#" class="btn btn-small">Ver más</a>
-                  <a href="#" class="btn btn-small">Inscribir</a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-
-  </div>
-</div>
 
 
 
