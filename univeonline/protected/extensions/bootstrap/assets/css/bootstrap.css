@@ -3426,6 +3426,7 @@ input[type="submit"].btn.btn-mini {
 }
 .nav > li > a {
   display: block;
+  font-family: "Roboto:100", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 .nav > li > a:hover,
 .nav > li > a:focus {
