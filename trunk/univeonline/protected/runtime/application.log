@@ -1253,6 +1253,132 @@ Stack trace:
 REQUEST_URI=/proyectoestudio/univeonline/index.php?r=site/login
 HTTP_REFERER=http://localhost/proyectoestudio/univeonline/index.php?r=site/index
 ---
+<<<<<<< .mine
+2013/09/11 22:17:57 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'El sistema no ha podido encontrar la acción "cursos" solicitada.' in C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CController.php(270): CController->missingAction('cursos')
+#1 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('cursos')
+#2 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/cursos')
+#3 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\proyectoestudio\univeonline\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/proyectoestudio/univeonline/index.php?r=site/cursos
+HTTP_REFERER=http://localhost/proyectoestudio/univeonline/index.php?r=site/contact
+---
+2013/09/11 22:18:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'El sistema no ha podido encontrar la acción "cursos" solicitada.' in C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CController.php(270): CController->missingAction('cursos')
+#1 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('cursos')
+#2 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/cursos')
+#3 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\proyectoestudio\univeonline\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/proyectoestudio/univeonline/index.php?r=site/cursos
+HTTP_REFERER=http://localhost/proyectoestudio/univeonline/index.php?r=site/index
+---
+2013/09/11 22:18:32 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'El sistema no ha podido encontrar la acción "cursos" solicitada.' in C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CController.php(270): CController->missingAction('cursos')
+#1 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('cursos')
+#2 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/cursos')
+#3 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\proyectoestudio\univeonline\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/proyectoestudio/univeonline/index.php?r=site/cursos
+HTTP_REFERER=http://localhost/proyectoestudio/univeonline/index.php?r=site/index
+---
+2013/09/11 22:19:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'El sistema no ha podido encontrar la acción "cursos" solicitada.' in C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CController.php(270): CController->missingAction('cursos')
+#1 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('cursos')
+#2 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/cursos')
+#3 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\proyectoestudio\univeonline\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/proyectoestudio/univeonline/index.php?r=site/cursos
+HTTP_REFERER=http://localhost/proyectoestudio/univeonline/index.php?r=site/index
+---
+2013/09/11 22:20:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'El sistema no ha podido encontrar la acción "cursos" solicitada.' in C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CController.php(270): CController->missingAction('cursos')
+#1 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('cursos')
+#2 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/cursos')
+#3 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\proyectoestudio\univeonline\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/proyectoestudio/univeonline/index.php?r=site/cursos&view=about
+HTTP_REFERER=http://localhost/proyectoestudio/univeonline/index.php?r=site/cursos
+---
+2013/09/11 22:20:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'El sistema no ha podido encontrar la acción "cursos" solicitada.' in C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CController.php(270): CController->missingAction('cursos')
+#1 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('cursos')
+#2 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/cursos')
+#3 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\proyectoestudio\univeonline\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/proyectoestudio/univeonline/index.php?r=site/cursos&view=about
+HTTP_REFERER=http://localhost/proyectoestudio/univeonline/index.php?r=site/index
+---
+2013/09/11 22:21:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'El sistema no ha podido encontrar la acción "cursos" solicitada.' in C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CController.php(270): CController->missingAction('cursos')
+#1 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('cursos')
+#2 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/cursos')
+#3 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\proyectoestudio\univeonline\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/proyectoestudio/univeonline/index.php?r=site/cursos&view=about
+HTTP_REFERER=http://localhost/proyectoestudio/univeonline/index.php?r=site/page&view=about
+---
+2013/09/11 22:21:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'El sistema no ha podido encontrar la acción "cursos" solicitada.' in C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CController.php(270): CController->missingAction('cursos')
+#1 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('cursos')
+#2 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/cursos')
+#3 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\proyectoestudio\univeonline\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/proyectoestudio/univeonline/index.php?r=site/cursos&view=about
+HTTP_REFERER=http://localhost/proyectoestudio/univeonline/index.php?r=site/cursos&view=about
+---
+2013/09/11 22:21:35 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'La vista solicitada "cursos" no fue encontrada.' in C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\actions\CViewAction.php:112
+Stack trace:
+#0 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\actions\CViewAction.php(123): CViewAction->resolveView('cursos')
+#1 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\actions\CAction.php(76): CViewAction->run()
+#2 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CController.php(308): CAction->runWithParams(Array)
+#3 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CController.php(286): CController->runAction(Object(CViewAction))
+#4 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CViewAction), Array)
+#5 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('page')
+#6 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/page')
+#7 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#8 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\proyectoestudio\univeonline\index.php(13): CApplication->run()
+#9 {main}
+REQUEST_URI=/proyectoestudio/univeonline/index.php?r=site/page&view=cursos
+HTTP_REFERER=http://localhost/proyectoestudio/univeonline/index.php?r=site/index
+---
+2013/09/11 22:21:56 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'El sistema no ha podido encontrar la acción "cursos" solicitada.' in C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CController.php(270): CController->missingAction('cursos')
+#1 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('cursos')
+#2 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/cursos')
+#3 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\proyectoestudio\univeonline\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/proyectoestudio/univeonline/index.php?r=site/cursos
+HTTP_REFERER=http://localhost/proyectoestudio/univeonline/index.php?r=site/index
+---
+2013/09/11 22:22:45 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'El sistema no ha podido encontrar la acción "cursos" solicitada.' in C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CController.php(270): CController->missingAction('cursos')
+#1 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('cursos')
+#2 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/cursos')
+#3 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\proyectoestudio\univeonline\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/proyectoestudio/univeonline/index.php?r=site/cursos
+---
+=======
 >>>>>>> .r212
 2013/09/11 22:40:02 [error] [exception.CException] exception 'CException' with message 'SiteController tiene una llamada extra a endWidget() en su vista.' in C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CBaseController.php:210
 Stack trace:
@@ -1274,3 +1400,4 @@ Stack trace:
 REQUEST_URI=/proyectoestudio/univeonline/index.php?r=site/login
 HTTP_REFERER=http://localhost/proyectoestudio/univeonline/
 ---
+>>>>>>> .r214
