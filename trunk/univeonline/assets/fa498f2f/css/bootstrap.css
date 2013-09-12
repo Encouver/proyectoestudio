@@ -624,10 +624,12 @@ footer a:hover {
 /* end responsive footer fix */
 p {
   margin: 0 0 10px;
+  font-weight: 300;
 }
 .lead {
   margin-bottom: 20px;
-  font-size: 24px;
+  /*font-size: @baseFontSize * 1.5;*/
+
   font-weight: 300;
   line-height: 30px;
 }
@@ -1463,7 +1465,8 @@ select:focus:invalid:focus {
   padding: 19px 20px 20px;
   margin-top: 20px;
   margin-bottom: 20px;
-  background-color: #f5f5f5;
+  /*  background-color: @formActionsBackground;*/
+
   border-top: 1px solid #e5e5e5;
   *zoom: 1;
 }
@@ -3426,6 +3429,7 @@ input[type="submit"].btn.btn-mini {
 }
 .nav > li > a {
   display: block;
+  font-family: "Roboto:100", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 .nav > li > a:hover,
 .nav > li > a:focus {
