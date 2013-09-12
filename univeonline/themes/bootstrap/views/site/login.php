@@ -27,7 +27,18 @@ $this->breadcrumbs=array(
 
 			<?php echo $form->textFieldRow($model,'username'); ?>
 
-			<?php echo $form->passwordFieldRow($model,'password',array(
+		<?php echo $form->passwordFieldRow($model,'password',array(
+		)); ?>
+		<?php echo $form->captchaRow($model,'password',array(
+		)); ?>
+		<div class="form-actions">
+			<?php $this->widget('bootstrap.widgets.TbButton', array(
+	            'buttonType'=>'submit',
+	            'type'=>'primary',
+	            'label'=>'Login',
+	        )); ?>
+
+		<?php echo $form->passwordFieldRow($model,'password',array(		)); ?>		<?php echo $form->captchaRow($model,'password',array(		)); ?>		<div class="form-actions">			<?php $this->widget('bootstrap.widgets.TbButton', array(	            'buttonType'=>'submit',	            'type'=>'primary',	            'label'=>'Login',	        )); ?>			<?php echo $form->passwordFieldRow($model,'password',array(
 			)); ?>
 			<?php echo $form->captchaRow($model,'password',array(
 			)); ?>
@@ -39,9 +50,16 @@ $this->breadcrumbs=array(
 		        )); ?>
 			</div>
 			<?php $this->endWidget(); ?>
+		
+		<div class="addthis_toolbox">
+			<h4>Login Social</h4>
+		<a class="addthis_login_facebook"></a>
+		<a class="addthis_login_google"></a>
 		</div>
-		<div class = "span6">
-			<h4 class ="lead">¿Ya tienes cuenta? Inicia sesión</h4>
+		
+	</div>
+	<div class = "span6">
+	<h1>Login</h1>
 
 			<p>Please fill out the following form with your login credentials:</p>
 
@@ -80,3 +98,28 @@ $this->breadcrumbs=array(
 		</div>
 	</div>
 </div>
+</div>
+
+
+
+<script>
+		var addthis_config = {
+		       login:{
+		               services:{
+		                       facebook:{
+		                               appId:'myfacebookid'
+		                       },
+		                       google:{
+		                               clientId:'mygoogleid'
+		                       }
+		               },
+		               callback:function(user){
+		                       /* Output user properties -- in your real app, you'd get rid of these*/
+		                       console.log(user.addthis_signature);
+		                       console.log(user.thumbnailURL);
+		                       console.log(user.service);
+		               }
+		       }
+		};
+		</script>
+		<script type="text/javascript" src="http://s7.addthis.com/js/300/addthis_widget.js#pubid=ra-4eb14e177a332b5f"></script>
