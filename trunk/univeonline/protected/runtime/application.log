@@ -1401,3 +1401,18 @@ REQUEST_URI=/proyectoestudio/univeonline/index.php?r=site/login
 HTTP_REFERER=http://localhost/proyectoestudio/univeonline/
 ---
 >>>>>>> .r214
+2013/09/14 15:33:09 [error] [php] copy(C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\proyectoestudio\univeonline\assets\ab3d5a34\js\bootstrap.js): failed to open stream: Invalid argument (C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\utils\CFileHelper.php:152)
+Stack trace:
+#0 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\utils\CFileHelper.php(63): copyDirectoryRecursive()
+#1 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CAssetManager.php(251): copyDirectory()
+#2 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\proyectoestudio\univeonline\protected\components\Controller.php(28): CAssetManager->publish()
+#3 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CController.php(306): SiteController->beforeAction()
+#4 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CController.php(286): SiteController->runAction()
+#5 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#6 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CWebApplication.php(282): SiteController->run()
+#7 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#8 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#9 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\proyectoestudio\univeonline\index.php(13): CWebApplication->run()
+REQUEST_URI=/proyectoestudio/univeonline/index.php
+in C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\proyectoestudio\univeonline\protected\components\Controller.php (28)
+in C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\proyectoestudio\univeonline\index.php (13)
