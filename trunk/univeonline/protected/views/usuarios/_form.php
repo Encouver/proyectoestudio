@@ -8,49 +8,49 @@
 
 <?php $form=$this->beginWidget('CActiveForm', array(
 	'id'=>'usuarios-form',
-	// Please note: When you enable ajax validation, make sure the corresponding
-	// controller action is handling ajax validation correctly.
-	// There is a call to performAjaxValidation() commented in generated controller code.
-	// See class documentation of CActiveForm for details on this.
 	'enableAjaxValidation'=>false,
 )); ?>
 
-	<p class="note">Fields with <span class="required">*</span> are required.</p>
+	<!--<p class="note">Fields with <span class="required">*</span> are required.</p>-->
 
-	<?php echo $form->errorSummary($model); ?>
+	<?php //echo $form->errorSummary($model); ?>
 
-	<div class="row">
-		<?php echo $form->labelEx($model,'idRedSocial'); ?>
+	<!--<div class="row">
+		<?php /*echo $form->labelEx($model,'idRedSocial'); ?>
 		<?php echo $form->textField($model,'idRedSocial'); ?>
-		<?php echo $form->error($model,'idRedSocial'); ?>
-	</div>
+		<?php echo $form->error($model,'idRedSocial');*/ ?>
+	</div>-->
 
-	<div class="row">
+	<!--<div class="row">-->
 		<?php echo $form->labelEx($model,'nombre'); ?>
 		<?php echo $form->textField($model,'nombre',array('size'=>60,'maxlength'=>255)); ?>
 		<?php echo $form->error($model,'nombre'); ?>
-	</div>
+	<!--</div>-->
 
-	<div class="row">
+	<!--<div class="row">-->
 		<?php echo $form->labelEx($model,'apellido'); ?>
 		<?php echo $form->textField($model,'apellido',array('size'=>60,'maxlength'=>255)); ?>
 		<?php echo $form->error($model,'apellido'); ?>
-	</div>
+	<!--</div>-->
 
-	<div class="row">
+	<!--<div class="row">-->
 		<?php echo $form->labelEx($model,'clave'); ?>
-		<?php echo $form->textField($model,'clave',array('size'=>60,'maxlength'=>255)); ?>
+		<?php echo $form->passwordField($model,'clave',array('size'=>60,'maxlength'=>255)); ?>
 		<?php echo $form->error($model,'clave'); ?>
-	</div>
+	<!--</div>-->
 
-	<div class="row">
+	<!--<div class="row">-->
 		<?php echo $form->labelEx($model,'correo'); ?>
 		<?php echo $form->textField($model,'correo',array('size'=>60,'maxlength'=>255)); ?>
 		<?php echo $form->error($model,'correo'); ?>
-	</div>
+	<!--</div>-->
+		<?php echo $form->labelEx($model,'terminos'); ?>
+		<?php echo $form->checkBox($model,'terminos'); ?>
+		<?php echo $form->error($model,'terminos'); ?>
 
-	<div class="row">
-		<?php echo $form->labelEx($model,'fechaNac'); ?>
+
+	<!--<div class="row">
+		<?php /*echo $form->labelEx($model,'fechaNac'); ?>
 		<?php echo $form->textField($model,'fechaNac'); ?>
 		<?php echo $form->error($model,'fechaNac'); ?>
 	</div>
@@ -99,7 +99,7 @@
 
 	<div class="row">
 		<?php echo $form->labelEx($model,'sexo'); ?>
-		<?php echo $form->checkBox($model,'sexo'); ?>
+		<?php echo $form->textField($model,'sexo',array('size'=>60,'maxlength'=>200)); ?>
 		<?php echo $form->error($model,'sexo'); ?>
 	</div>
 
@@ -118,13 +118,16 @@
 	<div class="row">
 		<?php echo $form->labelEx($model,'organizacion'); ?>
 		<?php echo $form->textField($model,'organizacion',array('size'=>60,'maxlength'=>255)); ?>
-		<?php echo $form->error($model,'organizacion'); ?>
-	</div>
-
-	<div class="row buttons">
-		<?php echo CHtml::submitButton($model->isNewRecord ? 'Create' : 'Save'); ?>
-	</div>
-
-<?php $this->endWidget(); ?>
+		<?php echo $form->error($model,'organizacion');*/ ?>
+	</div>-->
+	
+	<div class="form-actions">
+				<?php $this->widget('bootstrap.widgets.TbButton', array(
+				           'buttonType'=>'submit',
+				           'type'=>'primary',
+				           'label'=>'Crear cuenta',
+				       )); ?>
+				</div>
+			<?php $this->endWidget(); ?>
 
 </div><!-- form -->

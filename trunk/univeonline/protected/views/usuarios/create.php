@@ -3,16 +3,16 @@
 /* @var $model Usuarios */
 
 $this->breadcrumbs=array(
-	'Usuarioses'=>array('index'),
+	'Usuarios'=>array('index'),
 	'Create',
 );
 
-$this->menu=array(
+/*$this->menu=array(
 	array('label'=>'List Usuarios', 'url'=>array('index')),
 	array('label'=>'Manage Usuarios', 'url'=>array('admin')),
-);
+);*/
 ?>
 
-<h1>Create Usuarios</h1>
+<h5>Por favor, provee la siguiente información para registrarte en Univeonline</h5>
 
-<?php $this->renderPartial('_form', array('model'=>$model)); ?>
+<?php echo $this->renderPartial('_form', array('model'=>$model)); ?>

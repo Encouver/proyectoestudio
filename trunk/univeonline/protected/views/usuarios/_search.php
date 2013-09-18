@@ -88,7 +88,7 @@
 
 	<div class="row">
 		<?php echo $form->label($model,'sexo'); ?>
-		<?php echo $form->checkBox($model,'sexo'); ?>
+		<?php echo $form->textField($model,'sexo',array('size'=>60,'maxlength'=>200)); ?>
 	</div>
 
 	<div class="row">
