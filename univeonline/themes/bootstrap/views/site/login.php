@@ -10,73 +10,68 @@ $this->breadcrumbs=array(
 ?>
 
 <div class = "row-fluid">
-	<div class = "row-fluid">
-		<div class = "span6">
-				    <h3 class = "lead">Crear una cuenta gratis en univeonline</h3>
+	<div class = "span6">
+		<h3 class = "lead">Crear una cuenta gratis en univeonline</h3>
+		<br />
+		<?php $form=$this->beginWidget('bootstrap.widgets.TbActiveForm', array(
+			'id'=>'register-form',
+		    'type'=>'horizontal',
+			'enableClientValidation'=>true,
+			'clientOptions'=>array(
+				'validateOnSubmit'=>true,
+			),
+		)); ?>	
 
-			<br />
+			<?php echo $form->textFieldRow($model,'username'); ?>
+
+			<?php echo $form->passwordFieldRow($model,'password',array(
+			)); ?>
+			<?php echo $form->captchaRow($model,'password',array(
+			)); ?>
+
+			<div class="form-actions">
+				<?php $this->widget('bootstrap.widgets.TbButton', array(
+		            'buttonType'=>'submit',
+		            'type'=>'primary',
+		            'label'=>'Login',
+		      	)); ?>
+			</div>
+		<?php $this->endWidget(); ?>
+
+		<div class="addthis_toolbox">
+			<h5 class = "lead">También puedes iniciar sesión con:</h5>
+			<a class="addthis_login_facebook"></a>
+			<a class="addthis_login_google"></a>
+		</div>
+
+	</div>
+	
+	<div class = "span6">
+		<h5  class = "lead">¿Ya tienes cuenta? Inicia sesión aquí</h5>
+		<div class="form">
 			<?php $form=$this->beginWidget('bootstrap.widgets.TbActiveForm', array(
-				'id'=>'register-form',
+				'id'=>'login-form',
 			    'type'=>'horizontal',
 				'enableClientValidation'=>true,
 				'clientOptions'=>array(
 					'validateOnSubmit'=>true,
 				),
-			)); ?>	
-
-				<?php echo $form->textFieldRow($model,'username'); ?>
-
-				<?php echo $form->passwordFieldRow($model,'password',array(
-				)); ?>
-				<?php echo $form->captchaRow($model,'password',array(
-				)); ?>
-
-				<div class="form-actions">
-					<?php $this->widget('bootstrap.widgets.TbButton', array(
-			            'buttonType'=>'submit',
-			            'type'=>'primary',
-			            'label'=>'Login',
-			      	)); ?>
-				</div>
-			<?php $this->endWidget(); ?>
-
-			<div class="addthis_toolbox">
-				<h5 class = "lead">También puedes iniciar sesión con:</h5>
-				<a class="addthis_login_facebook"></a>
-				<a class="addthis_login_google"></a>
+			)); ?>
+			<p class="note">Fields with <span class="required">*</span> are required.</p>
+			<?php echo $form->textFieldRow($model,'username'); ?>
+			<?php echo $form->passwordFieldRow($model,'password',array(
+		        'hint'=>'Hint: You may login with <kbd>demo</kbd>/<kbd>demo</kbd> or <kbd>admin</kbd>/<kbd>admin</kbd>',
+		    )); ?>
+			<?php echo $form->checkBoxRow($model,'rememberMe'); ?>
+			<div class="form-actions">
+				<?php $this->widget('bootstrap.widgets.TbButton', array(
+		            'buttonType'=>'submit',
+		            'type'=>'primary',
+		            'label'=>'Login',
+		        )); ?>
 			</div>
-
-		</div>
-		
-		<div class = "span6">
-			<h5  class = "lead">¿Ya tienes cuenta? Inicia sesión aquí</h5>
-			<div class="form">
-				<?php $form=$this->beginWidget('bootstrap.widgets.TbActiveForm', array(
-					'id'=>'login-form',
-				    'type'=>'horizontal',
-					'enableClientValidation'=>true,
-					'clientOptions'=>array(
-						'validateOnSubmit'=>true,
-					),
-				)); ?>
-				<p class="note">Fields with <span class="required">*</span> are required.</p>
-				<?php echo $form->textFieldRow($model,'username'); ?>
-				<?php echo $form->passwordFieldRow($model,'password',array(
-			        'hint'=>'Hint: You may login with <kbd>demo</kbd>/<kbd>demo</kbd> or <kbd>admin</kbd>/<kbd>admin</kbd>',
-			    )); ?>
-				<?php echo $form->checkBoxRow($model,'rememberMe'); ?>
-				<div class="form-actions">
-					<?php $this->widget('bootstrap.widgets.TbButton', array(
-			            'buttonType'=>'submit',
-			            'type'=>'primary',
-			            'label'=>'Login',
-			        )); ?>
-				</div>
-				<?php $this->endWidget(); ?>
-			</div><!-- form -->
-
-
-		</div>
+			<?php $this->endWidget(); ?>
+		</div><!-- form -->
 
 
 	</div>
