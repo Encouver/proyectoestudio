@@ -33,7 +33,7 @@ $this->breadcrumbs=array(
 				<?php $this->widget('bootstrap.widgets.TbButton', array(
 		            'buttonType'=>'submit',
 		            'type'=>'primary',
-		            'label'=>'Login',
+		            'label'=>'Crear cuenta',
 		      	)); ?>
 			</div>
 		<?php $this->endWidget(); ?>
