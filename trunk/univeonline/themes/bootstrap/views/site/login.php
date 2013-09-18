@@ -26,7 +26,7 @@ $this->breadcrumbs=array(
 
 			<?php echo $form->passwordFieldRow($model,'password',array(
 			)); ?>
-			<?php echo $form->captchaRow($model,'password',array(
+			<?php echo $form->captchaRow($model,'verifyCode',array(
 			)); ?>
 
 			<div class="form-actions">
