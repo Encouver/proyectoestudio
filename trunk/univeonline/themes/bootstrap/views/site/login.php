@@ -10,13 +10,46 @@ $this->breadcrumbs=array(
 ?>
 
 <div class = "row-fluid">
-	<div class = "span12">
-	    <h3 class = "lead">Crear una cuenta gratis en univeonline</h3>
-	</div>
 	<div class = "row-fluid">
 		<div class = "span6">
-			<h1>Login</h1>
-			<p>Please fill out the following form with your login credentials:</p>
+				    <h3 class = "lead">Crear una cuenta gratis en univeonline</h3>
+
+			<br />
+			<?php $form=$this->beginWidget('bootstrap.widgets.TbActiveForm', array(
+				'id'=>'register-form',
+			    'type'=>'horizontal',
+				'enableClientValidation'=>true,
+				'clientOptions'=>array(
+					'validateOnSubmit'=>true,
+				),
+			)); ?>	
+
+				<?php echo $form->textFieldRow($model,'username'); ?>
+
+				<?php echo $form->passwordFieldRow($model,'password',array(
+				)); ?>
+				<?php echo $form->captchaRow($model,'password',array(
+				)); ?>
+
+				<div class="form-actions">
+					<?php $this->widget('bootstrap.widgets.TbButton', array(
+			            'buttonType'=>'submit',
+			            'type'=>'primary',
+			            'label'=>'Login',
+			      	)); ?>
+				</div>
+			<?php $this->endWidget(); ?>
+
+			<div class="addthis_toolbox">
+				<h5 class = "lead">También puedes iniciar sesión con:</h5>
+				<a class="addthis_login_facebook"></a>
+				<a class="addthis_login_google"></a>
+			</div>
+
+		</div>
+		
+		<div class = "span6">
+			<h5  class = "lead">¿Ya tienes cuenta? Inicia sesión aquí</h5>
 			<div class="form">
 				<?php $form=$this->beginWidget('bootstrap.widgets.TbActiveForm', array(
 					'id'=>'login-form',
@@ -41,48 +74,12 @@ $this->breadcrumbs=array(
 				</div>
 				<?php $this->endWidget(); ?>
 			</div><!-- form -->
+
+
 		</div>
-				<div class = "span6">
-			<br />
-			<?php $form=$this->beginWidget('bootstrap.widgets.TbActiveForm', array(
-				'id'=>'register-form',
-			    'type'=>'horizontal',
-				'enableClientValidation'=>true,
-				'clientOptions'=>array(
-					'validateOnSubmit'=>true,
-				),
-			)); ?>	
-
-			<?php echo $form->textFieldRow($model,'username'); ?>
-
-		<?php echo $form->passwordFieldRow($model,'password',array(
-		)); ?>
-		<?php echo $form->captchaRow($model,'password',array(
-		)); ?>
-		<div class="form-actions">
-			<?php $this->widget('bootstrap.widgets.TbButton', array(
-	            'buttonType'=>'submit',
-	            'type'=>'primary',
-	            'label'=>'Login',
-	        )); ?>
-
-			<?php $this->endWidget(); ?>
-		
-		<div class="addthis_toolbox">
-			<h4>Login Social</h4>
-		<a class="addthis_login_facebook"></a>
-		<a class="addthis_login_google"></a>
-		</div>
-		</div>
-		
-	</div>
-
 
 
 	</div>
-
-
-
 </div>
 
 
