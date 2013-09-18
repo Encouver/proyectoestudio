@@ -19,7 +19,7 @@
  * @property string $sesion
  * @property string $inicioSesion
  * @property string $ubicacion
- * @property boolean $sexo
+ * @property string $sexo
  * @property integer $interes
  * @property string $ocupacion
  * @property string $organizacion
@@ -31,6 +31,17 @@
  */
 class Usuarios extends CActiveRecord
 {
+	public $terminos;
+	/**
+	 * Returns the static model of the specified AR class.
+	 * @param string $className active record class name.
+	 * @return Usuarios the static model class
+	 */
+	public static function model($className=__CLASS__)
+	{
+		return parent::model($className);
+	}
+
 	/**
 	 * @return string the associated database table name
 	 */
@@ -47,13 +58,17 @@ class Usuarios extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('nombre, apellido, clave, correo, fechaNac, pais, ubicacion, sexo, ocupacion', 'required'),
+			array('nombre, apellido, clave, correo', 'required'),
+			array('terminos', 'compare', 'compareValue' => true,'message' => 'Debes aceptar ls terminos' ),
+			array('correo', 'email'),
+			array('correo', 'unique', 'attributeName'=> 'correo', 'caseSensitive' => 'false'),
 			array('idRedSocial, interes', 'numerical', 'integerOnly'=>true),
 			array('nombre, apellido, clave, correo, pais, sesion, inicioSesion, ubicacion, ocupacion, organizacion', 'length', 'max'=>255),
 			array('tipoArchivoFoto', 'length', 'max'=>100),
+			array('sexo', 'length', 'max'=>200),
 			array('recibirInformacion, fotoBinario', 'safe'),
 			// The following rule is used by search().
-			// @todo Please remove those attributes that should not be searched.
+			// Please remove those attributes that should not be searched.
 			array('id, idRedSocial, nombre, apellido, clave, correo, fechaNac, recibirInformacion, pais, fotoBinario, tipoArchivoFoto, tamanoFoto, sesion, inicioSesion, ubicacion, sexo, interes, ocupacion, organizacion', 'safe', 'on'=>'search'),
 		);
 	}
@@ -97,24 +112,18 @@ class Usuarios extends CActiveRecord
 			'interes' => 'Interes',
 			'ocupacion' => 'Ocupacion',
 			'organizacion' => 'Organizacion',
+			'terminos' => 'He leido, entiendo y acepto los terminos del sitio.'
 		);
 	}
 
 	/**
 	 * Retrieves a list of models based on the current search/filter conditions.
-	 *
-	 * Typical usecase:
-	 * - Initialize the model fields with values from filter form.
-	 * - Execute this method to get CActiveDataProvider instance which will filter
-	 * models according to data in model fields.
-	 * - Pass data provider to CGridView, CListView or any similar widget.
-	 *
-	 * @return CActiveDataProvider the data provider that can return the models
-	 * based on the search/filter conditions.
+	 * @return CActiveDataProvider the data provider that can return the models based on the search/filter conditions.
 	 */
 	public function search()
 	{
-		// @todo Please modify the following code to remove attributes that should not be searched.
+		// Warning: Please modify the following code to remove attributes that
+		// should not be searched.
 
 		$criteria=new CDbCriteria;
 
@@ -133,7 +142,7 @@ class Usuarios extends CActiveRecord
 		$criteria->compare('sesion',$this->sesion,true);
 		$criteria->compare('inicioSesion',$this->inicioSesion,true);
 		$criteria->compare('ubicacion',$this->ubicacion,true);
-		$criteria->compare('sexo',$this->sexo);
+		$criteria->compare('sexo',$this->sexo,true);
 		$criteria->compare('interes',$this->interes);
 		$criteria->compare('ocupacion',$this->ocupacion,true);
 		$criteria->compare('organizacion',$this->organizacion,true);
@@ -141,16 +150,5 @@ class Usuarios extends CActiveRecord
 		return new CActiveDataProvider($this, array(
 			'criteria'=>$criteria,
 		));
-	}
-
-	/**
-	 * Returns the static model of the specified AR class.
-	 * Please note that you should have this exact method in all your CActiveRecord descendants!
-	 * @param string $className active record class name.
-	 * @return Usuarios the static model class
-	 */
-	public static function model($className=__CLASS__)
-	{
-		return parent::model($className);
 	}
 }

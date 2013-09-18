@@ -23,13 +23,14 @@ class LoginForm extends CFormModel
 	{
 		return array(
 			// username and password are required
-			array('username, password, verifyCode', 'required'),
+			array('username, password', 'required'),
+			array('username', 'email'),
 			// rememberMe needs to be a boolean
 			array('rememberMe', 'boolean'),
 			// password needs to be authenticated
 			array('password', 'authenticate'),
 
-			array('verifyCode', 'captcha', 'allowEmpty'=>!CCaptcha::checkRequirements()),
+			//array('verifyCode', 'captcha', 'allowEmpty'=>!CCaptcha::checkRequirements()),
 		);
 	}
 
@@ -39,8 +40,8 @@ class LoginForm extends CFormModel
 	public function attributeLabels()
 	{
 		return array(
-			'rememberMe'=>'Remember me next time',
-			'verifyCode'=>'Captcha',
+			'rememberMe'=>'No cerrar sesión',
+			//'verifyCode'=>'Captcha',
 			'username' => 'Correo',
 			'password' => 'Clave'
 		);
