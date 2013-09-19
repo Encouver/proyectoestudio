@@ -9,6 +9,8 @@
 <?php $form=$this->beginWidget('CActiveForm', array(
 	'id'=>'usuarios-form',
 	'enableAjaxValidation'=>false,
+	'focus'=>array($model,'nombre')
+
 )); ?>
 
 	<!--<p class="note">Fields with <span class="required">*</span> are required.</p>-->

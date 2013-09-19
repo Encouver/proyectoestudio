@@ -21,7 +21,7 @@ $this->breadcrumbs=array(
 
 			<?php $form=$this->beginWidget('bootstrap.widgets.TbActiveForm', array(
 			'id'=>'login-form',
-			   'type'=>'horizontal',
+			  'type'=>'horizontal',
 			'enableClientValidation'=>true,
 			'clientOptions'=>array(
 			'validateOnSubmit'=>true,

@@ -2290,3 +2290,65 @@ Stack trace:
 REQUEST_URI=/proyectoestudio/univeonline/index.php?r=usuarios/create
 in C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\proyectoestudio\univeonline\protected\controllers\UsuariosController.php (79)
 in C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\proyectoestudio\univeonline\index.php (13)
+2013/09/18 23:56:25 [error] [exception.CException] exception 'CException' with message 'CActiveForm y sus behaviors no tienen un método o closure llamado "h5".' in C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\base\CComponent.php:266
+Stack trace:
+#0 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\proyectoestudio\univeonline\protected\views\usuarios\_form.php(55): CComponent->__call('h5', Array)
+#1 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\proyectoestudio\univeonline\protected\views\usuarios\_form.php(55): CActiveForm->h5(Object(Usuarios), 'terminos')
+#2 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CBaseController.php(126): require('C:\Program File...')
+#3 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\Program File...', Array, true)
+#4 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\Program File...', Array, true)
+#5 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\proyectoestudio\univeonline\protected\views\usuarios\create.php(22): CController->renderPartial('_form', Array)
+#6 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CBaseController.php(126): require('C:\Program File...')
+#7 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\Program File...', Array, true)
+#8 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\Program File...', Array, true)
+#9 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CController.php(782): CController->renderPartial('create', Array, true)
+#10 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\proyectoestudio\univeonline\protected\controllers\UsuariosController.php(83): CController->render('create', Array)
+#11 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\actions\CInlineAction.php(49): UsuariosController->actionCreate()
+#12 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#13 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#14 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#15 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#16 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#17 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#18 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#19 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#20 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('create')
+#21 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('usuarios/create')
+#22 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#23 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\proyectoestudio\univeonline\index.php(13): CApplication->run()
+#24 {main}
+REQUEST_URI=/proyectoestudio/univeonline/index.php?r=usuarios/create
+HTTP_REFERER=http://localhost/proyectoestudio/univeonline/index.php?r=site/login
+---
+2013/09/19 00:03:21 [error] [exception.CException] exception 'CException' with message 'La propiedad "CActiveForm"."type" no se encuentra definida.' in C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\base\CComponent.php:173
+Stack trace:
+#0 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CWidgetFactory.php(161): CComponent->__set('type', 'horizontal')
+#1 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CBaseController.php(146): CWidgetFactory->createWidget(Object(UsuariosController), 'CActiveForm', Array)
+#2 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CBaseController.php(189): CBaseController->createWidget('CActiveForm', Array)
+#3 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\proyectoestudio\univeonline\protected\views\usuarios\_form.php(13): CBaseController->beginWidget('CActiveForm', Array)
+#4 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CBaseController.php(126): require('C:\Program File...')
+#5 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\Program File...', Array, true)
+#6 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\Program File...', Array, true)
+#7 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\proyectoestudio\univeonline\protected\views\usuarios\create.php(22): CController->renderPartial('_form', Array)
+#8 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CBaseController.php(126): require('C:\Program File...')
+#9 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\Program File...', Array, true)
+#10 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\Program File...', Array, true)
+#11 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CController.php(782): CController->renderPartial('create', Array, true)
+#12 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\proyectoestudio\univeonline\protected\controllers\UsuariosController.php(83): CController->render('create', Array)
+#13 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\actions\CInlineAction.php(49): UsuariosController->actionCreate()
+#14 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#15 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#16 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#17 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#18 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#19 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#20 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#21 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#22 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('create')
+#23 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('usuarios/create')
+#24 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#25 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\proyectoestudio\univeonline\index.php(13): CApplication->run()
+#26 {main}
+REQUEST_URI=/proyectoestudio/univeonline/index.php?r=usuarios/create
+HTTP_REFERER=http://localhost/proyectoestudio/univeonline/index.php?r=site/login
+---
