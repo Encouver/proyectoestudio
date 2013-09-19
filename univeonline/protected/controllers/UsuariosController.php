@@ -66,6 +66,7 @@ class UsuariosController extends Controller
 
 		// Uncomment the following line if AJAX validation is needed
 		// $this->performAjaxValidation($model);
+			$claveActual = $model->clave;
 
 		if(isset($_POST['Usuarios']))
 		{
