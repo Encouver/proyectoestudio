@@ -69,7 +69,7 @@ class UsuariosController extends Controller
 
 		if(isset($_POST['Usuarios']))
 		{
-			
+			$claveActual = "";
 			$model->attributes=$_POST['Usuarios'];
 			$claveActual = $model->clave;
 			$model->clave = md5($model->clave);
