@@ -118,19 +118,19 @@ class Usuarios extends CActiveRecord
 			'clave' => 'Clave',
 			'correo' => 'Correo',
 			'fechaNac' => 'Fecha Nac',
-			'recibirInformacion' => 'Recibir Informacion',
+			'recibirInformacion' => 'Recibir información',
 			'pais' => 'Pais',
 			'fotoBinario' => 'Foto Binario',
 			'tipoArchivoFoto' => 'Tipo Archivo Foto',
 			'tamanoFoto' => 'Tamano Foto',
 			'sesion' => 'Sesion',
-			'inicioSesion' => 'Inicio Sesion',
+			'inicioSesion' => 'Inicio sesión',
 			'ubicacion' => 'Ubicacion',
 			'sexo' => 'Sexo',
 			'interes' => 'Interes',
 			'ocupacion' => 'Ocupacion',
 			'organizacion' => 'Organizacion',
-			'terminos' => 'He leido, entiendo y acepto los terminos del sitio.',
+			'terminos' => 'He leído, entiendo y acepto los términos del sitio',
 			'repetirCorreo'=> 'Confirmar correo'
 		);
 	}
