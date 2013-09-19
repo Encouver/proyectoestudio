@@ -11,6 +11,8 @@ $this->breadcrumbs=array(
 
 <div class = "row-fluid">
 
+		<h1  class = "lead" style="color: #656565; text-shadow: 0px 2px 3px #a7a7a7; font-family: 'Roboto', sans-serif;"> <x style="color: #048ac2">></x>Iniciar sesión</h1>
+
 
 
 	<div class = "span4 offset1">
