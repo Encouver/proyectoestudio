@@ -43,6 +43,13 @@
 		<?php echo $form->labelEx($model,'correo'); ?>
 		<?php echo $form->textField($model,'correo',array('size'=>60,'maxlength'=>255)); ?>
 		<?php echo $form->error($model,'correo'); ?>
+
+
+		<?php echo $form->labelEx($model,'repetirCorreo'); ?>
+		<?php echo $form->textField($model,'repetirCorreo',array('size'=>60,'maxlength'=>255)); ?>
+		<?php echo $form->error($model,'repetirCorreo'); ?>
+
+
 	<!--</div>-->
 		<?php echo $form->labelEx($model,'terminos'); ?>
 		<?php echo $form->checkBox($model,'terminos'); ?>

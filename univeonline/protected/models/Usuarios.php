@@ -32,6 +32,7 @@
 class Usuarios extends CActiveRecord
 {
 	public $terminos;
+	public $repetirCorreo;
 	/**
 	 * Returns the static model of the specified AR class.
 	 * @param string $className active record class name.
@@ -70,7 +71,24 @@ class Usuarios extends CActiveRecord
 			// The following rule is used by search().
 			// Please remove those attributes that should not be searched.
 			array('id, idRedSocial, nombre, apellido, clave, correo, fechaNac, recibirInformacion, pais, fotoBinario, tipoArchivoFoto, tamanoFoto, sesion, inicioSesion, ubicacion, sexo, interes, ocupacion, organizacion', 'safe', 'on'=>'search'),
+			array('repetirCorreo', 'validarCorreo'),
 		);
+	}
+
+	public function validarCorreo($attribute,$parans)
+	{
+			if($this->correo!=$this->repetirCorreo)
+			{
+				$this->addError('repetirCorreo','Tus direcciones de correo no coinciden. Inténtalo de nuevo.');
+			}
+	}
+
+	public function validatePassword($password){
+		return $this->hashPassword($password)===$this->clave;
+	}
+
+	public function hashPassword($password){
+		return md5($password);
 	}
 
 	/**
@@ -112,7 +130,8 @@ class Usuarios extends CActiveRecord
 			'interes' => 'Interes',
 			'ocupacion' => 'Ocupacion',
 			'organizacion' => 'Organizacion',
-			'terminos' => 'He leido, entiendo y acepto los terminos del sitio.'
+			'terminos' => 'He leido, entiendo y acepto los terminos del sitio.',
+			'repetirCorreo'=> 'Confirmar correo'
 		);
 	}
 
