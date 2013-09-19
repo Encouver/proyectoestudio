@@ -10,22 +10,13 @@ $this->breadcrumbs=array(
 ?>
 
 <div class = "row-fluid">
-	<div class = "span6">
-		<?php $this->widget('bootstrap.widgets.TbButton', array(
-           'buttonType'=>'link',
-           'type'=>'info',
-           'label'=>'Crear cuenta',
-           'size'=>'large',
-           'url' => 'index.php?r=usuarios/create',
 
 
-       )); ?>
-	</div>
 
-
-	<div class = "span6">
-		<h5  class = "lead">Inicia sesión</h5>
+	<div class = "span4 offset1">
 		<div class="form">
+		<h5  class = "lead">Inicia sesión con tu cuenta <b>univeonline</b></h5>
+
 			<?php $form=$this->beginWidget('bootstrap.widgets.TbActiveForm', array(
 			'id'=>'login-form',
 			   'type'=>'horizontal',
@@ -44,11 +35,35 @@ $this->breadcrumbs=array(
 				           'type'=>'primary',
 				           'label'=>'Entrar',
 				       )); ?>
+
 				</div>
+				<h6 class="lead"> ¿No puedes acceder a tu cuenta?</h6>
+
 			<?php $this->endWidget(); ?>
 		</div><!-- form -->
 
 
+	</div>
+	<div class = "span4 offset2">
+	<h5  class = "lead">O ingresa con: <br /><br />AQUI VA <br /><br /> EL WIDGET CON LAS <br /><br />REDES SPCIALES</h5>
+	</div>
+</div>
+<div class="clear"></div>
+<div class = "row">
+			
+
+
+	<div class = "span12"><center>
+	<h4  class = "lead">¿Eres nuevo?<b>
+		<?php $this->widget('bootstrap.widgets.TbButton', array(
+           'buttonType'=>'link',
+           'type'=>'link',
+           'label'=>'¡Crea tu cuenta ahora!',
+           'size'=>'medium',
+           'url' => 'index.php?r=usuarios/create',
+
+
+       )); ?></b></h4></center>
 	</div>
 
 </div>
