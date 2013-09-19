@@ -61,7 +61,7 @@ class Usuarios extends CActiveRecord
 			array('nombre, apellido, clave, correo', 'required'),
 			array('terminos', 'compare', 'compareValue' => true,'message' => 'Debes aceptar ls terminos' ),
 			array('correo', 'email'),
-			array('correo', 'unique', 'attributeName'=> 'correo', 'caseSensitive' => 'false'),
+			array('correo', 'unique', 'attributeName'=> 'correo', 'caseSensitive' => 'false', 'message' => 'Ya existe este correo'),
 			array('idRedSocial, interes', 'numerical', 'integerOnly'=>true),
 			array('nombre, apellido, clave, correo, pais, sesion, inicioSesion, ubicacion, ocupacion, organizacion', 'length', 'max'=>255),
 			array('tipoArchivoFoto', 'length', 'max'=>100),

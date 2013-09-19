@@ -69,11 +69,14 @@ class UsuariosController extends Controller
 
 		if(isset($_POST['Usuarios']))
 		{
+			
 			$model->attributes=$_POST['Usuarios'];
+			$claveActual = $model->clave;
+			$model->clave = md5($model->clave);
 			if($model->save())
 				$this->redirect(array('view','id'=>$model->id));
 		}
-
+		$model->clave = $claveActual;
 		$this->render('create',array(
 			'model'=>$model,
 		));
@@ -94,6 +97,7 @@ class UsuariosController extends Controller
 		if(isset($_POST['Usuarios']))
 		{
 			$model->attributes=$_POST['Usuarios'];
+			$model->clave = md5($model->clave);
 			if($model->save())
 				$this->redirect(array('view','id'=>$model->id));
 		}
