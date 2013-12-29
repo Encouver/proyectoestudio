@@ -2352,3 +2352,1184 @@ Stack trace:
 REQUEST_URI=/proyectoestudio/univeonline/index.php?r=usuarios/create
 HTTP_REFERER=http://localhost/proyectoestudio/univeonline/index.php?r=site/login
 ---
+2013/12/28 19:58:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'El sistema no ha podido encontrar la acción "oauthadmin" solicitada.' in C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CController.php(270): CController->missingAction('oauthadmin')
+#1 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('oauthadmin')
+#2 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/oauthadmin...')
+#3 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\proyectoestudio\univeonline\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/proyectoestudio/univeonline/index.php?r=site/oauthadmin/
+---
+2013/12/28 19:58:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'El sistema no ha podido encontrar la acción "oauthadmin" solicitada.' in C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CController.php(270): CController->missingAction('oauthadmin')
+#1 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('oauthadmin')
+#2 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/oauthadmin...')
+#3 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\proyectoestudio\univeonline\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/proyectoestudio/univeonline/index.php?r=site/oauthadmin/
+HTTP_REFERER=http://localhost/proyectoestudio/univeonline/index.php?r=site/oauthadmin/
+---
+2013/12/28 20:40:40 [error] [exception.CException] exception 'CException' with message 'The config.php file doesn't exists' in C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\proyectoestudio\univeonline\protected\extensions\hoauth\models\UserOAuth.php:118
+Stack trace:
+#0 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\proyectoestudio\univeonline\protected\extensions\hoauth\widgets\HOAuth.php(36): UserOAuth::getConfig()
+#1 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CBaseController.php(173): HOAuth->run()
+#2 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\proyectoestudio\univeonline\themes\bootstrap\views\site\login.php(52): CBaseController->widget('ext.hoauth.widg...')
+#3 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CBaseController.php(126): require('C:\Program File...')
+#4 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\Program File...', Array, true)
+#5 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\Program File...', Array, true)
+#6 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CController.php(782): CController->renderPartial('login', Array, true)
+#7 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\proyectoestudio\univeonline\protected\controllers\SiteController.php(98): CController->render('login', Array)
+#8 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionLogin()
+#9 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#10 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#11 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('login')
+#13 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/login')
+#14 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#15 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\proyectoestudio\univeonline\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/proyectoestudio/univeonline/index.php?r=site/login
+HTTP_REFERER=http://localhost/proyectoestudio/univeonline/index.php?r=site/oauthadmin/
+---
+2013/12/28 20:40:41 [error] [exception.CException] exception 'CException' with message 'The config.php file doesn't exists' in C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\proyectoestudio\univeonline\protected\extensions\hoauth\models\UserOAuth.php:118
+Stack trace:
+#0 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\proyectoestudio\univeonline\protected\extensions\hoauth\widgets\HOAuth.php(36): UserOAuth::getConfig()
+#1 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CBaseController.php(173): HOAuth->run()
+#2 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\proyectoestudio\univeonline\themes\bootstrap\views\site\login.php(52): CBaseController->widget('ext.hoauth.widg...')
+#3 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CBaseController.php(126): require('C:\Program File...')
+#4 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\Program File...', Array, true)
+#5 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\Program File...', Array, true)
+#6 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CController.php(782): CController->renderPartial('login', Array, true)
+#7 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\proyectoestudio\univeonline\protected\controllers\SiteController.php(98): CController->render('login', Array)
+#8 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionLogin()
+#9 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#10 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#11 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('login')
+#13 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/login')
+#14 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#15 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\proyectoestudio\univeonline\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/proyectoestudio/univeonline/index.php?r=site/login
+HTTP_REFERER=http://localhost/proyectoestudio/univeonline/index.php?r=site/login
+---
+2013/12/29 15:01:17 [error] [exception.CException] exception 'CException' with message 'The config.php file doesn't exists' in C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\proyectoestudio\univeonline\protected\extensions\hoauth\models\UserOAuth.php:118
+Stack trace:
+#0 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\proyectoestudio\univeonline\protected\extensions\hoauth\widgets\HOAuth.php(36): UserOAuth::getConfig()
+#1 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CBaseController.php(173): HOAuth->run()
+#2 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\proyectoestudio\univeonline\themes\bootstrap\views\site\login.php(52): CBaseController->widget('ext.hoauth.widg...')
+#3 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CBaseController.php(126): require('C:\Program File...')
+#4 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\Program File...', Array, true)
+#5 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\Program File...', Array, true)
+#6 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CController.php(782): CController->renderPartial('login', Array, true)
+#7 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\proyectoestudio\univeonline\protected\controllers\SiteController.php(98): CController->render('login', Array)
+#8 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionLogin()
+#9 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#10 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#11 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('login')
+#13 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/login')
+#14 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#15 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\proyectoestudio\univeonline\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/proyectoestudio/univeonline/index.php?r=site/login
+---
+2013/12/29 15:01:19 [error] [exception.CException] exception 'CException' with message 'The config.php file doesn't exists' in C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\proyectoestudio\univeonline\protected\extensions\hoauth\models\UserOAuth.php:118
+Stack trace:
+#0 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\proyectoestudio\univeonline\protected\extensions\hoauth\widgets\HOAuth.php(36): UserOAuth::getConfig()
+#1 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CBaseController.php(173): HOAuth->run()
+#2 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\proyectoestudio\univeonline\themes\bootstrap\views\site\login.php(52): CBaseController->widget('ext.hoauth.widg...')
+#3 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CBaseController.php(126): require('C:\Program File...')
+#4 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\Program File...', Array, true)
+#5 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\Program File...', Array, true)
+#6 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CController.php(782): CController->renderPartial('login', Array, true)
+#7 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\proyectoestudio\univeonline\protected\controllers\SiteController.php(98): CController->render('login', Array)
+#8 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionLogin()
+#9 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#10 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#11 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('login')
+#13 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/login')
+#14 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#15 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\proyectoestudio\univeonline\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/proyectoestudio/univeonline/index.php?r=site/login
+HTTP_REFERER=http://localhost/proyectoestudio/univeonline/index.php?r=site/login
+---
+2013/12/29 15:02:21 [error] [exception.CException] exception 'CException' with message 'The config.php file doesn't exists' in C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\proyectoestudio\univeonline\protected\extensions\hoauth\models\UserOAuth.php:118
+Stack trace:
+#0 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\proyectoestudio\univeonline\protected\extensions\hoauth\widgets\HOAuth.php(36): UserOAuth::getConfig()
+#1 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CBaseController.php(173): HOAuth->run()
+#2 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\proyectoestudio\univeonline\themes\bootstrap\views\site\login.php(52): CBaseController->widget('ext.hoauth.widg...')
+#3 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CBaseController.php(126): require('C:\Program File...')
+#4 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\Program File...', Array, true)
+#5 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\Program File...', Array, true)
+#6 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CController.php(782): CController->renderPartial('login', Array, true)
+#7 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\proyectoestudio\univeonline\protected\controllers\SiteController.php(98): CController->render('login', Array)
+#8 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionLogin()
+#9 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#10 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#11 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('login')
+#13 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/login')
+#14 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#15 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\proyectoestudio\univeonline\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/proyectoestudio/univeonline/index.php?r=site/login
+---
+2013/12/29 15:02:21 [error] [exception.CException] exception 'CException' with message 'The config.php file doesn't exists' in C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\proyectoestudio\univeonline\protected\extensions\hoauth\models\UserOAuth.php:118
+Stack trace:
+#0 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\proyectoestudio\univeonline\protected\extensions\hoauth\widgets\HOAuth.php(36): UserOAuth::getConfig()
+#1 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CBaseController.php(173): HOAuth->run()
+#2 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\proyectoestudio\univeonline\themes\bootstrap\views\site\login.php(52): CBaseController->widget('ext.hoauth.widg...')
+#3 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CBaseController.php(126): require('C:\Program File...')
+#4 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\Program File...', Array, true)
+#5 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\Program File...', Array, true)
+#6 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CController.php(782): CController->renderPartial('login', Array, true)
+#7 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\proyectoestudio\univeonline\protected\controllers\SiteController.php(98): CController->render('login', Array)
+#8 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionLogin()
+#9 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#10 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#11 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('login')
+#13 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/login')
+#14 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#15 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\proyectoestudio\univeonline\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/proyectoestudio/univeonline/index.php?r=site/login
+HTTP_REFERER=http://localhost/proyectoestudio/univeonline/index.php?r=site/login
+---
+2013/12/29 15:24:40 [error] [exception.CException] exception 'CException' with message 'The config.php file doesn't exists' in C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\proyectoestudio\univeonline\protected\extensions\hoauth\models\UserOAuth.php:118
+Stack trace:
+#0 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\proyectoestudio\univeonline\protected\extensions\hoauth\widgets\HOAuth.php(36): UserOAuth::getConfig()
+#1 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CBaseController.php(173): HOAuth->run()
+#2 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\proyectoestudio\univeonline\themes\bootstrap\views\site\login.php(52): CBaseController->widget('ext.hoauth.widg...')
+#3 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CBaseController.php(126): require('C:\Program File...')
+#4 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\Program File...', Array, true)
+#5 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\Program File...', Array, true)
+#6 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CController.php(782): CController->renderPartial('login', Array, true)
+#7 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\proyectoestudio\univeonline\protected\controllers\SiteController.php(124): CController->render('login', Array)
+#8 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionLogin()
+#9 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#10 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#11 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('login')
+#13 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/login')
+#14 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#15 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\proyectoestudio\univeonline\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/proyectoestudio/univeonline/index.php?r=site/login
+---
+2013/12/29 15:24:41 [error] [exception.CException] exception 'CException' with message 'The config.php file doesn't exists' in C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\proyectoestudio\univeonline\protected\extensions\hoauth\models\UserOAuth.php:118
+Stack trace:
+#0 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\proyectoestudio\univeonline\protected\extensions\hoauth\widgets\HOAuth.php(36): UserOAuth::getConfig()
+#1 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CBaseController.php(173): HOAuth->run()
+#2 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\proyectoestudio\univeonline\themes\bootstrap\views\site\login.php(52): CBaseController->widget('ext.hoauth.widg...')
+#3 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CBaseController.php(126): require('C:\Program File...')
+#4 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\Program File...', Array, true)
+#5 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\Program File...', Array, true)
+#6 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CController.php(782): CController->renderPartial('login', Array, true)
+#7 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\proyectoestudio\univeonline\protected\controllers\SiteController.php(124): CController->render('login', Array)
+#8 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionLogin()
+#9 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#10 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#11 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('login')
+#13 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/login')
+#14 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#15 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\proyectoestudio\univeonline\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/proyectoestudio/univeonline/index.php?r=site/login
+HTTP_REFERER=http://localhost/proyectoestudio/univeonline/index.php?r=site/login
+---
+2013/12/29 15:56:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'El sistema no ha podido encontrar la acción "oauth" solicitada.' in C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CController.php(270): CController->missingAction('oauth')
+#1 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('oauth')
+#2 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/oauth')
+#3 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\proyectoestudio\univeonline\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/proyectoestudio/univeonline/index.php?r=site/oauth
+---
+2013/12/29 15:56:43 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'El sistema no ha podido encontrar la acción "oauth" solicitada.' in C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CController.php(270): CController->missingAction('oauth')
+#1 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('oauth')
+#2 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/oauth')
+#3 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\proyectoestudio\univeonline\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/proyectoestudio/univeonline/index.php?r=site/oauth
+HTTP_REFERER=http://localhost/proyectoestudio/univeonline/index.php?r=site/oauth
+---
+2013/12/29 15:58:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'No es posible resolver la solicitud "oauth"' in C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('oauth')
+#1 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\proyectoestudio\univeonline\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/proyectoestudio/univeonline/index.php?r=oauth
+---
+2013/12/29 15:58:27 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'No es posible resolver la solicitud "oauth"' in C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('oauth')
+#1 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\proyectoestudio\univeonline\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/proyectoestudio/univeonline/index.php?r=oauth
+HTTP_REFERER=http://localhost/proyectoestudio/univeonline/index.php?r=oauth
+---
+2013/12/29 15:58:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'El sistema no ha podido encontrar la acción "oauth" solicitada.' in C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CController.php(270): CController->missingAction('oauth')
+#1 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('oauth')
+#2 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/oauth')
+#3 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\proyectoestudio\univeonline\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/proyectoestudio/univeonline/index.php?r=site/oauth
+---
+2013/12/29 15:58:39 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'El sistema no ha podido encontrar la acción "oauth" solicitada.' in C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CController.php(270): CController->missingAction('oauth')
+#1 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('oauth')
+#2 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/oauth')
+#3 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\proyectoestudio\univeonline\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/proyectoestudio/univeonline/index.php?r=site/oauth
+HTTP_REFERER=http://localhost/proyectoestudio/univeonline/index.php?r=site/oauth
+---
+2013/12/29 16:00:56 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'El sistema no ha podido encontrar la acción "oauthadmin" solicitada.' in C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CController.php(270): CController->missingAction('oauthadmin')
+#1 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('oauthadmin')
+#2 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/oauthadmin')
+#3 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\proyectoestudio\univeonline\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/proyectoestudio/univeonline/index.php?r=site/oauthadmin
+---
+2013/12/29 16:00:57 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'El sistema no ha podido encontrar la acción "oauthadmin" solicitada.' in C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CController.php(270): CController->missingAction('oauthadmin')
+#1 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('oauthadmin')
+#2 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/oauthadmin')
+#3 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\proyectoestudio\univeonline\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/proyectoestudio/univeonline/index.php?r=site/oauthadmin
+HTTP_REFERER=http://localhost/proyectoestudio/univeonline/index.php?r=site/oauthadmin
+---
+2013/12/29 16:01:37 [error] [exception.CException] exception 'CException' with message 'Propiedad "CViewAction"."oauth" no se encuentra definida.' in C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\base\CComponent.php:173
+Stack trace:
+#0 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\YiiBase.php(220): CComponent->__set('oauth', Array)
+#1 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CController.php(440): YiiBase::createComponent(Array, Object(SiteController), 'page')
+#2 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CController.php(417): CController->createActionFromMap(Array, 'page', 'page')
+#3 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CController.php(259): CController->createAction('page')
+#4 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('page')
+#5 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/page')
+#6 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#7 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\proyectoestudio\univeonline\index.php(13): CApplication->run()
+#8 {main}
+REQUEST_URI=/proyectoestudio/univeonline/index.php?r=site/page
+---
+2013/12/29 16:01:38 [error] [exception.CException] exception 'CException' with message 'Propiedad "CViewAction"."oauth" no se encuentra definida.' in C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\base\CComponent.php:173
+Stack trace:
+#0 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\YiiBase.php(220): CComponent->__set('oauth', Array)
+#1 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CController.php(440): YiiBase::createComponent(Array, Object(SiteController), 'page')
+#2 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CController.php(417): CController->createActionFromMap(Array, 'page', 'page')
+#3 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CController.php(259): CController->createAction('page')
+#4 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('page')
+#5 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/page')
+#6 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#7 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\proyectoestudio\univeonline\index.php(13): CApplication->run()
+#8 {main}
+REQUEST_URI=/proyectoestudio/univeonline/index.php?r=site/page
+HTTP_REFERER=http://localhost/proyectoestudio/univeonline/index.php?r=site/page
+---
+2013/12/29 16:01:47 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'El sistema no ha podido encontrar la acción "oauth" solicitada.' in C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CController.php(270): CController->missingAction('oauth')
+#1 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('oauth')
+#2 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/oauth')
+#3 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\proyectoestudio\univeonline\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/proyectoestudio/univeonline/index.php?r=site/oauth
+---
+2013/12/29 16:01:48 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'El sistema no ha podido encontrar la acción "oauth" solicitada.' in C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CController.php(270): CController->missingAction('oauth')
+#1 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('oauth')
+#2 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/oauth')
+#3 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\proyectoestudio\univeonline\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/proyectoestudio/univeonline/index.php?r=site/oauth
+HTTP_REFERER=http://localhost/proyectoestudio/univeonline/index.php?r=site/oauth
+---
+2013/12/29 16:03:34 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'El sistema no ha podido encontrar la acción "oauth" solicitada.' in C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CController.php(270): CController->missingAction('oauth')
+#1 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('oauth')
+#2 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/oauth')
+#3 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\proyectoestudio\univeonline\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/proyectoestudio/univeonline/index.php?r=site/oauth
+---
+2013/12/29 16:03:35 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'El sistema no ha podido encontrar la acción "oauth" solicitada.' in C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CController.php(270): CController->missingAction('oauth')
+#1 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('oauth')
+#2 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/oauth')
+#3 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\proyectoestudio\univeonline\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/proyectoestudio/univeonline/index.php?r=site/oauth
+HTTP_REFERER=http://localhost/proyectoestudio/univeonline/index.php?r=site/oauth
+---
+2013/12/29 16:05:12 [error] [exception.CException] exception 'CException' with message 'You forgot to bind 'email' field in HOAuthAction::attributes property.' in C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\proyectoestudio\univeonline\protected\extensions\hoauth\HOAuthAction.php:147
+Stack trace:
+#0 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\actions\CAction.php(76): HOAuthAction->run()
+#1 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CController.php(308): CAction->runWithParams(Array)
+#2 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CController.php(286): CController->runAction(Object(HOAuthAction))
+#3 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(HOAuthAction), Array)
+#4 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('oauth')
+#5 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/oauth')
+#6 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#7 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\proyectoestudio\univeonline\index.php(13): CApplication->run()
+#8 {main}
+REQUEST_URI=/proyectoestudio/univeonline/index.php?r=site/oauth
+---
+2013/12/29 16:05:12 [error] [exception.CException] exception 'CException' with message 'You forgot to bind 'email' field in HOAuthAction::attributes property.' in C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\proyectoestudio\univeonline\protected\extensions\hoauth\HOAuthAction.php:147
+Stack trace:
+#0 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\actions\CAction.php(76): HOAuthAction->run()
+#1 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CController.php(308): CAction->runWithParams(Array)
+#2 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CController.php(286): CController->runAction(Object(HOAuthAction))
+#3 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(HOAuthAction), Array)
+#4 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('oauth')
+#5 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/oauth')
+#6 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#7 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\proyectoestudio\univeonline\index.php(13): CApplication->run()
+#8 {main}
+REQUEST_URI=/proyectoestudio/univeonline/index.php?r=site/oauth
+HTTP_REFERER=http://localhost/proyectoestudio/univeonline/index.php?r=site/oauth
+---
+2013/12/29 16:32:07 [error] [system.db.CDbCommand] CDbCommand::execute() falló: SQLSTATE[42601]: Syntax error: 7 ERROR:  error de sintaxis en o cerca de «`»
+LINE 23: DROP TABLE IF EXISTS `user_oauth`;
+                              ^. La sentencia SQL ejecutada fue: -- phpMyAdmin SQL Dump
+-- version 3.4.10.1deb1
+-- http://www.phpmyadmin.net
+--
+-- Хост: localhost
+-- Время создания: Фев 17 2013 г., 15:30
+-- Версия сервера: 5.5.29
+-- Версия PHP: 5.3.10-1ubuntu3.5
+
+SET FOREIGN_KEY_CHECKS=0;
+SET SQL_MODE="NO_AUTO_VALUE_ON_ZERO";
+SET time_zone = "+00:00";
+
+--
+-- База данных: `muzforge`
+--
+
+-- --------------------------------------------------------
+
+--
+-- Структура таблицы `user_oauth`
+--
+DROP TABLE IF EXISTS `user_oauth`;
+CREATE TABLE IF NOT EXISTS `user_oauth` (
+  `user_id` int(11) NOT NULL,
+  `provider` varchar(45) NOT NULL,
+  `identifier` varchar(64) NOT NULL,
+  `profile_cache` text,
+  `session_data` text,
+  PRIMARY KEY (`provider`,`identifier`),
+  UNIQUE KEY `unic_user_id_name` (`user_id`,`provider`),
+  KEY `oauth_user_id` (`user_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+SET FOREIGN_KEY_CHECKS=1;
+.
+in C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\proyectoestudio\univeonline\protected\extensions\hoauth\models\UserOAuth.php (312)
+in C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\proyectoestudio\univeonline\protected\extensions\hoauth\models\UserOAuth.php (56)
+in C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\proyectoestudio\univeonline\protected\extensions\hoauth\HOAuthAction.php (177)
+2013/12/29 16:32:07 [error] [system.db.CDbCommand] CDbCommand::execute() falló: SQLSTATE[42601]: Syntax error: 7 ERROR:  error de sintaxis en o cerca de «`»
+LINE 23: DROP TABLE IF EXISTS `user_oauth`;
+                              ^. La sentencia SQL ejecutada fue: -- phpMyAdmin SQL Dump
+-- version 3.4.10.1deb1
+-- http://www.phpmyadmin.net
+--
+-- Хост: localhost
+-- Время создания: Фев 17 2013 г., 15:30
+-- Версия сервера: 5.5.29
+-- Версия PHP: 5.3.10-1ubuntu3.5
+
+SET FOREIGN_KEY_CHECKS=0;
+SET SQL_MODE="NO_AUTO_VALUE_ON_ZERO";
+SET time_zone = "+00:00";
+
+--
+-- База данных: `muzforge`
+--
+
+-- --------------------------------------------------------
+
+--
+-- Структура таблицы `user_oauth`
+--
+DROP TABLE IF EXISTS `user_oauth`;
+CREATE TABLE IF NOT EXISTS `user_oauth` (
+  `user_id` int(11) NOT NULL,
+  `provider` varchar(45) NOT NULL,
+  `identifier` varchar(64) NOT NULL,
+  `profile_cache` text,
+  `session_data` text,
+  PRIMARY KEY (`provider`,`identifier`),
+  UNIQUE KEY `unic_user_id_name` (`user_id`,`provider`),
+  KEY `oauth_user_id` (`user_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+SET FOREIGN_KEY_CHECKS=1;
+.
+in C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\proyectoestudio\univeonline\protected\extensions\hoauth\models\UserOAuth.php (312)
+in C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\proyectoestudio\univeonline\protected\extensions\hoauth\models\UserOAuth.php (56)
+in C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\proyectoestudio\univeonline\protected\extensions\hoauth\HOAuthAction.php (177)
+2013/12/29 16:33:06 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'El sistema no ha podido encontrar la acción "chrome-extension:" solicitada.' in C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CController.php(270): CController->missingAction('chrome-extensio...')
+#1 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('chrome-extensio...')
+#2 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/chrome-ext...')
+#3 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\proyectoestudio\univeonline\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/proyectoestudio/univeonline/index.php?r=site/chrome-extension://bmagokdooijbeehmkpknfglimnifench/googleChrome.js
+HTTP_REFERER=http://localhost/proyectoestudio/univeonline/index.php?r=site/oauth&provider=Google
+---
+2013/12/29 16:59:14 [error] [system.db.CDbCommand] CDbCommand::execute() falló: SQLSTATE[42601]: Syntax error: 7 ERROR:  error de sintaxis en o cerca de «`»
+LINE 23: DROP TABLE IF EXISTS `user_oauth`;
+                              ^. La sentencia SQL ejecutada fue: -- phpMyAdmin SQL Dump
+-- version 3.4.10.1deb1
+-- http://www.phpmyadmin.net
+--
+-- Хост: localhost
+-- Время создания: Фев 17 2013 г., 15:30
+-- Версия сервера: 5.5.29
+-- Версия PHP: 5.3.10-1ubuntu3.5
+
+SET FOREIGN_KEY_CHECKS=0;
+SET SQL_MODE="NO_AUTO_VALUE_ON_ZERO";
+SET time_zone = "+00:00";
+
+--
+-- База данных: `muzforge`
+--
+
+-- --------------------------------------------------------
+
+--
+-- Структура таблицы `user_oauth`
+--
+DROP TABLE IF EXISTS `user_oauth`;
+CREATE TABLE IF NOT EXISTS `user_oauth` (
+  `user_id` int(11) NOT NULL,
+  `provider` varchar(45) NOT NULL,
+  `identifier` varchar(64) NOT NULL,
+  `profile_cache` text,
+  `session_data` text,
+  PRIMARY KEY (`provider`,`identifier`),
+  UNIQUE KEY `unic_user_id_name` (`user_id`,`provider`),
+  KEY `oauth_user_id` (`user_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+SET FOREIGN_KEY_CHECKS=1;
+.
+in C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\proyectoestudio\univeonline\protected\extensions\hoauth\models\UserOAuth.php (312)
+in C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\proyectoestudio\univeonline\protected\extensions\hoauth\models\UserOAuth.php (56)
+in C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\proyectoestudio\univeonline\protected\extensions\hoauth\HOAuthAction.php (177)
+2013/12/29 16:59:15 [error] [system.db.CDbCommand] CDbCommand::execute() falló: SQLSTATE[42601]: Syntax error: 7 ERROR:  error de sintaxis en o cerca de «`»
+LINE 23: DROP TABLE IF EXISTS `user_oauth`;
+                              ^. La sentencia SQL ejecutada fue: -- phpMyAdmin SQL Dump
+-- version 3.4.10.1deb1
+-- http://www.phpmyadmin.net
+--
+-- Хост: localhost
+-- Время создания: Фев 17 2013 г., 15:30
+-- Версия сервера: 5.5.29
+-- Версия PHP: 5.3.10-1ubuntu3.5
+
+SET FOREIGN_KEY_CHECKS=0;
+SET SQL_MODE="NO_AUTO_VALUE_ON_ZERO";
+SET time_zone = "+00:00";
+
+--
+-- База данных: `muzforge`
+--
+
+-- --------------------------------------------------------
+
+--
+-- Структура таблицы `user_oauth`
+--
+DROP TABLE IF EXISTS `user_oauth`;
+CREATE TABLE IF NOT EXISTS `user_oauth` (
+  `user_id` int(11) NOT NULL,
+  `provider` varchar(45) NOT NULL,
+  `identifier` varchar(64) NOT NULL,
+  `profile_cache` text,
+  `session_data` text,
+  PRIMARY KEY (`provider`,`identifier`),
+  UNIQUE KEY `unic_user_id_name` (`user_id`,`provider`),
+  KEY `oauth_user_id` (`user_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+SET FOREIGN_KEY_CHECKS=1;
+.
+in C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\proyectoestudio\univeonline\protected\extensions\hoauth\models\UserOAuth.php (312)
+in C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\proyectoestudio\univeonline\protected\extensions\hoauth\models\UserOAuth.php (56)
+in C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\proyectoestudio\univeonline\protected\extensions\hoauth\HOAuthAction.php (177)
+2013/12/29 17:00:12 [error] [system.db.CDbCommand] CDbCommand::execute() falló: SQLSTATE[42601]: Syntax error: 7 ERROR:  error de sintaxis en o cerca de «`»
+LINE 23: DROP TABLE IF EXISTS `user_oauth`;
+                              ^. La sentencia SQL ejecutada fue: -- phpMyAdmin SQL Dump
+-- version 3.4.10.1deb1
+-- http://www.phpmyadmin.net
+--
+-- Хост: localhost
+-- Время создания: Фев 17 2013 г., 15:30
+-- Версия сервера: 5.5.29
+-- Версия PHP: 5.3.10-1ubuntu3.5
+
+SET FOREIGN_KEY_CHECKS=0;
+SET SQL_MODE="NO_AUTO_VALUE_ON_ZERO";
+SET time_zone = "+00:00";
+
+--
+-- База данных: `muzforge`
+--
+
+-- --------------------------------------------------------
+
+--
+-- Структура таблицы `user_oauth`
+--
+DROP TABLE IF EXISTS `user_oauth`;
+CREATE TABLE IF NOT EXISTS `user_oauth` (
+  `user_id` int(11) NOT NULL,
+  `provider` varchar(45) NOT NULL,
+  `identifier` varchar(64) NOT NULL,
+  `profile_cache` text,
+  `session_data` text,
+  PRIMARY KEY (`provider`,`identifier`),
+  UNIQUE KEY `unic_user_id_name` (`user_id`,`provider`),
+  KEY `oauth_user_id` (`user_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+SET FOREIGN_KEY_CHECKS=1;
+.
+in C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\proyectoestudio\univeonline\protected\extensions\hoauth\models\UserOAuth.php (312)
+in C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\proyectoestudio\univeonline\protected\extensions\hoauth\models\UserOAuth.php (56)
+in C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\proyectoestudio\univeonline\protected\extensions\hoauth\HOAuthAction.php (177)
+2013/12/29 17:00:13 [error] [system.db.CDbCommand] CDbCommand::execute() falló: SQLSTATE[42601]: Syntax error: 7 ERROR:  error de sintaxis en o cerca de «`»
+LINE 23: DROP TABLE IF EXISTS `user_oauth`;
+                              ^. La sentencia SQL ejecutada fue: -- phpMyAdmin SQL Dump
+-- version 3.4.10.1deb1
+-- http://www.phpmyadmin.net
+--
+-- Хост: localhost
+-- Время создания: Фев 17 2013 г., 15:30
+-- Версия сервера: 5.5.29
+-- Версия PHP: 5.3.10-1ubuntu3.5
+
+SET FOREIGN_KEY_CHECKS=0;
+SET SQL_MODE="NO_AUTO_VALUE_ON_ZERO";
+SET time_zone = "+00:00";
+
+--
+-- База данных: `muzforge`
+--
+
+-- --------------------------------------------------------
+
+--
+-- Структура таблицы `user_oauth`
+--
+DROP TABLE IF EXISTS `user_oauth`;
+CREATE TABLE IF NOT EXISTS `user_oauth` (
+  `user_id` int(11) NOT NULL,
+  `provider` varchar(45) NOT NULL,
+  `identifier` varchar(64) NOT NULL,
+  `profile_cache` text,
+  `session_data` text,
+  PRIMARY KEY (`provider`,`identifier`),
+  UNIQUE KEY `unic_user_id_name` (`user_id`,`provider`),
+  KEY `oauth_user_id` (`user_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+SET FOREIGN_KEY_CHECKS=1;
+.
+in C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\proyectoestudio\univeonline\protected\extensions\hoauth\models\UserOAuth.php (312)
+in C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\proyectoestudio\univeonline\protected\extensions\hoauth\models\UserOAuth.php (56)
+in C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\proyectoestudio\univeonline\protected\extensions\hoauth\HOAuthAction.php (177)
+2013/12/29 17:02:11 [error] [system.db.CDbCommand] CDbCommand::execute() falló: SQLSTATE[42601]: Syntax error: 7 ERROR:  error de sintaxis en o cerca de «`»
+LINE 23: DROP TABLE IF EXISTS `user_oauth`;
+                              ^. La sentencia SQL ejecutada fue: -- phpMyAdmin SQL Dump
+-- version 3.4.10.1deb1
+-- http://www.phpmyadmin.net
+--
+-- Хост: localhost
+-- Время создания: Фев 17 2013 г., 15:30
+-- Версия сервера: 5.5.29
+-- Версия PHP: 5.3.10-1ubuntu3.5
+
+SET FOREIGN_KEY_CHECKS=0;
+SET SQL_MODE="NO_AUTO_VALUE_ON_ZERO";
+SET time_zone = "+00:00";
+
+--
+-- База данных: `muzforge`
+--
+
+-- --------------------------------------------------------
+
+--
+-- Структура таблицы `user_oauth`
+--
+DROP TABLE IF EXISTS `user_oauth`;
+CREATE TABLE IF NOT EXISTS `user_oauth` (
+  `user_id` int(11) NOT NULL,
+  `provider` varchar(45) NOT NULL,
+  `identifier` varchar(64) NOT NULL,
+  `profile_cache` text,
+  `session_data` text,
+  PRIMARY KEY (`provider`,`identifier`),
+  UNIQUE KEY `unic_user_id_name` (`user_id`,`provider`),
+  KEY `oauth_user_id` (`user_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+SET FOREIGN_KEY_CHECKS=1;
+.
+in C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\proyectoestudio\univeonline\protected\extensions\hoauth\models\UserOAuth.php (312)
+in C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\proyectoestudio\univeonline\protected\extensions\hoauth\models\UserOAuth.php (56)
+in C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\proyectoestudio\univeonline\protected\extensions\hoauth\HOAuthAction.php (177)
+2013/12/29 17:02:12 [error] [system.db.CDbCommand] CDbCommand::execute() falló: SQLSTATE[42601]: Syntax error: 7 ERROR:  error de sintaxis en o cerca de «`»
+LINE 23: DROP TABLE IF EXISTS `user_oauth`;
+                              ^. La sentencia SQL ejecutada fue: -- phpMyAdmin SQL Dump
+-- version 3.4.10.1deb1
+-- http://www.phpmyadmin.net
+--
+-- Хост: localhost
+-- Время создания: Фев 17 2013 г., 15:30
+-- Версия сервера: 5.5.29
+-- Версия PHP: 5.3.10-1ubuntu3.5
+
+SET FOREIGN_KEY_CHECKS=0;
+SET SQL_MODE="NO_AUTO_VALUE_ON_ZERO";
+SET time_zone = "+00:00";
+
+--
+-- База данных: `muzforge`
+--
+
+-- --------------------------------------------------------
+
+--
+-- Структура таблицы `user_oauth`
+--
+DROP TABLE IF EXISTS `user_oauth`;
+CREATE TABLE IF NOT EXISTS `user_oauth` (
+  `user_id` int(11) NOT NULL,
+  `provider` varchar(45) NOT NULL,
+  `identifier` varchar(64) NOT NULL,
+  `profile_cache` text,
+  `session_data` text,
+  PRIMARY KEY (`provider`,`identifier`),
+  UNIQUE KEY `unic_user_id_name` (`user_id`,`provider`),
+  KEY `oauth_user_id` (`user_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+SET FOREIGN_KEY_CHECKS=1;
+.
+in C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\proyectoestudio\univeonline\protected\extensions\hoauth\models\UserOAuth.php (312)
+in C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\proyectoestudio\univeonline\protected\extensions\hoauth\models\UserOAuth.php (56)
+in C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\proyectoestudio\univeonline\protected\extensions\hoauth\HOAuthAction.php (177)
+2013/12/29 17:14:17 [error] [system.db.CDbCommand] CDbCommand::execute() falló: SQLSTATE[42601]: Syntax error: 7 ERROR:  error de sintaxis en o cerca de «'user_oauth'»
+LINE 23: DROP TABLE IF EXISTS 'user_oauth';
+                              ^. La sentencia SQL ejecutada fue: -- phpMyAdmin SQL Dump
+-- version 3.4.10.1deb1
+-- http://www.phpmyadmin.net
+--
+-- Хост: localhost
+-- Время создания: Фев 17 2013 г., 15:30
+-- Версия сервера: 5.5.29
+-- Версия PHP: 5.3.10-1ubuntu3.5
+
+SET FOREIGN_KEY_CHECKS=0;
+SET SQL_MODE="NO_AUTO_VALUE_ON_ZERO";
+SET time_zone = "+00:00";
+
+--
+-- База данных: `muzforge`
+--
+
+-- --------------------------------------------------------
+
+--
+-- Структура таблицы `user_oauth`
+--
+DROP TABLE IF EXISTS 'user_oauth';
+CREATE TABLE IF NOT EXISTS 'user_oauth' (
+  'user_id' int(11) NOT NULL,
+  'provider'  varchar(45) NOT NULL,
+  'identifier' varchar(64) NOT NULL,
+  'profile_cache' text,
+  'session_data' text,
+  PRIMARY KEY ('provider','identifier'),
+  UNIQUE KEY 'unic_user_id_name' ('user_id','provider'),
+  KEY 'oauth_user_id' ('user_id')
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+SET FOREIGN_KEY_CHECKS=1;
+.
+in C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\proyectoestudio\univeonline\protected\extensions\hoauth\models\UserOAuth.php (312)
+in C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\proyectoestudio\univeonline\protected\extensions\hoauth\models\UserOAuth.php (56)
+in C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\proyectoestudio\univeonline\protected\extensions\hoauth\HOAuthAction.php (177)
+2013/12/29 17:14:18 [error] [system.db.CDbCommand] CDbCommand::execute() falló: SQLSTATE[42601]: Syntax error: 7 ERROR:  error de sintaxis en o cerca de «'user_oauth'»
+LINE 23: DROP TABLE IF EXISTS 'user_oauth';
+                              ^. La sentencia SQL ejecutada fue: -- phpMyAdmin SQL Dump
+-- version 3.4.10.1deb1
+-- http://www.phpmyadmin.net
+--
+-- Хост: localhost
+-- Время создания: Фев 17 2013 г., 15:30
+-- Версия сервера: 5.5.29
+-- Версия PHP: 5.3.10-1ubuntu3.5
+
+SET FOREIGN_KEY_CHECKS=0;
+SET SQL_MODE="NO_AUTO_VALUE_ON_ZERO";
+SET time_zone = "+00:00";
+
+--
+-- База данных: `muzforge`
+--
+
+-- --------------------------------------------------------
+
+--
+-- Структура таблицы `user_oauth`
+--
+DROP TABLE IF EXISTS 'user_oauth';
+CREATE TABLE IF NOT EXISTS 'user_oauth' (
+  'user_id' int(11) NOT NULL,
+  'provider'  varchar(45) NOT NULL,
+  'identifier' varchar(64) NOT NULL,
+  'profile_cache' text,
+  'session_data' text,
+  PRIMARY KEY ('provider','identifier'),
+  UNIQUE KEY 'unic_user_id_name' ('user_id','provider'),
+  KEY 'oauth_user_id' ('user_id')
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+SET FOREIGN_KEY_CHECKS=1;
+.
+in C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\proyectoestudio\univeonline\protected\extensions\hoauth\models\UserOAuth.php (312)
+in C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\proyectoestudio\univeonline\protected\extensions\hoauth\models\UserOAuth.php (56)
+in C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\proyectoestudio\univeonline\protected\extensions\hoauth\HOAuthAction.php (177)
+2013/12/29 17:22:49 [error] [system.db.CDbCommand] CDbCommand::execute() falló: SQLSTATE[42601]: Syntax error: 7 ERROR:  error de sintaxis en o cerca de «'user_oauth'»
+LINE 23: DROP TABLE IF EXISTS 'user_oauth';
+                              ^. La sentencia SQL ejecutada fue: -- phpMyAdmin SQL Dump
+-- version 3.4.10.1deb1
+-- http://www.phpmyadmin.net
+--
+-- Хост: localhost
+-- Время создания: Фев 17 2013 г., 15:30
+-- Версия сервера: 5.5.29
+-- Версия PHP: 5.3.10-1ubuntu3.5
+
+SET FOREIGN_KEY_CHECKS=0;
+SET SQL_MODE="NO_AUTO_VALUE_ON_ZERO";
+SET time_zone = "+00:00";
+
+--
+-- База данных: `muzforge`
+--
+
+-- --------------------------------------------------------
+
+--
+-- Структура таблицы `user_oauth`
+--
+DROP TABLE IF EXISTS 'user_oauth';
+CREATE TABLE IF NOT EXISTS 'user_oauth' (
+  'user_id' int(11) NOT NULL,
+  'provider'  varchar(45) NOT NULL,
+  'identifier' varchar(64) NOT NULL,
+  'profile_cache' text,
+  'session_data' text,
+  PRIMARY KEY ('provider','identifier'),
+  UNIQUE KEY 'unic_user_id_name' ('user_id','provider'),
+  KEY 'oauth_user_id' ('user_id')
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+SET FOREIGN_KEY_CHECKS=1;
+.
+in C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\proyectoestudio\univeonline\protected\extensions\hoauth\models\UserOAuth.php (312)
+in C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\proyectoestudio\univeonline\protected\extensions\hoauth\models\UserOAuth.php (56)
+in C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\proyectoestudio\univeonline\protected\extensions\hoauth\HOAuthAction.php (177)
+2013/12/29 17:22:49 [error] [system.db.CDbCommand] CDbCommand::execute() falló: SQLSTATE[42601]: Syntax error: 7 ERROR:  error de sintaxis en o cerca de «'user_oauth'»
+LINE 23: DROP TABLE IF EXISTS 'user_oauth';
+                              ^. La sentencia SQL ejecutada fue: -- phpMyAdmin SQL Dump
+-- version 3.4.10.1deb1
+-- http://www.phpmyadmin.net
+--
+-- Хост: localhost
+-- Время создания: Фев 17 2013 г., 15:30
+-- Версия сервера: 5.5.29
+-- Версия PHP: 5.3.10-1ubuntu3.5
+
+SET FOREIGN_KEY_CHECKS=0;
+SET SQL_MODE="NO_AUTO_VALUE_ON_ZERO";
+SET time_zone = "+00:00";
+
+--
+-- База данных: `muzforge`
+--
+
+-- --------------------------------------------------------
+
+--
+-- Структура таблицы `user_oauth`
+--
+DROP TABLE IF EXISTS 'user_oauth';
+CREATE TABLE IF NOT EXISTS 'user_oauth' (
+  'user_id' int(11) NOT NULL,
+  'provider'  varchar(45) NOT NULL,
+  'identifier' varchar(64) NOT NULL,
+  'profile_cache' text,
+  'session_data' text,
+  PRIMARY KEY ('provider','identifier'),
+  UNIQUE KEY 'unic_user_id_name' ('user_id','provider'),
+  KEY 'oauth_user_id' ('user_id')
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+SET FOREIGN_KEY_CHECKS=1;
+.
+in C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\proyectoestudio\univeonline\protected\extensions\hoauth\models\UserOAuth.php (312)
+in C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\proyectoestudio\univeonline\protected\extensions\hoauth\models\UserOAuth.php (56)
+in C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\proyectoestudio\univeonline\protected\extensions\hoauth\HOAuthAction.php (177)
+2013/12/29 17:22:57 [error] [system.db.CDbCommand] CDbCommand::execute() falló: SQLSTATE[42601]: Syntax error: 7 ERROR:  error de sintaxis en o cerca de «'user_oauth'»
+LINE 23: DROP TABLE IF EXISTS 'user_oauth';
+                              ^. La sentencia SQL ejecutada fue: -- phpMyAdmin SQL Dump
+-- version 3.4.10.1deb1
+-- http://www.phpmyadmin.net
+--
+-- Хост: localhost
+-- Время создания: Фев 17 2013 г., 15:30
+-- Версия сервера: 5.5.29
+-- Версия PHP: 5.3.10-1ubuntu3.5
+
+SET FOREIGN_KEY_CHECKS=0;
+SET SQL_MODE="NO_AUTO_VALUE_ON_ZERO";
+SET time_zone = "+00:00";
+
+--
+-- База данных: `muzforge`
+--
+
+-- --------------------------------------------------------
+
+--
+-- Структура таблицы `user_oauth`
+--
+DROP TABLE IF EXISTS 'user_oauth';
+CREATE TABLE IF NOT EXISTS 'user_oauth' (
+  'user_id' int(11) NOT NULL,
+  'provider'  varchar(45) NOT NULL,
+  'identifier' varchar(64) NOT NULL,
+  'profile_cache' text,
+  'session_data' text,
+  PRIMARY KEY ('provider','identifier'),
+  UNIQUE KEY 'unic_user_id_name' ('user_id','provider'),
+  KEY 'oauth_user_id' ('user_id')
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+SET FOREIGN_KEY_CHECKS=1;
+.
+in C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\proyectoestudio\univeonline\protected\extensions\hoauth\models\UserOAuth.php (312)
+in C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\proyectoestudio\univeonline\protected\extensions\hoauth\models\UserOAuth.php (56)
+in C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\proyectoestudio\univeonline\protected\extensions\hoauth\HOAuthAction.php (177)
+2013/12/29 17:22:57 [error] [system.db.CDbCommand] CDbCommand::execute() falló: SQLSTATE[42601]: Syntax error: 7 ERROR:  error de sintaxis en o cerca de «'user_oauth'»
+LINE 23: DROP TABLE IF EXISTS 'user_oauth';
+                              ^. La sentencia SQL ejecutada fue: -- phpMyAdmin SQL Dump
+-- version 3.4.10.1deb1
+-- http://www.phpmyadmin.net
+--
+-- Хост: localhost
+-- Время создания: Фев 17 2013 г., 15:30
+-- Версия сервера: 5.5.29
+-- Версия PHP: 5.3.10-1ubuntu3.5
+
+SET FOREIGN_KEY_CHECKS=0;
+SET SQL_MODE="NO_AUTO_VALUE_ON_ZERO";
+SET time_zone = "+00:00";
+
+--
+-- База данных: `muzforge`
+--
+
+-- --------------------------------------------------------
+
+--
+-- Структура таблицы `user_oauth`
+--
+DROP TABLE IF EXISTS 'user_oauth';
+CREATE TABLE IF NOT EXISTS 'user_oauth' (
+  'user_id' int(11) NOT NULL,
+  'provider'  varchar(45) NOT NULL,
+  'identifier' varchar(64) NOT NULL,
+  'profile_cache' text,
+  'session_data' text,
+  PRIMARY KEY ('provider','identifier'),
+  UNIQUE KEY 'unic_user_id_name' ('user_id','provider'),
+  KEY 'oauth_user_id' ('user_id')
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+SET FOREIGN_KEY_CHECKS=1;
+.
+in C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\proyectoestudio\univeonline\protected\extensions\hoauth\models\UserOAuth.php (312)
+in C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\proyectoestudio\univeonline\protected\extensions\hoauth\models\UserOAuth.php (56)
+in C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\proyectoestudio\univeonline\protected\extensions\hoauth\HOAuthAction.php (177)
+2013/12/29 17:23:54 [error] [system.db.CDbCommand] CDbCommand::execute() falló: SQLSTATE[42601]: Syntax error: 7 ERROR:  error de sintaxis en o cerca de «'user_oauth'»
+LINE 23: DROP TABLE IF EXISTS 'user_oauth';
+                              ^. La sentencia SQL ejecutada fue: -- phpMyAdmin SQL Dump
+-- version 3.4.10.1deb1
+-- http://www.phpmyadmin.net
+--
+-- Хост: localhost
+-- Время создания: Фев 17 2013 г., 15:30
+-- Версия сервера: 5.5.29
+-- Версия PHP: 5.3.10-1ubuntu3.5
+
+SET FOREIGN_KEY_CHECKS=0;
+SET SQL_MODE="NO_AUTO_VALUE_ON_ZERO";
+SET time_zone = "+00:00";
+
+--
+-- База данных: `muzforge`
+--
+
+-- --------------------------------------------------------
+
+--
+-- Структура таблицы `user_oauth`
+--
+DROP TABLE IF EXISTS 'user_oauth';
+CREATE TABLE IF NOT EXISTS 'user_oauth' (
+  'user_id' int(11) NOT NULL,
+  'provider'  varchar(45) NOT NULL,
+  'identifier' varchar(64) NOT NULL,
+  'profile_cache' text,
+  'session_data' text,
+  PRIMARY KEY ('provider','identifier'),
+  UNIQUE KEY 'unic_user_id_name' ('user_id','provider'),
+  KEY 'oauth_user_id' ('user_id')
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+SET FOREIGN_KEY_CHECKS=1;
+.
+in C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\proyectoestudio\univeonline\protected\extensions\hoauth\models\UserOAuth.php (312)
+in C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\proyectoestudio\univeonline\protected\extensions\hoauth\models\UserOAuth.php (56)
+in C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\proyectoestudio\univeonline\protected\extensions\hoauth\HOAuthAction.php (177)
+2013/12/29 17:23:55 [error] [system.db.CDbCommand] CDbCommand::execute() falló: SQLSTATE[42601]: Syntax error: 7 ERROR:  error de sintaxis en o cerca de «'user_oauth'»
+LINE 23: DROP TABLE IF EXISTS 'user_oauth';
+                              ^. La sentencia SQL ejecutada fue: -- phpMyAdmin SQL Dump
+-- version 3.4.10.1deb1
+-- http://www.phpmyadmin.net
+--
+-- Хост: localhost
+-- Время создания: Фев 17 2013 г., 15:30
+-- Версия сервера: 5.5.29
+-- Версия PHP: 5.3.10-1ubuntu3.5
+
+SET FOREIGN_KEY_CHECKS=0;
+SET SQL_MODE="NO_AUTO_VALUE_ON_ZERO";
+SET time_zone = "+00:00";
+
+--
+-- База данных: `muzforge`
+--
+
+-- --------------------------------------------------------
+
+--
+-- Структура таблицы `user_oauth`
+--
+DROP TABLE IF EXISTS 'user_oauth';
+CREATE TABLE IF NOT EXISTS 'user_oauth' (
+  'user_id' int(11) NOT NULL,
+  'provider'  varchar(45) NOT NULL,
+  'identifier' varchar(64) NOT NULL,
+  'profile_cache' text,
+  'session_data' text,
+  PRIMARY KEY ('provider','identifier'),
+  UNIQUE KEY 'unic_user_id_name' ('user_id','provider'),
+  KEY 'oauth_user_id' ('user_id')
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+SET FOREIGN_KEY_CHECKS=1;
+.
+in C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\proyectoestudio\univeonline\protected\extensions\hoauth\models\UserOAuth.php (312)
+in C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\proyectoestudio\univeonline\protected\extensions\hoauth\models\UserOAuth.php (56)
+in C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\proyectoestudio\univeonline\protected\extensions\hoauth\HOAuthAction.php (177)
+2013/12/29 17:24:13 [error] [system.db.CDbCommand] CDbCommand::execute() falló: SQLSTATE[42601]: Syntax error: 7 ERROR:  error de sintaxis en o cerca de «'user_oauth'»
+LINE 23: DROP TABLE IF EXISTS 'user_oauth';
+                              ^. La sentencia SQL ejecutada fue: -- phpMyAdmin SQL Dump
+-- version 3.4.10.1deb1
+-- http://www.phpmyadmin.net
+--
+-- Хост: localhost
+-- Время создания: Фев 17 2013 г., 15:30
+-- Версия сервера: 5.5.29
+-- Версия PHP: 5.3.10-1ubuntu3.5
+
+SET FOREIGN_KEY_CHECKS=0;
+SET SQL_MODE="NO_AUTO_VALUE_ON_ZERO";
+SET time_zone = "+00:00";
+
+--
+-- База данных: `muzforge`
+--
+
+-- --------------------------------------------------------
+
+--
+-- Структура таблицы `user_oauth`
+--
+DROP TABLE IF EXISTS 'user_oauth';
+CREATE TABLE IF NOT EXISTS 'user_oauth' (
+  'user_id' int(11) NOT NULL,
+  'provider'  varchar(45) NOT NULL,
+  'identifier' varchar(64) NOT NULL,
+  'profile_cache' text,
+  'session_data' text,
+  PRIMARY KEY ('provider','identifier'),
+  UNIQUE KEY 'unic_user_id_name' ('user_id','provider'),
+  KEY 'oauth_user_id' ('user_id')
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+SET FOREIGN_KEY_CHECKS=1;
+.
+in C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\proyectoestudio\univeonline\protected\extensions\hoauth\models\UserOAuth.php (312)
+in C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\proyectoestudio\univeonline\protected\extensions\hoauth\models\UserOAuth.php (56)
+in C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\proyectoestudio\univeonline\protected\extensions\hoauth\HOAuthAction.php (177)
+2013/12/29 17:24:14 [error] [system.db.CDbCommand] CDbCommand::execute() falló: SQLSTATE[42601]: Syntax error: 7 ERROR:  error de sintaxis en o cerca de «'user_oauth'»
+LINE 23: DROP TABLE IF EXISTS 'user_oauth';
+                              ^. La sentencia SQL ejecutada fue: -- phpMyAdmin SQL Dump
+-- version 3.4.10.1deb1
+-- http://www.phpmyadmin.net
+--
+-- Хост: localhost
+-- Время создания: Фев 17 2013 г., 15:30
+-- Версия сервера: 5.5.29
+-- Версия PHP: 5.3.10-1ubuntu3.5
+
+SET FOREIGN_KEY_CHECKS=0;
+SET SQL_MODE="NO_AUTO_VALUE_ON_ZERO";
+SET time_zone = "+00:00";
+
+--
+-- База данных: `muzforge`
+--
+
+-- --------------------------------------------------------
+
+--
+-- Структура таблицы `user_oauth`
+--
+DROP TABLE IF EXISTS 'user_oauth';
+CREATE TABLE IF NOT EXISTS 'user_oauth' (
+  'user_id' int(11) NOT NULL,
+  'provider'  varchar(45) NOT NULL,
+  'identifier' varchar(64) NOT NULL,
+  'profile_cache' text,
+  'session_data' text,
+  PRIMARY KEY ('provider','identifier'),
+  UNIQUE KEY 'unic_user_id_name' ('user_id','provider'),
+  KEY 'oauth_user_id' ('user_id')
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+SET FOREIGN_KEY_CHECKS=1;
+.
+in C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\proyectoestudio\univeonline\protected\extensions\hoauth\models\UserOAuth.php (312)
+in C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\proyectoestudio\univeonline\protected\extensions\hoauth\models\UserOAuth.php (56)
+in C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\proyectoestudio\univeonline\protected\extensions\hoauth\HOAuthAction.php (177)
+2013/12/29 17:29:24 [error] [system.db.CDbCommand] CDbCommand::execute() falló: SQLSTATE[42601]: Syntax error: 7 ERROR:  error de sintaxis en o cerca de «'user_oauth'»
+LINE 23: DROP TABLE IF EXISTS 'user_oauth';
+                              ^. La sentencia SQL ejecutada fue: -- phpMyAdmin SQL Dump
+-- version 3.4.10.1deb1
+-- http://www.phpmyadmin.net
+--
+-- Хост: localhost
+-- Время создания: Фев 17 2013 г., 15:30
+-- Версия сервера: 5.5.29
+-- Версия PHP: 5.3.10-1ubuntu3.5
+
+SET FOREIGN_KEY_CHECKS=0;
+SET SQL_MODE='NO_AUTO_VALUE_ON_ZERO';
+SET time_zone = '+00:00';
+
+--
+-- База данных: `muzforge`
+--
+
+-- --------------------------------------------------------
+
+--
+-- Структура таблицы `user_oauth`
+--
+DROP TABLE IF EXISTS 'user_oauth';
+CREATE TABLE IF NOT EXISTS 'user_oauth' (
+  'user_id' int(11) NOT NULL,
+  'provider'  varchar(45) NOT NULL,
+  'identifier' varchar(64) NOT NULL,
+  'profile_cache' text,
+  'session_data' text,
+  PRIMARY KEY ('provider','identifier'),
+  UNIQUE KEY 'unic_user_id_name' ('user_id','provider'),
+  KEY 'oauth_user_id' ('user_id')
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+SET FOREIGN_KEY_CHECKS=1;
+.
+in C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\proyectoestudio\univeonline\protected\extensions\hoauth\models\UserOAuth.php (312)
+in C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\proyectoestudio\univeonline\protected\extensions\hoauth\models\UserOAuth.php (56)
+in C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\proyectoestudio\univeonline\protected\extensions\hoauth\HOAuthAction.php (177)
+2013/12/29 17:29:24 [error] [system.db.CDbCommand] CDbCommand::execute() falló: SQLSTATE[42601]: Syntax error: 7 ERROR:  error de sintaxis en o cerca de «'user_oauth'»
+LINE 23: DROP TABLE IF EXISTS 'user_oauth';
+                              ^. La sentencia SQL ejecutada fue: -- phpMyAdmin SQL Dump
+-- version 3.4.10.1deb1
+-- http://www.phpmyadmin.net
+--
+-- Хост: localhost
+-- Время создания: Фев 17 2013 г., 15:30
+-- Версия сервера: 5.5.29
+-- Версия PHP: 5.3.10-1ubuntu3.5
+
+SET FOREIGN_KEY_CHECKS=0;
+SET SQL_MODE='NO_AUTO_VALUE_ON_ZERO';
+SET time_zone = '+00:00';
+
+--
+-- База данных: `muzforge`
+--
+
+-- --------------------------------------------------------
+
+--
+-- Структура таблицы `user_oauth`
+--
+DROP TABLE IF EXISTS 'user_oauth';
+CREATE TABLE IF NOT EXISTS 'user_oauth' (
+  'user_id' int(11) NOT NULL,
+  'provider'  varchar(45) NOT NULL,
+  'identifier' varchar(64) NOT NULL,
+  'profile_cache' text,
+  'session_data' text,
+  PRIMARY KEY ('provider','identifier'),
+  UNIQUE KEY 'unic_user_id_name' ('user_id','provider'),
+  KEY 'oauth_user_id' ('user_id')
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+SET FOREIGN_KEY_CHECKS=1;
+.
+in C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\proyectoestudio\univeonline\protected\extensions\hoauth\models\UserOAuth.php (312)
+in C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\proyectoestudio\univeonline\protected\extensions\hoauth\models\UserOAuth.php (56)
+in C:\Program Files (x86)\Apache Software Foundation\Apache2.2\htdocs\proyectoestudio\univeonline\protected\extensions\hoauth\HOAuthAction.php (177)

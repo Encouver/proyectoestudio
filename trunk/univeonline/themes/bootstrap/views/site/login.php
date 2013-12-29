@@ -47,7 +47,10 @@ $this->breadcrumbs=array(
 
 	</div>
 	<div class = "span4 offset2">
-	<h5  class = "lead">O ingresa con: <br /><br />AQUI VA <br /><br /> EL WIDGET CON LAS <br /><br />REDES SPCIALES</h5>
+	<h5  class = "lead">O ingresa con: <br /><br /></h5>
+	
+	<?php $this->widget('ext.hoauth.widgets.HOAuth'); ?>
+
 	</div>
 </div>
 <div class="clear"></div>

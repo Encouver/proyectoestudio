@@ -17,7 +17,33 @@ class SiteController extends Controller
 			// They can be accessed via: index.php?r=site/page&view=FileName
 			'page'=>array(
 				'class'=>'CViewAction',
+	      	),
+			'oauth' => array(
+		        // the list of additional properties of this action is below
+		        'class'=>'ext.hoauth.HOAuthAction',
+		        // Yii alias for your user's model, or simply class name, when it already on yii's import path
+		        // default value of this property is: User
+		        'model' => 'Usuarios', 
+		        // map model attributes to attributes of user's social profile
+		        // model attribute => profile attribute
+		        // the list of avaible attributes is below
+		        'attributes' => array(
+		          'correo' => 'email',
+		          'nombre' => 'firstName',
+		          'apellido' => 'lastName',
+		          'sexo' => 'genderShort',
+		          'fechaNac' => 'birthDate',
+		          // you can also specify additional values, 
+		          // that will be applied to your model (eg. account activation status)
+		          'acc_status' => 1,
+	        	),
 			),
+			  // this is an admin action that will help you to configure HybridAuth 
+		      // (you must delete this action, when you'll be ready with configuration, or 
+		      // specify rules for admin role. User shouldn't have access to this action!)
+		      'oauthadmin' => array(
+		        'class'=>'ext.hoauth.HOAuthAdminAction',
+	      ),
 		);
 	}
 
@@ -96,6 +122,8 @@ class SiteController extends Controller
 		}
 		// display the login form
 		$this->render('login',array('model'=>$model));
+
+		
 	}
 
 	/**
@@ -106,4 +134,6 @@ class SiteController extends Controller
 		Yii::app()->user->logout();
 		$this->redirect(Yii::app()->homeUrl);
 	}
+
+
 }
