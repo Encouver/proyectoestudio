@@ -22,5 +22,9 @@ $this->breadcrumbs=array(
 <?php echo $this->renderPartial('_form', array('model'=>$model)); ?></div>
 
 	<div class = "span4 offset2">
-	<h5  class = "lead">O regístrate con una cuenta existente de: <br /><br />AQUI VA <br /><br /> EL WIDGET CON LAS <br /><br />REDES SPCIALES</h5>
+	<h5  class = "lead">O regístrate con una cuenta existente de: <br /><br />
+		AQUI VA <br /><br /> EL WIDGET CON LAS <br /><br />REDES SPCIALES</h5>
+
+		<?php $this->widget('ext.hoauth.widgets.HOAuth'); ?>
+		
 	</div>

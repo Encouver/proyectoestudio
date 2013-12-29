@@ -33,6 +33,19 @@ class Usuarios extends CActiveRecord
 {
 	public $terminos;
 	public $repetirCorreo;
+
+	/**
+	 * Returns User model by its email
+	 * 
+	 * @param string $email 
+	 * @access public
+	 * @return User
+	 */
+	public function findByEmail($email)
+	{
+	  return self::model()->findByAttributes(array('email' => $email));
+	}
+
 	/**
 	 * Returns the static model of the specified AR class.
 	 * @param string $className active record class name.

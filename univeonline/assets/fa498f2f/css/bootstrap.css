@@ -1464,7 +1464,8 @@ select:focus:invalid:focus {
 .form-actions {
   padding: 19px 20px 20px;
   margin-top: 20px;
-  margin-bottom: 20px;
+  /*  margin-bottom: @baseLineHeight;*/
+
   /*  background-color: @formActionsBackground;*/
 
   border-top: 1px solid #e5e5e5;
