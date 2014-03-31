@@ -3,11 +3,11 @@
 class EventLogSistema extends Controller
 {
 	// Retorna true si fue exitoso, false sino lo fue
-	public function RegistrarEvento($Descripcion, $URL, $ScriptAfectado, $NewValue = null, $OldValue = null){
+	public function RegistrarEvento($Codigo, $Descripcion, $URL, $ScriptAfectado, $NewValue = null, $OldValue = null){
 		$success = false;
 
 		$EventLogSistema  = new EventLogSistema ;
-		$EventLogSistema ->Descripcion=$Descripcion;
+		$EventLogSistema ->Codigo=$Codigo;
 		$EventLogSistema ->ScriptAfectado=$ScriptAfectado;
 		$EventLogSistema ->Ubicacion=$URL;
 		if(isset($NewValue)) $EventLogSistema ->NewValue=$NewValue;
@@ -21,10 +21,11 @@ class EventLogSistema extends Controller
 	}
 
 	// Retorna true si fue exitoso, false sino lo fue
-	public function RegistrarEventoCliente($Descripcion, $URL, $ScriptAfectado, $NewValue = null, $OldValue = null){
+	public function RegistrarEventoCliente($Codigo, $Descripcion, $URL, $ScriptAfectado, $NewValue = null, $OldValue = null){
 		$success = false;
 
 		$EventLogSistema  = new EventLogSistema ;
+		$EventLogSistema ->Codigo=$Codigo;
 		$EventLogSistema ->Descripcion=$Descripcion;
 		$EventLogSistema ->ScriptAfectado=$ScriptAfectado;
 		$EventLogSistema ->Ubicacion=$URL;
