@@ -106,7 +106,7 @@ return array(
 			'connectionString' => 'pgsql:host=localhost;dbname=univeonl_univeonl',
 			'emulatePrepare' => true,
 			'username' => 'univeonl_univeonl',
-			'password' => 'admin',
+			'password' => 'univeonl_univeonl',
 			'charset' => 'utf8',
 		),
 		/**/
