@@ -1,6 +1,6 @@
 <?php
 
-class EventLogSistema extends Controller
+class EventLogSistemaController extends Controller
 {
 	// Retorna true si fue exitoso, false sino lo fue
 	public function RegistrarEvento($Codigo, $Descripcion, $URL, $ScriptAfectado, $NewValue = null, $OldValue = null){
