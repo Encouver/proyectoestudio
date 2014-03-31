@@ -55,6 +55,12 @@ class SiteController extends Controller
 	{
 		// renders the view file 'protected/views/site/index.php'
 		// using the default layout 'protected/views/layouts/main.php'
+		
+		
+		
+		list($controlador) = Yii::app()->createController('EventLogSistema');
+		$controlador->RegistrarEventoCliente(1212, "Probando", "url", "Probando",'123','23213');
+		
 		$this->render('index');
 	}
 
