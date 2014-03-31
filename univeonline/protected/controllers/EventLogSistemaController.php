@@ -2,6 +2,7 @@
 
 class EventLogSistemaController extends Controller
 {
+
 	public function filters()
 	{
 		return array(
@@ -26,7 +27,7 @@ class EventLogSistemaController extends Controller
 	}
 
 	// Retorna true si fue exitoso, false sino lo fue
-	public function RegistrarEvento($Codigo, $Descripcion, $URL, $ScriptAfectado, $NewValue = null, $OldValue = null)
+	public function actionRegistrarEvento($Codigo, $Descripcion, $URL, $ScriptAfectado, $NewValue = null, $OldValue = null)
 	{
 
 		$success = false;
@@ -42,11 +43,10 @@ class EventLogSistemaController extends Controller
 
 		if($EventLogSistema ->save()) $success = true;
 		return $success;
-
 	}
 
 	// Retorna true si fue exitoso, false sino lo fue
-	public function RegistrarEventoCliente($Codigo, $Descripcion, $URL, $ScriptAfectado, $NewValue = null, $OldValue = null)
+	public function actionRegistrarEventoCliente($Codigo, $Descripcion, $URL, $ScriptAfectado, $NewValue = null, $OldValue = null)
 	{
 		$success = false;
 
@@ -55,15 +55,39 @@ class EventLogSistemaController extends Controller
 		$EventLogSistema->Descripcion=$Descripcion;
 		$EventLogSistema->ScriptAfectado=$ScriptAfectado;
 		$EventLogSistema->Ubicacion=$URL;
-		if($NewValue != null) $EventLogSistema ->NewValue=$NewValue;
-		if($OldValue != null) $EventLogSistema ->OldValue=$OldValue;
+		if(isset($NewValue)) $EventLogSistema ->NewValue=$NewValue;
+		if(isset($OldValue)) $EventLogSistema ->OldValue=$OldValue;
 		$EventLogSistema->Servidor = 0;
 
 		if($EventLogSistema ->save()) $success = true;
 
 		return $success;
-
 	}
 
-}
+	// Uncomment the following methods and override them if needed
+	/*
+	public function filters()
+	{
+		// return the filter configuration for this controller, e.g.:
+		return array(
+			'inlineFilterName',
+			array(
+				'class'=>'path.to.FilterClass',
+				'propertyName'=>'propertyValue',
+			),
+		);
+	}
 
+	public function actions()
+	{
+		// return external action classes, e.g.:
+		return array(
+			'action1'=>'path.to.ActionClass',
+			'action2'=>array(
+				'class'=>'path.to.AnotherActionClass',
+				'propertyName'=>'propertyValue',
+			),
+		);
+	}
+	*/
+}
