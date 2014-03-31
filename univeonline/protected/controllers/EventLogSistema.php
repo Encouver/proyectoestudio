@@ -10,10 +10,8 @@ class EventLogSistema extends Controller
 		$EventLogSistema ->Descripcion=$Descripcion;
 		$EventLogSistema ->ScriptAfectado=$ScriptAfectado;
 		$EventLogSistema ->Ubicacion=$URL;
-		if(isset($NewValue))
-			$EventLogSistema ->NewValue=$NewValue;
-		if(isset($OldValue))
-			$EventLogSistema ->OldValue=$OldValue;
+		if(isset($NewValue)) $EventLogSistema ->NewValue=$NewValue;
+		if(isset($OldValue)) $EventLogSistema ->OldValue=$OldValue;
 		$EventLogSistema ->Servidor = 1;
 
 		if($EventLogSistema ->save())
@@ -30,10 +28,8 @@ class EventLogSistema extends Controller
 		$EventLogSistema ->Descripcion=$Descripcion;
 		$EventLogSistema ->ScriptAfectado=$ScriptAfectado;
 		$EventLogSistema ->Ubicacion=$URL;
-		if($NewValue != null)
-			$EventLogSistema ->NewValue=$NewValue;
-		if($OldValue != null)
-			$EventLogSistema ->OldValue=$OldValue;
+		if($NewValue != null) $EventLogSistema ->NewValue=$NewValue;
+		if($OldValue != null) $EventLogSistema ->OldValue=$OldValue;
 		$EventLogSistema ->Servidor = 0;
 
 		if($EventLogSistema ->save())
