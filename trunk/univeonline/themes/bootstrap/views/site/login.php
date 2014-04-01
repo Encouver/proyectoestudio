@@ -49,9 +49,7 @@ $this->breadcrumbs=array(
 	<div class = "span4 offset2">
 	<h5  class = "lead">O ingresa con: <br /><br /></h5>
 	
-	<?php $this->widget('ext.hoauth.widgets.HOAuth',array(
-			'onlyIcons' => 'true',
-			)); ?>
+	<?php //$this->widget('ext.hoauth.widgets.HOAuth',array( 	'onlyIcons' => 'true', 	)); ?>
 
 	</div>
 </div>
