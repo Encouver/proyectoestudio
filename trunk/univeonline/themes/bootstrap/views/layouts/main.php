@@ -35,7 +35,7 @@
         ),
 		'type'=> 'inverse',
 		'collapse' => 'true',
-        'brand'=>"<img src='images/logoslogan.png' width='310px'>",
+        'brand'=>"<img src='".Yii::app()->baseUrl."/images/logoslogan.png' width='310px'>",
         'brandUrl'=>array('/site/index'),
     )); ?>
 
