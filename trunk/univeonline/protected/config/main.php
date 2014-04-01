@@ -39,6 +39,38 @@ return array(
 			// If removed, Gii defaults to localhost only. Edit carefully to taste.
 			'ipFilters'=>array('127.0.0.1','::1'),
 		),
+
+		'hybridauth' => array(
+            'baseUrl' => 'http://'. $_SERVER['SERVER_NAME'] . '/hybridauth', 
+            'withYiiUser' => false, // Set to true if using yii-user
+            "providers" => array ( 
+                "openid" => array (
+                    "enabled" => true
+                ),
+ 
+                "yahoo" => array ( 
+                    "enabled" => true 
+                ),
+ 
+                "google" => array ( 
+                    "enabled" => true,
+                    "keys"    => array ( "id" => "", "secret" => "" ),
+                    "scope"   => ""
+                ),
+ 
+                "facebook" => array ( 
+                    "enabled" => true,
+                    "keys"    => array ( "id" => "", "secret" => "" ),
+                    "scope"   => "email,publish_stream", 
+                    "display" => "" 
+                ),
+ 
+                "twitter" => array ( 
+                    "enabled" => true,
+                    "keys"    => array ( "key" => "", "secret" => "" ) 
+                )
+            )
+        ),
 		
 	),
 
