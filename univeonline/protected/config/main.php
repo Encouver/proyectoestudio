@@ -41,7 +41,7 @@ return array(
 		),
 
 		'hybridauth' => array(
-            'baseUrl' => 'http://'. $_SERVER['SERVER_NAME'] . '/hybridauth', 
+            'baseUrl' => 'http://'. $_SERVER['SERVER_NAME'] . '/proyectoestudio/univeonline/hybridauth', 
             'withYiiUser' => false, // Set to true if using yii-user
             "providers" => array ( 
                 "openid" => array (
