@@ -59,10 +59,8 @@ class SiteController extends Controller
 		
 		
 		list($controlador) = Yii::app()->createController('EventLogSistema');
-		if($controlador->actionRegistrarEvento(true,1212, "Probando", "url", "Probando",'123','23213'))
-			echo "<h1>éxito</h1>";
-		else
-			echo "<h1>sin éxito</h1>";
+		$controlador->actionRegistrarEvento(true,1212, "Probando", "url", "Probando",'123','23213');
+
 		
 		$this->render('index');
 	}
