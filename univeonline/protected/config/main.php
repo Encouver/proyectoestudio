@@ -52,7 +52,7 @@ return array(
                     "enabled" => true 
                 ),
  
-                "google" => array ( 
+                "Google" => array ( 
                     "enabled" => true,
                     "keys"    => array ( "id" => "914657215142-8lfnkmeqb4q8hi021i4mknmj3s23shml.apps.googleusercontent.com", "secret" => "uqC3OoFg02RkBsDSuft-G5J9" ),
                     "scope"   => ""
