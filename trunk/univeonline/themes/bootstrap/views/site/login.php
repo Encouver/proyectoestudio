@@ -17,7 +17,6 @@ $this->breadcrumbs=array(
 
 	<div class = "span4 offset1">
 		<div class="form">
-		<h5  class = "lead">Inicia sesión con tu cuenta <b>univeonline</b></h5>
 
 			<?php $form=$this->beginWidget('bootstrap.widgets.TbActiveForm', array(
 			'id'=>'login-form',
@@ -27,6 +26,8 @@ $this->breadcrumbs=array(
 			'validateOnSubmit'=>true,
 			),
 			)); ?>
+			<fieldset form="login-form">
+				<legend><h5  class = "lead">Inicia sesión con tu cuenta <b>univeonline</b></h5></legend>
 			<!--<p class="note">Fields with <span class="required">*</span> are required.</p>-->
 			<?php echo $form->textFieldRow($model,'username'); ?>
 			<?php echo $form->passwordFieldRow($model,'password'); ?>
@@ -40,7 +41,7 @@ $this->breadcrumbs=array(
 
 				</div>
 				<h6 class="lead"> ¿No puedes acceder a tu cuenta?</h6>
-
+			</fieldset>
 			<?php $this->endWidget(); ?>
 		</div><!-- form -->
 
@@ -49,7 +50,9 @@ $this->breadcrumbs=array(
 	<div class = "span4 offset2">
 	<h5  class = "lead">O ingresa con: <br /><br /></h5>
 	
-	<?php $this->widget('application.modules.hybridauth.widgets.renderProviders'); ?>
+	<?php 	//$this->widget('application.modules.hybridauth.widgets.renderProviders');
+			$this->widget('ext.hoauth.widgets.HOAuth');
+	 ?>
 
 	</div>
 </div>
@@ -65,7 +68,7 @@ $this->breadcrumbs=array(
            'type'=>'link',
            'label'=>'¡Crea tu cuenta ahora!',
            'size'=>'medium',
-           'url' => 'index.php?r=usuarios/create',
+           'url' => Yii::app()->baseUrl.'/usuarios/create',
 
 
        )); ?></b></h4></center>

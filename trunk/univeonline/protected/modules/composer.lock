@@ -1,0 +1,57 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
+    ],
+    "hash": "fbf466231d09c569c50c3f9433f9ccbf",
+    "packages": [
+        {
+            "name": "nineinchnick/yii-usr",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/nineinchnick/yii-usr.git",
+                "reference": "c7e6d16b0612c846e0d1eeaee1779885a0497ce1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/nineinchnick/yii-usr/zipball/c7e6d16b0612c846e0d1eeaee1779885a0497ce1",
+                "reference": "c7e6d16b0612c846e0d1eeaee1779885a0497ce1",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0"
+            },
+            "type": "library",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Jan Waś",
+                    "email": "janek.jan@gmail.com",
+                    "homepage": "http://niix.pl/"
+                }
+            ],
+            "description": "Yii framework module for user authentication, password reset, registration and profile updating.",
+            "time": "2014-04-10 15:47:53"
+        }
+    ],
+    "packages-dev": [
+
+    ],
+    "aliases": [
+
+    ],
+    "minimum-stability": "stable",
+    "stability-flags": {
+        "nineinchnick/yii-usr": 20
+    },
+    "platform": [
+
+    ],
+    "platform-dev": [
+
+    ]
+}

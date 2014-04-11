@@ -30,9 +30,10 @@ return array(
             'generatorPaths'=>array(
                 'bootstrap.gii',
             ),
-        ),
+
+        ),  
+
 		// uncomment the following to enable the Gii tool
-		
 		'gii'=>array(
 			'class'=>'system.gii.GiiModule',
 			'password'=>'univeonline',
@@ -40,37 +41,40 @@ return array(
 			'ipFilters'=>array('127.0.0.1','::1'),
 		),
 
-		'hybridauth' => array(
-            'baseUrl' => 'http://'. $_SERVER['SERVER_NAME'] . '/proyectoestudio/univeonline/hybridauth', 
-            'withYiiUser' => false, // Set to true if using yii-user
-            "providers" => array ( 
-                "openid" => array (
-                    "enabled" => true
-                ),
- 
-                "yahoo" => array ( 
-                    "enabled" => true 
-                ),
- 
-                "Google" => array ( 
-                    "enabled" => true,
-                    "keys"    => array ( "id" => "914657215142-8lfnkmeqb4q8hi021i4mknmj3s23shml.apps.googleusercontent.com", "secret" => "uqC3OoFg02RkBsDSuft-G5J9" ),
-                    "scope"   => ""
-                ),
- 
-                "facebook" => array ( 
-                    "enabled" => true,
-                    "keys"    => array ( "id" => "", "secret" => "" ),
-                    "scope"   => "email,publish_stream", 
-                    "display" => "" 
-                ),
- 
-                "twitter" => array ( 
-                    "enabled" => true,
-                    "keys"    => array ( "key" => "", "secret" => "" ) 
-                )
-            )
+	'usr' => array(
+		 'class'=>'vendors.nineinchnick.yii-usr.UsrModule',
+        'layout' => '//layouts/column1',
+        'formClass'=>'bootstrap.widgets.TbActiveForm',
+        'detailViewClass'=>'bootstrap.widgets.TbDetailView',
+        'formCssClass'=>'form well',
+        'alertCssClassPrefix'=>'alert alert-',
+        'submitButtonCssClass'=>'btn btn-primary',
+        'htmlCss' => array(
+            'errorSummaryCss' => 'alert alert-error',
+            'errorMessageCss' => 'text-error',
+            ),
+        'hybridauthProviders' => array(
+            'OpenID' => array('enabled'=>true),
+            'Facebook' => array('enabled'=>true, 'keys'=>array('id'=>'', 'secret'=>''), 'scope'=>'email'),
+           	"Google" => array ( 
+				"enabled" => true,
+				"keys"    => array ( "id" => "914657215142-8lfnkmeqb4q8hi021i4mknmj3s23shml.apps.googleusercontent.com", "secret" => "uqC3OoFg02RkBsDSuft-G5J9" ),
+				'scope'=>'email',
+			),
+           "Twitter" => array ( 
+				"enabled" => true,
+				"keys"    => array ( "key" => "CHBzbyaIJGAQbIJ4BIUiGXrL1", "secret" => "cVE1tUrRjFJLHDkiGntGi2g0rX2BcBrDwmZ0jz1qqupQfPfvGh" )
+			),
+			"LinkedIn" => array ( 
+				"enabled" => true,
+				"keys"    => array ( "key" => "", "secret" => "" ) 
+			),
+
         ),
+        // mail
+        //...mail config...
+    ),
+
 		
 	),
 
@@ -80,6 +84,7 @@ return array(
 			// enable cookie-based authentication
 			'allowAutoLogin'=>true,
 		),
+
 		/*'assetManager' => array (
 			'linkAssets' => true,
 		),*/

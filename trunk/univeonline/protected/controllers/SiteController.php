@@ -18,6 +18,8 @@ class SiteController extends Controller
 			'page'=>array(
 				'class'=>'CViewAction',
 	      	),
+	      	
+	      	//Esto es para la extensión HOAUTH
 			'oauth' => array(
 		        // the list of additional properties of this action is below
 		        'class'=>'ext.hoauth.HOAuthAction',

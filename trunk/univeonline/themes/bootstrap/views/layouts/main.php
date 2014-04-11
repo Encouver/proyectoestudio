@@ -24,7 +24,7 @@
                 'htmlOptions'=>array('class'=>'pull-right'),
                 
                 'items'=>array(
-                    array('label'=>'Inicio', 'url'=>array('/site/index')),                    
+                    array('label'=>'Inicio', 'url'=>Yii::app()->getBaseUrl(true)),                    
                     array('label'=>'Cursos', 'url'=>array('')),
                     array('label'=>'Sobre UniveOnline', 'url'=>array('/site/page', 'view'=>'about')),
                     array('label'=>'Contacto', 'url'=>array('/site/contact')),
@@ -36,7 +36,7 @@
 		'type'=> 'inverse',
 		'collapse' => 'true',
         'brand'=>"<img src='".Yii::app()->baseUrl."/images/logoslogan.png' width='310px'>",
-        'brandUrl'=>array('/site/index'),
+        'brandUrl'=>Yii::app()->getBaseUrl(true),
     )); ?>
 
 
