@@ -37,13 +37,13 @@ class Usuarios extends CActiveRecord
 	/**
 	 * Returns User model by its email
 	 * 
-	 * @param string $email 
+	 * @param string $correo 
 	 * @access public
 	 * @return User
 	 */
 	public function findByEmail($email)
 	{
-	  return self::model()->findByAttributes(array('email' => $email));
+	  return self::model()->findByAttributes(array('correo' => $email));
 	}
 
 	/**

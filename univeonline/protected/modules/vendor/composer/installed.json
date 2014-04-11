@@ -1,0 +1,36 @@
+[
+    {
+        "name": "nineinchnick/yii-usr",
+        "version": "dev-master",
+        "version_normalized": "9999999-dev",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/nineinchnick/yii-usr.git",
+            "reference": "c7e6d16b0612c846e0d1eeaee1779885a0497ce1"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/nineinchnick/yii-usr/zipball/c7e6d16b0612c846e0d1eeaee1779885a0497ce1",
+            "reference": "c7e6d16b0612c846e0d1eeaee1779885a0497ce1",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=5.3.0"
+        },
+        "time": "2014-04-10 15:47:53",
+        "type": "library",
+        "installation-source": "dist",
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "BSD-3-Clause"
+        ],
+        "authors": [
+            {
+                "name": "Jan Waś",
+                "email": "janek.jan@gmail.com",
+                "homepage": "http://niix.pl/"
+            }
+        ],
+        "description": "Yii framework module for user authentication, password reset, registration and profile updating."
+    }
+]

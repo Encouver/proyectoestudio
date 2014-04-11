@@ -25,6 +25,6 @@ $this->breadcrumbs=array(
 	<h5  class = "lead">O regístrate con una cuenta existente de: <br /><br />
 		AQUI VA <br /><br /> EL WIDGET CON LAS <br /><br />REDES SPCIALES</h5>
 
-		<?php $this->widget('ext.hoauth.widgets.HOAuth'); ?>
+		
 		
 	</div>
