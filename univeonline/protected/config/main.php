@@ -42,7 +42,7 @@ return array(
 		),
 
 	'usr' => array(
-		 'class'=>'vendors.nineinchnick.yii-usr.UsrModule',
+		 'class'=>'application.modules.vendor.nineinchnick.yii-usr.UsrModule',
         'layout' => '//layouts/column1',
         'formClass'=>'bootstrap.widgets.TbActiveForm',
         'detailViewClass'=>'bootstrap.widgets.TbDetailView',
