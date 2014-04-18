@@ -1,13 +1,13 @@
 <?php
 
-Yii::import('usr.components.*');
+Yii::import('usdr.components.*');
 
 /**
  * UserIdentity represents the data needed to identity a user.
  * It contains the authentication method that checks if the provided
- * data can identity the user.
+ * data can identify the user.
  */
-class ExampleUserIdentity extends CUserIdentity
+class UserIdentity extends CUserIdentity
 	implements IPasswordHistoryIdentity,
 	IActivatedIdentity,
 	IEditableIdentity,
@@ -28,6 +28,8 @@ class ExampleUserIdentity extends CUserIdentity
 	public $lastName = null;
 	private $_id = null;
 	private $_activeRecord = null;
+
+
 
 	protected static function createFromUser(User $user)
 	{

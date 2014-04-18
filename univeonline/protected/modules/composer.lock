@@ -11,12 +11,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/nineinchnick/yii-usr.git",
-                "reference": "c7e6d16b0612c846e0d1eeaee1779885a0497ce1"
+                "reference": "2e7e62832cf55c347dcf7cfb38a1f1fd11be84bf"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nineinchnick/yii-usr/zipball/c7e6d16b0612c846e0d1eeaee1779885a0497ce1",
-                "reference": "c7e6d16b0612c846e0d1eeaee1779885a0497ce1",
+                "url": "https://api.github.com/repos/nineinchnick/yii-usr/zipball/2e7e62832cf55c347dcf7cfb38a1f1fd11be84bf",
+                "reference": "2e7e62832cf55c347dcf7cfb38a1f1fd11be84bf",
                 "shasum": ""
             },
             "require": {
@@ -35,7 +35,7 @@
                 }
             ],
             "description": "Yii framework module for user authentication, password reset, registration and profile updating.",
-            "time": "2014-04-10 15:47:53"
+            "time": "2014-04-13 19:38:59"
         }
     ],
     "packages-dev": [
