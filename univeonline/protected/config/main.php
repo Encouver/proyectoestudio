@@ -42,6 +42,7 @@ return array(
 		),
 
 	'usr' => array(
+		'userIdentityClass' => 'UserIdentity',
 		 'class'=>'application.modules.vendor.nineinchnick.yii-usr.UsrModule',
         'layout' => '//layouts/column1',
         'formClass'=>'bootstrap.widgets.TbActiveForm',
