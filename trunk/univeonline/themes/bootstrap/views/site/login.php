@@ -68,7 +68,7 @@ $this->breadcrumbs=array(
            'type'=>'link',
            'label'=>'¡Crea tu cuenta ahora!',
            'size'=>'medium',
-           'url' => Yii::app()->baseUrl.'/usuarios/create',
+           'url' => Yii::app()->baseUrl.'/default/register',
 
 
        )); ?></b></h4></center>

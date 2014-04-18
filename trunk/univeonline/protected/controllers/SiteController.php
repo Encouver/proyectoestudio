@@ -60,8 +60,8 @@ class SiteController extends Controller
 		
 		
 		
-		list($controlador) = Yii::app()->createController('EventLogSistema');
-		$controlador->actionRegistrarEvento(true,1212, "Probando", "url", "Probando",'123','23213');
+		//list($controlador) = Yii::app()->createController('EventLogSistema');
+		//$controlador->actionRegistrarEvento(true,1212, "Probando", "url", "Probando",'123','23213');
 
 		
 		$this->render('index');
@@ -105,6 +105,10 @@ class SiteController extends Controller
 			}
 		}
 		$this->render('contact',array('model'=>$model));
+	}
+
+	public function actionRegistrar(){
+		
 	}
 
 	/**
