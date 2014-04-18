@@ -70,7 +70,9 @@
 	<footer>
         <div class="container">
             <div class = "span4">
-                    <img src="images/logo_unive2.png" width="200px">
+                <?php
+                    echo '<img src="'.Yii::app()->baseUrl.'/images/logo_unive2.png" width="200px">';
+                ?>
                     <h6>Tu comunidad de enseñanza - aprendizaje</h6>
             </div> 
             <div class = "span2">
@@ -89,16 +91,17 @@
             <div class = "span3">
                     <h5>Únete a la comunidad en </h5> 
                     <?php
-                        echo CHtml::link('<img src="images/facebook.png">', "http://www.facebook.com");
-                        echo CHtml::link('<img src="images/twitter.png">', "http://www.twiiter.com");
-                        echo CHtml::link('<img src="images/google.png">', "https://plus.google.com/‎");
+                        echo CHtml::link('<img src="'.Yii::app()->baseUrl.'/images/facebook.png">', "http://www.facebook.com");
+                        echo CHtml::link('<img src="'.Yii::app()->baseUrl.'/images/twitter.png">', "http://www.twiiter.com");
+                        echo CHtml::link('<img src="'.Yii::app()->baseUrl.'/images/google.png">', "https://plus.google.com/‎");
                     ?> 
                     <br>
             </div>
             <div class = "span2">
                                 <center>
-
-                <img src="images/latinoamerica.png" width="130px">
+            <?php
+                echo '<img src="'.Yii::app()->baseUrl.'/images/latinoamerica.png" width="130px">';
+            ?>
                                 </center>
 
             </div>
