@@ -1,6 +1,6 @@
 <?php
 
-Yii::import('usdr.components.*');
+Yii::import('usr.components.*');
 
 /**
  * UserIdentity represents the data needed to identity a user.
