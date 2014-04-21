@@ -13,8 +13,9 @@ return array(
 	'basePath'=>dirname(__FILE__).DIRECTORY_SEPARATOR.'..',
 	'name'=>'UniveOnline',
 	'language' => 'es',
-	'sourceLanguage' => 'en',
+	'sourceLanguage' => 'es',
 	'theme'=>'bootstrap',
+
 	// preloading 'log' component
 	'preload'=>array('log'),
 
@@ -41,40 +42,55 @@ return array(
 			'ipFilters'=>array('127.0.0.1','::1'),
 		),
 
-	'usr' => array(
-		'userIdentityClass' => 'UserIdentity',
-		 'class'=>'application.modules.vendor.nineinchnick.yii-usr.UsrModule',
-        'layout' => '//layouts/column1',
-        'formClass'=>'bootstrap.widgets.TbActiveForm',
-        'detailViewClass'=>'bootstrap.widgets.TbDetailView',
-        'formCssClass'=>'form well',
-        'alertCssClassPrefix'=>'alert alert-',
-        'submitButtonCssClass'=>'btn btn-primary',
-        'htmlCss' => array(
-            'errorSummaryCss' => 'alert alert-error',
-            'errorMessageCss' => 'text-error',
-            ),
-        'hybridauthProviders' => array(
-            'OpenID' => array('enabled'=>true),
-            'Facebook' => array('enabled'=>true, 'keys'=>array('id'=>'', 'secret'=>''), 'scope'=>'email'),
-           	"Google" => array ( 
-				"enabled" => true,
-				"keys"    => array ( "id" => "914657215142-8lfnkmeqb4q8hi021i4mknmj3s23shml.apps.googleusercontent.com", "secret" => "uqC3OoFg02RkBsDSuft-G5J9" ),
-				'scope'=>'email',
-			),
-           "Twitter" => array ( 
-				"enabled" => true,
-				"keys"    => array ( "key" => "CHBzbyaIJGAQbIJ4BIUiGXrL1", "secret" => "cVE1tUrRjFJLHDkiGntGi2g0rX2BcBrDwmZ0jz1qqupQfPfvGh" )
-			),
-			"LinkedIn" => array ( 
-				"enabled" => true,
-				"keys"    => array ( "key" => "", "secret" => "" ) 
-			),
+		'usr' => array(
+			'userIdentityClass' => 'UserIdentity',
+			'class'=>'application.modules.vendor.nineinchnick.yii-usr.UsrModule',
+	        'layout' => '//layouts/column1',
+	        'formClass'=>'bootstrap.widgets.TbActiveForm',
+	        'detailViewClass'=>'bootstrap.widgets.TbDetailView',
+	        'formCssClass'=>'form well',
+	        'alertCssClassPrefix'=>'alert alert-',
+	        'submitButtonCssClass'=>'btn btn-primary',
+	        'htmlCss' => array(
+	            'errorSummaryCss' => 'alert alert-error',
+	            'errorMessageCss' => 'text-error',
+	            ),
+	        'hybridauthProviders' => array(
+	            'OpenID' => array('enabled'=>true),
+	            'Facebook' => array('enabled'=>true, 'keys'=>array('id'=>'', 'secret'=>''), 'scope'=>'email'),
+	           	"Google" => array ( 
+					"enabled" => true,
+					"keys"    => array ( "id" => "914657215142-8lfnkmeqb4q8hi021i4mknmj3s23shml.apps.googleusercontent.com", "secret" => "uqC3OoFg02RkBsDSuft-G5J9" ),
+					'scope'=>'email',
+				),
+	           "Twitter" => array ( 
+					"enabled" => true,
+					"keys"    => array ( "key" => "CHBzbyaIJGAQbIJ4BIUiGXrL1", "secret" => "cVE1tUrRjFJLHDkiGntGi2g0rX2BcBrDwmZ0jz1qqupQfPfvGh" )
+				),
+				"LinkedIn" => array ( 
+					"enabled" => true,
+					"keys"    => array ( "key" => "", "secret" => "" ) 
+				),
 
-        ),
-        // mail
-        //...mail config...
-    ),
+	        ),
+	        // mail
+	        //...mail config...
+			'mailerConfig' => array(
+				'SetLanguage' => array('es'),
+				'SetFrom' => array('from@example.com', 'Administrator'),
+				'AddReplyTo' => array('replyto@example.com','Administrator'),
+				'IsMail' => array(),
+				// SMTP options
+				//'IsSMTP' => array(),
+				//'Host' => 'localhost',
+				//'Port' => 25,
+				//'Username' => 'login',
+				//'Password' => 'password',
+				// extension properties
+				'setPathViews' => array('usr.views.emails'),
+				'setPathLayouts' => array('usr.views.layouts'),
+			),
+	    ),
 
 		
 	),
@@ -161,11 +177,11 @@ return array(
 					'levels'=>'error, warning',
 				),
 				// uncomment the following to show log messages on web pages
-				/*
+				
 				array(
 					'class'=>'CWebLogRoute',
 				),
-				*/
+				/**/
 			),
 		),
 	),
@@ -174,7 +190,8 @@ return array(
 	// using Yii::app()->params['paramName']
 	'params'=>array(
 		// this is used in contact page
-		'adminEmail'=>'webmaster@example.com',
+		'adminEmail'=>'infouniveonline@gmail.com',
+		'languages'=>array('en_us'=>'English', 'es'=>'Spanish', 'fa_ir'=>'فارسی'), // Yii::app()->language = Yii::app()->params->languages['fa_ir']; Para cambiar el lenguaje en runtime
 	),
 );
 
