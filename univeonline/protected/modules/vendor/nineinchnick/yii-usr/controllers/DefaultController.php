@@ -271,7 +271,6 @@ class DefaultController extends UsrController
 				$trx = Yii::app()->db->beginTransaction();
 				if (!$model->save() || !$passwordForm->resetPassword($model->getIdentity())) {
 					$trx->rollback();
-					//echo printf_f($model->getErrors()); 
 					Yii::app()->user->setFlash('error', Yii::t('UsrModule.usr', 'Failed to register a new user.').' '.Yii::t('UsrModule.usr', 'Try again or contact the site administrator.'));
 				} else {
 					$trx->commit();
