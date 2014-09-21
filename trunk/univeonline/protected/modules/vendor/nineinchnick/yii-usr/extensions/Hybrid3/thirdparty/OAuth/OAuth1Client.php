@@ -1,8 +1,8 @@
 <?php
 /*!
 * HybridAuth
-* http://hybridauth.sourceforge.net | http://github.com/hybridauth/hybridauth
-* (c) 2009-2012, HybridAuth authors | http://hybridauth.sourceforge.net/licenses.html 
+* http://hybridauth.sourceforge.net | https://github.com/hybridauth/hybridauth
+*  (c) 2009-2011 HybridAuth authors | hybridauth.sourceforge.net/licenses.html
 */
 
 // A service client for the OAuth 1/1.0a flow.
@@ -25,7 +25,6 @@ class OAuth1Client{
 	public $curl_ssl_verifypeer   = false;
 	public $curl_auth_header      = true;
 	public $curl_useragent        = "OAuth/1 Simple PHP Client v0.1; HybridAuth http://hybridauth.sourceforge.net/";
-	public $curl_proxy            = null;
 
 	//--
 
@@ -174,11 +173,7 @@ class OAuth1Client{
 		curl_setopt( $ci, CURLOPT_SSL_VERIFYPEER, $this->curl_ssl_verifypeer );
 		curl_setopt( $ci, CURLOPT_HEADERFUNCTION, array($this, 'getHeader') );
 		curl_setopt( $ci, CURLOPT_HEADER        , FALSE );
-		
-		if($this->curl_proxy){
-			curl_setopt( $ci, CURLOPT_PROXY        , $this->curl_proxy);
-		}
- 
+
 		switch ($method){
 			case 'POST':
 				curl_setopt( $ci, CURLOPT_POST, TRUE );
@@ -200,9 +195,6 @@ class OAuth1Client{
 
 		curl_setopt($ci, CURLOPT_URL, $url);
 		$response = curl_exec($ci);
-		if( $response === FALSE ) {
-				Hybrid_Logger::error( "OAuth1Client::request(). curl_exec error: ", curl_error($ci) );
-		}
 
 		Hybrid_Logger::debug( "OAuth1Client::request(). dump request info: ", serialize( curl_getinfo($ci) ) );
 		Hybrid_Logger::debug( "OAuth1Client::request(). dump request result: ", serialize( $response ) );
