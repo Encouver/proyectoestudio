@@ -19,14 +19,14 @@
  * @property UserProfilePicture[] $thumbnails
  * @property Users $user
  */
-class UserProfilePicture extends CActiveRecord
+abstract class ExampleUserProfilePicture extends CActiveRecord
 {
 	/**
 	 * @inheritdoc
 	 */
 	public function tableName()
 	{
-		return 'user_profile_pictures';
+		return '{{user_profile_pictures}}';
 	}
 
 	/**
@@ -35,7 +35,6 @@ class UserProfilePicture extends CActiveRecord
 	public function rules()
 	{
 		return array(
-			//array('mimetype', 'default', 'setOnEmpty'=>true, 'value'=>''),
 		);
 	}
 
